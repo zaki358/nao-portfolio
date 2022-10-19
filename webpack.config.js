@@ -53,17 +53,17 @@ module.exports = {
       filename: './css/style.css',
     }),
     new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({
-      inject: 'body',
-      template: './src/html/index.html',
-      filename: './html/index.html',
-      hash: true,
-    }),
-    new HtmlWebpackPlugin({
-      inject: 'body',
-      template: './src/html/work.html',
-      filename: './html/work.html',
-      hash: true,
-    }),
+    // new HtmlWebpackPlugin({
+    //   inject: 'body',
+    //   template: './src/index.html',
+    //   filename: './index.html',
+    //   hash: true,
+    // }),
+    // new HtmlWebpackPlugin({
+    //   inject: 'body',
+    //   template: './src/html/work.html',
+    //   filename: './html/work.html',
+    //   hash: true,
+    // }),
   ],
 }
