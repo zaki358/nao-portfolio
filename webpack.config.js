@@ -4,11 +4,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
+  devtool: 'source-map',
   mode: 'development',
   entry: './src/js/index.js',
   output: {
-    filename: 'js/index.js',
     path: path.resolve(__dirname, 'dist'),
+    filename: 'js/index.js',
+    publicPath: '/',
   },
   module: {
     rules: [
@@ -27,7 +29,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpg)/,
+        test: /\.(png|jpg|jpeg)/,
         type: 'asset/resource',
         generator: {
           filename: 'images/[name][ext]',
@@ -40,6 +42,9 @@ module.exports = {
           //     name: 'images/[name].[ext]',
           //   }
           // }
+          {
+            loader: 'image-webpack-loader',
+          },
         ],
       },
     ],
@@ -51,13 +56,13 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       inject: 'body',
-      template: path.resolve(__dirname, 'src', 'html', 'index.html'),
+      template: path.resolve(__dirname, 'src', 'index.html'),
       filename: 'index.html',
       //hash: true,
     }),
     new HtmlWebpackPlugin({
       inject: 'body',
-      template: path.resolve(__dirname, 'src', 'html', 'work.html'),
+      template: path.resolve(__dirname, 'src', 'work.html'),
       filename: 'work.html',
       //hash: true,
     }),

@@ -5,7 +5,9 @@ html {
 body {
   overflow-x: hidden;
   box-sizing: border-box;
-
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 100;
 }
 
 a {
@@ -24,8 +26,4 @@ ul {
 
 li {
   padding: 0;
-}
-
-h1 {
-  color: aqua;
 }
