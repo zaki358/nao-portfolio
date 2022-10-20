@@ -4,7 +4,10 @@
   "description": "Naoさんの旧ポートフォリオサイトです",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode=development",
+    "build:dev": "webpack"
   },
   "repository": {
     "type": "git",

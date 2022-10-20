@@ -4,10 +4,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
+  mode: 'development',
   entry: './src/js/index.js',
   output: {
     filename: 'js/index.js',
-    path: path.resolve(__dirname, './dist'),
+    path: path.resolve(__dirname, 'dist'),
   },
   module: {
     rules: [
@@ -43,27 +44,30 @@ module.exports = {
       },
     ],
   },
-  // devServer: {
-  //   static: {
-  //     directory: path.join(__dirname, './dist')
-  //   }
-  // },
   plugins: [
     new MiniCssExtractPlugin({
       filename: './css/style.css',
     }),
     new CleanWebpackPlugin(),
-    // new HtmlWebpackPlugin({
-    //   inject: 'body',
-    //   template: './src/index.html',
-    //   filename: './index.html',
-    //   hash: true,
-    // }),
-    // new HtmlWebpackPlugin({
-    //   inject: 'body',
-    //   template: './src/html/work.html',
-    //   filename: './html/work.html',
-    //   hash: true,
-    // }),
+    new HtmlWebpackPlugin({
+      inject: 'body',
+      template: path.resolve(__dirname, 'src', 'html', 'index.html'),
+      filename: 'index.html',
+      //hash: true,
+    }),
+    new HtmlWebpackPlugin({
+      inject: 'body',
+      template: path.resolve(__dirname, 'src', 'html', 'work.html'),
+      filename: 'work.html',
+      //hash: true,
+    }),
   ],
+  devServer: {
+    // static: {
+    //   // directory: path.resolve(__dirname, 'dist', 'html'),
+    //   // publicPath: '../js/',
+    // },
+    static: "dist",
+    open: true,
+  },
 }
