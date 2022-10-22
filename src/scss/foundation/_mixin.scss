@@ -3,13 +3,55 @@
 //---レスポンシブ用（pcは初期値）---//
 @mixin media($breakpoint: pc) {
   @media #{map-get(variables.$breakpoints, $breakpoint)} {
-      @content;
+    @content;
   }
 }
 
 //font
-@mixin fontMainTitle {
+@mixin coquette200 {
+  font-family: coquette, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+@mixin coquette300 {
+  font-family: coquette, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin coquette400 {
+  font-family: coquette, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin coquette700 {
+  font-family: coquette, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin coquette800 {
+  font-family: coquette, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+@mixin coquette900 {
   font-family: coquette, sans-serif;
   font-weight: 900;
+  font-style: normal;
+}
+
+@mixin gothic400 {
+  font-family: fot-tsukuardgothic-std, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin gothic700 {
+  font-family: fot-tsukuardgothic-std, sans-serif;
+  font-weight: 700;
   font-style: normal;
 }

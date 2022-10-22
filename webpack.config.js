@@ -19,9 +19,13 @@ module.exports = {
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
+            //options: { publicPath: '../' },
           },
           {
             loader: 'css-loader',
+            options: {
+              url: true,
+            },
           },
           {
             loader: 'sass-loader',
@@ -29,10 +33,10 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpg|jpeg)/,
+        test: /\.(png|jpg|jpeg|svg)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'images/[name][ext]',
+          filename: 'images/[name][ext][query]',
         },
         use: [
           // {
@@ -58,15 +62,22 @@ module.exports = {
       inject: 'body',
       template: path.resolve(__dirname, 'src', 'index.html'),
       filename: 'index.html',
+      favicon: "./src/images/favicon.svg",
       //hash: true,
     }),
     new HtmlWebpackPlugin({
       inject: 'body',
       template: path.resolve(__dirname, 'src', 'work.html'),
       filename: 'work.html',
+      favicon: "./src/images/favicon.svg",
       //hash: true,
     }),
   ],
+  resolve: {
+    alias: {
+      '@images': path.resolve(__dirname, './src/images/'),
+    },
+  },
   devServer: {
     // static: {
     //   // directory: path.resolve(__dirname, 'dist', 'html'),
@@ -74,5 +85,6 @@ module.exports = {
     // },
     static: "dist",
     open: true,
+    watchFiles: ["src/index.html"],
   },
 }

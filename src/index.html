@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +8,49 @@
   <title>front-page</title>
   <link rel="stylesheet" href="https://use.typekit.net/ffe5yoz.css">
   <script>
-    (function(d) {
+    (function (d) {
       var config = {
         kitId: 'adf1ial',
         scriptTimeout: 3000,
         async: true
       },
-      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
     })(document);
   </script>
 </head>
-<body>
-  <h1>テスト</h1>
-  <a href="./work.html">WORK</a>
-  <h2>aaa</h2>
-</body>
-</html>
 
+<body>
+  <div class="l-wrapper">
+    <header class="l-header p-header__content">
+      <div class="p-header__title">
+        <img class="c-icon__header" src="<%= require('./images/front-page_symbol.svg') %>" alt="フロントページシンボル">
+        <h1 class="c-font__header">naoLab</h1>
+      </div>
+      <div class="p-header__main">
+        <img class="p-header__img--sp" src="<%= require ('./images/front-page_header_background_sp.png') %>" alt="">
+        <img class="p-header__img--pc"  src="<%= require ('./images/front-page_header_background_pc.png') %>" alt="">
+
+      </div>
+      <nav class="p-header__nav">
+        <button class="p-header__close--btn c-btn__nav--close"></button>
+        <ul class="p-header__menu">
+          <li class="p-header__list"><a class="c-font__list--header" href="">Top</a></li>
+          <li class="p-header__list"><a class="c-font__list--header" href="">About</a></li>
+          <li class="p-header__list"><a class="c-font__list--header" href="">Profile</a></li>
+          <li class="p-header__list"><a class="c-font__list--header" href=""></a>Work</li>
+          <li class="p-header__list"><a class="c-font__list--header" href=""></a>SKill</li>
+          <li class="p-header__list"><a class="c-font__list--header" href=""></a>Contact</li>
+        </ul>
+      </nav>
+      <button class="p-header__open--btn c-btn__nav--open"></button>
+    </header>
+    <main class="l-main">
+
+    </main>
+    <footer class="l-footer p-footer">
+
+    </footer>
+  </div>
+</body>
+
+</html>

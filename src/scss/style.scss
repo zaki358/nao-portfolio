@@ -10,6 +10,10 @@
 // Layout
 // ==========================================================================
 
+@use "layout/wrapper";
+@use "layout/header" as layoutHeader;
+@use "layout/main";
+@use "layout/footer" as layoutFooter;
 
 // ==========================================================================
 // Object
@@ -18,10 +22,24 @@
 // Component
 // -----------------------------------------------------------------
 
+@use "object/component/font";
+@use "object/component/icon";
+@use "object/component/svg";
+@use "object/component/img";
+@use "object/component/btn";
 
 // -----------------------------------------------------------------
 // Project
 // -----------------------------------------------------------------
+
+@use "object/project/header" as projectHeader;
+@use "object/project/about";
+@use "object/project/profile";
+@use "object/project/work";
+@use "object/project/skill";
+@use "object/project/contact";
+@use "object/project/production";
+@use "object/project/footer" as projectFooter;
 
 // -----------------------------------------------------------------
 // Utility
