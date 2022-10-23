@@ -1,0 +1,46 @@
+@use "../../foundation/mixin";
+
+.c-img {
+  &__background--header--sp {
+    width: 100vw;
+    height: auto;
+  }
+  &__background--header--pc {
+    width: 100vw;
+    height: auto;
+    @include mixin.media(pc) {
+      width: min(85vw, 1632px);
+    }
+  }
+  &__title--header--front {
+    width: max(50vw, 190px);
+    height: auto;
+    @include mixin.media(tab) {
+      width: min(30vw, 576px);
+    }
+  }
+  &__main--header--sp {
+    width: 100vw;
+    height: auto;
+  }
+  &__main--header--pc {
+    width: 100vw;
+    height: auto;
+  }
+  &__catchcopy--pc {
+    width: 32vw;
+    height: auto;
+  }
+  &__catchcopy--sp {
+    width: 43vw;
+    height: auto;
+  }
+  &__present {
+    width: 31vw;
+    height: auto;
+    @include mixin.media(pc) {
+      width: 20vw;
+      height: auto;
+    }
+  }
+}

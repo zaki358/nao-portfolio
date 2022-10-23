@@ -1,21 +1,130 @@
+@use "../../foundation/mixin";
+@use "../../foundation/variables" as val;
+
 .p-header {
   &__content {
-    background-image: url("@images/header_background_sp.png");
-    background-repeat: no-repeat;
-    background-position: right top;
-    //height: 600px;
+    position: relative;
+    z-index: 100;
+  }
+  &__background--sp {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 101;
+    @include mixin.media(tab) {
+      display: none;
+    }
+  }
+  &__background--pc {
+    display: none;
+    @include mixin.media(tab) {
+      position: absolute;
+      z-index: 101;
+      display: block;
+      top: 0;
+      right: 0;
+    }
+    @include mixin.media(pc) {
+      right: 0;
+    }
   }
   &__title {
-    padding: 65px 0;
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 102;
+    @include mixin.media(tab) {
+      top: 2%;
+    }
   }
-  &__main--img {
-
+  &__main {
+    position: relative;
+    @include mixin.media(pc) {
+      padding-top: 15vw;
+    }
+  }
+  &__img--sp {
+    @include mixin.media(pc) {
+      display: none;
+    }
+  }
+  &__img--pc {
+    display: none;
+    @include mixin.media(pc) {
+      display: block;
+    }
+  }
+  &__catchcopy--pc {
+    display: none;
+    @include mixin.media(pc) {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 102;
+      transform: translateX(-50%);
+    }
+  }
+  &__catchcopy--sp--lv1 {
+    position: absolute;
+    top: 35%;
+    right: 28%;
+    z-index: 102;
+    @include mixin.media(pc) {
+      display: none;
+    }
+  }
+  &__catchcopy--sp--lv2 {
+    position: absolute;
+    top: 56%;
+    right: 15%;
+    z-index: 102;
+    @include mixin.media(pc) {
+      display: none;
+    }
+  }
+  &__present {
+    position: absolute;
+    top: 51%;
+    left: 7%;
+    z-index: 99;
+    @include mixin.media(pc) {
+      top: 26%;
+      left: 18%;
+    }
   }
   &__nav {
-    
+    position: absolute;
+    top: 0;
+    z-index: 103;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.2);
+    @include mixin.media(pc) {
+      right: 3%;
+      width: auto;
+      height: auto;
+      background-color: transparent;
+    }
+  }
+  &__close--btn {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    z-index: 106;
+    @include mixin.media(pc) {
+      display: none;
+    }
+  }
+  &__menu {
+    position: absolute;
+    left: 50%;
+    z-index: 104;
+    width: 50%;
+    height: 100%;
+    background-color: val.$mainColor;
   }
 }
