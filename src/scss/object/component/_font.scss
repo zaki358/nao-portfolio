@@ -1,2 +1,10 @@
 @use "../../foundation/mixin";
 @use "../../foundation/variables" as val;
+
+.c-font {
+  &__list--header {
+    @include mixin.coquette300;
+    color: val.$fontMainColor;
+    font-size: 2.4rem;
+  }
+}

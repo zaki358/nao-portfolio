@@ -97,34 +97,76 @@
     }
   }
   &__nav {
-    position: absolute;
-    top: 0;
-    z-index: 103;
-    width: 100%;
-    height: 100%;
+    display: none;
+    position        : absolute;
+    top             : 0;
+    right           : -100%;
+    z-index         : 103;
+    width           : 100%;
+    height          : 100%;
     background-color: rgba($color: #000000, $alpha: 0.2);
+    &::before {
+      content         : "";
+      position        : absolute;
+      top             : 0;
+      right           : 0;
+      background-color: val.$mainColor;
+      width           : 50%;
+      height          : 100%;
+    }
     @include mixin.media(pc) {
-      right: 3%;
-      width: auto;
-      height: auto;
+      display: block;
+      position        : static;
       background-color: transparent;
+      &::before {
+        display: none;
+      }
     }
   }
   &__close--btn {
     position: absolute;
-    top: 5%;
-    right: 5%;
-    z-index: 106;
+    top     : 8%;
+    right   : 14%;
+    z-index : 106;
     @include mixin.media(pc) {
       display: none;
     }
   }
   &__menu {
     position: absolute;
-    left: 50%;
+    top     : 20%;
+    left    : 70%;
+    z-index : 104;
+    width   : auto;
+    @include mixin.media(pc) {
+      top   : 3%;
+      left  : 86%;
+      height: auto;
+    }
+  }
+  &__list {
+    width     : 80px;
+    height    : auto;
+    text-align: right;
+  }
+  &__item {
+    padding: 5px 0;
+    margin : 5px 0;
+    @include mixin.media(pc) {
+
+    }
+  }
+  &__open--btn {
+    position: absolute;
+    top: 6.5%;
+    right: 10%;
     z-index: 104;
-    width: 50%;
-    height: 100%;
-    background-color: val.$mainColor;
+    @include mixin.media(tab) {
+      top: 3.5%;
+      right: 5%;
+    }
+    @include mixin.media(pc) {
+      display: none;
+    }
   }
 }

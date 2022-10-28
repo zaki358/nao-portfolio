@@ -69,6 +69,22 @@ li {
   padding: 0;
 }
 
+button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.c-font__list--header {
+  font-family: coquette, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #157788;
+  font-size: 2.4rem;
+}
+
 .c-img__background--header--sp {
   width: 100vw;
   height: auto;
@@ -115,6 +131,16 @@ li {
   .c-img__present {
     width: 20vw;
     height: auto;
+  }
+}
+
+.c-btn__nav--open {
+  width: 10vw;
+  height: auto;
+}
+@media screen and (min-width: 600px) {
+  .c-btn__nav--open {
+    width: 6vw;
   }
 }
 
@@ -233,25 +259,38 @@ li {
   }
 }
 .p-header__nav {
+  display: none;
   position: absolute;
   top: 0;
+  right: -100%;
   z-index: 103;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 }
+.p-header__nav::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #B1d3DD;
+  width: 50%;
+  height: 100%;
+}
 @media screen and (min-width: 1025px) {
   .p-header__nav {
-    right: 3%;
-    width: auto;
-    height: auto;
+    display: block;
+    position: static;
     background-color: transparent;
+  }
+  .p-header__nav::before {
+    display: none;
   }
 }
 .p-header__close--btn {
   position: absolute;
-  top: 5%;
-  right: 5%;
+  top: 8%;
+  right: 14%;
   z-index: 106;
 }
 @media screen and (min-width: 1025px) {
@@ -261,11 +300,43 @@ li {
 }
 .p-header__menu {
   position: absolute;
-  left: 50%;
+  top: 20%;
+  left: 70%;
   z-index: 104;
-  width: 50%;
-  height: 100%;
-  background-color: #B1d3DD;
+  width: auto;
+}
+@media screen and (min-width: 1025px) {
+  .p-header__menu {
+    top: 3%;
+    left: 86%;
+    height: auto;
+  }
+}
+.p-header__list {
+  width: 80px;
+  height: auto;
+  text-align: right;
+}
+.p-header__item {
+  padding: 5px 0;
+  margin: 5px 0;
+}
+.p-header__open--btn {
+  position: absolute;
+  top: 6.5%;
+  right: 10%;
+  z-index: 104;
+}
+@media screen and (min-width: 600px) {
+  .p-header__open--btn {
+    top: 3.5%;
+    right: 5%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-header__open--btn {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map*/
