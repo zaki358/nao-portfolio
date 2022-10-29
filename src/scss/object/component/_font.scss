@@ -4,7 +4,28 @@
 .c-font {
   &__list--header {
     @include mixin.coquette300;
-    color: val.$fontMainColor;
     font-size: 2.4rem;
+    color: val.$fontMainColor;
+  }
+  &__heading--about {
+    @include mixin.coquette300;
+    font-size: 9vw;
+    color: val.$fontMainColor;
+  }
+  &__sub-heading--about {
+    @include mixin.gothic400;
+    font-size: 1.6rem;
+    color: val.$fontMainColor;
+  }
+  &__heading--post {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 100;
+  }
+  &__text {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 100;
+    line-height: 2.8rem;
   }
 }

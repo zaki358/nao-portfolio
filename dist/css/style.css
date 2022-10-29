@@ -81,8 +81,38 @@ button {
   font-family: coquette, sans-serif;
   font-weight: 300;
   font-style: normal;
-  color: #157788;
   font-size: 2.4rem;
+  color: #157788;
+}
+.c-font__heading--about {
+  font-family: coquette, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 9vw;
+  color: #157788;
+}
+.c-font__sub-heading--about {
+  font-family: fot-tsukuardgothic-std, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.6rem;
+  color: #157788;
+}
+.c-font__heading--post {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 100;
+}
+.c-font__text {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 100;
+  line-height: 2.8rem;
+}
+
+.c-icon__about {
+  width: 120px;
+  height: auto;
 }
 
 .c-img__background--header--sp {
@@ -142,6 +172,21 @@ button {
   .c-btn__nav--open {
     width: 6vw;
   }
+}
+
+.c-circle--large {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #B1d3DD;
+  box-shadow: inset 2px 2px 5px rgba(78, 86, 104, 0.55);
+}
+.c-circle--small {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #B1d3DD;
+  box-shadow: inset 2px 2px 5px rgba(78, 86, 104, 0.55);
 }
 
 .p-header__content {
@@ -336,6 +381,45 @@ button {
 @media screen and (min-width: 1025px) {
   .p-header__open--btn {
     display: none;
+  }
+}
+
+.p-about__container {
+  padding: 0 20px;
+  margin-top: 100px;
+}
+.p-about__heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.p-about__title--font {
+  position: relative;
+  z-index: 101;
+}
+.p-about__title--circle--large {
+  position: relative;
+  z-index: 100;
+  margin-left: -25px;
+}
+.p-about__title--circle--small {
+  width: 65px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 16px;
+}
+.p-about__sbu-heading {
+  text-align: center;
+}
+.p-about__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+@media screen and (min-width: 1025px) {
+  .p-about__box {
+    flex-direction: row;
   }
 }
 

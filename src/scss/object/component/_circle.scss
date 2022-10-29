@@ -1,0 +1,19 @@
+@use "../../foundation/mixin";
+@use "../../foundation/variables" as val;
+
+.c-circle {
+  &--large {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: val.$mainColor;
+    box-shadow: inset 2px 2px 5px rgba(78, 86, 104, 0.55);
+  }
+  &--small {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: val.$mainColor;
+    box-shadow: inset 2px 2px 5px rgba(78, 86, 104, 0.55);
+  }
+}
