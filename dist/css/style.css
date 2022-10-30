@@ -102,6 +102,7 @@ button {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 2.4rem;
   font-weight: 100;
+  line-height: 2.4rem;
 }
 .c-font__text {
   font-family: "Noto Sans JP", sans-serif;
@@ -114,7 +115,6 @@ button {
   width: 120px;
   height: auto;
 }
-
 .c-img__background--header--sp {
   width: 100vw;
   height: auto;
@@ -175,15 +175,15 @@ button {
 }
 
 .c-circle--large {
-  width: 56px;
-  height: 56px;
+  width: 15vw;
+  height: 15vw;
   border-radius: 50%;
   background-color: #B1d3DD;
   box-shadow: inset 2px 2px 5px rgba(78, 86, 104, 0.55);
 }
 .c-circle--small {
-  width: 13px;
-  height: 13px;
+  width: 3.5vw;
+  height: 3.5vw;
   border-radius: 50%;
   background-color: #B1d3DD;
   box-shadow: inset 2px 2px 5px rgba(78, 86, 104, 0.55);
@@ -400,27 +400,45 @@ button {
 .p-about__title--circle--large {
   position: relative;
   z-index: 100;
-  margin-left: -25px;
+  margin-left: -7vw;
 }
 .p-about__title--circle--small {
-  width: 65px;
+  width: 18vw;
   display: flex;
   justify-content: space-between;
-  margin-left: 16px;
+  margin-left: 4.5vw;
 }
 .p-about__sbu-heading {
   text-align: center;
 }
-.p-about__box {
+.p-about__card {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
 }
 @media screen and (min-width: 1025px) {
-  .p-about__box {
+  .p-about__card {
     flex-direction: row;
   }
+}
+.p-about__post {
+  padding: 16px 25px 20px 20px;
+  background-color: #FDFDFD;
+  border-radius: 5vw;
+  box-shadow: 1px 1px 1.5vw rgba(66, 61, 60, 0.3);
+  margin-top: 24px;
+}
+
+.p-post__heading--about {
+  width: 100%;
+  height: auto;
+  padding-bottom: 18px;
+}
+.p-post__text--about {
+  border-top: 0.5px solid #B1B1B1;
+  width: 100%;
+  padding-top: 16px;
 }
 
 /*# sourceMappingURL=style.css.map*/

@@ -1,0 +1,15 @@
+@use "../../foundation/mixin";
+@use "../../foundation/variables" as val;
+
+.p-post {
+  &__heading--about {
+    width: 100%;
+    height: auto;
+    padding-bottom: 18px;
+  }
+  &__text--about {
+    border-top: 0.5px solid #B1B1B1;
+    width: 100%;
+    padding-top: 16px;
+  }
+}

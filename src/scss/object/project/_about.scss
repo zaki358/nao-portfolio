@@ -18,18 +18,18 @@
   &__title--circle--large {
     position: relative;
     z-index: 100;
-    margin-left: -25px;
+    margin-left: -7vw;
   }
   &__title--circle--small {
-    width: 65px;
+    width: 18vw;
     display: flex;
     justify-content: space-between;
-    margin-left: 16px;
+    margin-left: 4.5vw;
   }
   &__sbu-heading {
     text-align: center;
   }
-  &__box {
+  &__card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,4 +38,12 @@
       flex-direction: row;
     }
   }
+  &__post {
+    padding: 16px 25px 20px 20px;
+    background-color: val.$white;
+    border-radius: 5vw;
+    box-shadow: 1px 1px 1.5vw rgba(66, 61, 60, 0.3);
+    margin-top: 24px;
+  }
+  
 }
