@@ -3,17 +3,34 @@
 
 .c-circle {
   &--large {
-    width: 15vw;
-    height: 15vw;
+    width: 56px;
+    height: 56px;
     border-radius: 50%;
     background-color: val.$mainColor;
     box-shadow: inset 2px 2px 5px rgba(78, 86, 104, 0.55);
+    &--white {
+      @extend .c-circle--large;
+      background-color: val.$gray;
+      box-shadow: inset 2px 2px 5px rgba(95, 95, 95, 0.6);
+    }
   }
   &--small {
-    width: 3.5vw;
-    height: 3.5vw;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background-color: val.$mainColor;
     box-shadow: inset 2px 2px 5px rgba(78, 86, 104, 0.55);
+    &--white {
+      @extend .c-circle--small;
+      background-color: val.$gray;
+      box-shadow: inset 2px 2px 5px rgba(95, 95, 95, 0.6);
+    }
+  }
+  &__gap {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: val.$mainColor;
+      box-shadow: inset 2px 2px 5px rgba(78, 86, 104, 0.55);
   }
 }

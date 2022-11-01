@@ -2,10 +2,16 @@
 @use "../../foundation/variables" as val;
 
 .p-post {
+  &__box {
+    display: flex;
+    align-items: center;
+    //padding-bottom: 18px;
+  }
   &__heading--about {
+    white-space: nowrap;
+    margin-left: 10px;
     width: 100%;
     height: auto;
-    padding-bottom: 18px;
   }
   &__text--about {
     border-top: 0.5px solid #B1B1B1;
