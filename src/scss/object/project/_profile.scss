@@ -1,0 +1,143 @@
+@use "../../foundation/mixin";
+@use "../../foundation/variables" as val;
+
+.p-profile {
+  &__wrapper {
+    margin-top: 100px;
+    overflow: hidden;
+  }
+  &__container {
+    background-color: val.$mainColor;
+    padding: 132px 20px 100px 20px;
+    //overflow:hidden; //子要素にmarginをつけたときに使用
+  }
+  &__heading {
+    //margin-top: 100px;
+    @include mixin.sectionHeading;
+  }
+  &__title--font {
+    @include mixin.sectionTitleFont;
+  }
+  &__title--circle--large {
+    @include mixin.sectionTitleCircleLarge;
+  }
+  &__title--circle--small {
+    @include mixin.sectionTitleCircleSmall;
+  }
+  &__sub-heading {
+    text-align: center;
+  }
+  &__group {
+    display: grid;
+    margin: 65px auto 0 auto;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 16px;
+    //grid-template-rows: 1fr 1fr 1fr;
+    @include mixin.media(bigTab) {
+      width: min(95vw, 800px);
+      height: 518px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 0;
+    }
+  }
+  &__self {
+    margin: auto;
+    background-color: val.$white;
+    border-radius: 16px;
+    box-shadow: inset 2px 2px 6px rgba(66, 61, 60, 0.52);
+    grid-column: 1/3;
+    width: 100%;
+    height: auto;
+    @include mixin.profilePaddingSP;
+    @include mixin.media(bigTab) {
+      grid-column: 1/3;
+      width: min(64vw,520px);
+      height: 220px;
+      @include mixin.profilePaddingPC;
+    }
+  }
+  &__sns {
+    margin: auto;
+    border-radius: 16px;
+    box-shadow: inset 2px 2px 6px rgba(66, 61, 60, 0.52);
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 100%;
+    height: 100%;
+    @include mixin.profilePaddingSP;
+    @include mixin.media(bigTab) {
+      grid-column: 3/4;
+      grid-row: 1/2;
+      width: min(28vw, 240px);
+      height: 220px;
+      @include mixin.profilePaddingPC;
+      padding-right: 0;
+    }
+  }
+  &__chara {
+    background-color: brown;
+    margin: auto;
+    background-color: val.$white;
+    border-radius: 16px;
+    box-shadow: inset 2px 2px 6px rgba(66, 61, 60, 0.52);
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 100%;
+    height: 100%;
+    @include mixin.profilePaddingSP;
+    @include mixin.media(bigTab) {
+      grid-column: 1/2;
+      width: min(28vw, 240px);
+      height: 272px;
+      @include mixin.profilePaddingPC;
+    }
+  }
+  &__img {
+    object-fit: cover;
+    border-radius: 16px;
+    grid-column: 1/3;
+    grid-row: 3;
+    width: 100%;
+    @include mixin.media(bigTab) {
+      grid-column: 2/4;
+      grid-row: 2/3;
+      width: min(64vw,520px);
+      height: 272px;
+    }
+  }
+  &__theme {
+    border-bottom: 0.5px solid #b1b1b1;
+    white-space: nowrap;
+  }
+  &__text {
+    margin-top: 5px;
+  }
+  &__area--sns {
+    margin-top: 15px;
+    @include mixin.media(tab) {
+      position: relative;
+    }
+  }
+  &__item--icon {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    width: 75px;
+    @include mixin.media(bigTab) {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      flex-direction: column;
+      margin-top: 0px;
+      width: auto;
+      height: 75px;
+    }
+  }
+  &__item--sns {
+    margin-top: 5px;
+  }
+}

@@ -1,12 +1,13 @@
 //ブレイクポイント定義（Map型)
 $breakpoints: (
+  "bigTab": "screen and (min-width: 768px)",
     "tab": "screen and (min-width: 600px)",
     "pc": "screen and (min-width: 1025px)",
     "sp": "screen and (max-width: 599px)",
 ) !default;
 
 //color
-$mainColor: #B1d3DD;
+$mainColor: #BDd3DD;
 $white: #FDFDFD;
 $gray: #EEEBE6;
 $paleColor: #DEBEC3;

@@ -1,0 +1,8 @@
+@use "../../foundation/mixin";
+@use "../../foundation/variables" as val;
+
+.p-work {
+  &__wrapper {
+    margin-top: 80px;
+  }
+}
