@@ -5,4 +5,52 @@
   &__wrapper {
     margin-top: 80px;
   }
+  &__container {
+    position: relative;
+    //z-index: 100;
+    padding: 0 20px;
+    margin-top: 40px;
+    @include mixin.media(pc) {
+      padding: 0;
+    }
+  }
+  &__shadow--lv1 {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 94vw;
+    height: 12vw;
+    background-color: rgba($color: val.$shadowBlue, $alpha: 0.3);
+    border-radius: 8px;
+  }
+  &__shadow--lv2 {
+    @extend .p-work__shadow--lv1;
+    top: 56%;
+
+  }
+  &__shadow--lv3--sp {
+    @extend .p-work__shadow--lv1;
+    top: 91%;
+    @include mixin.media(pc) {
+      display: none;
+    }
+  }
+  &__area {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: minmax(126px, auto) minmax(126px, auto);
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 8vw 0;
+  }
+  &__box {
+    position: relative;
+    width: max(43vw, 162px);
+  }
+  &__link {
+    display: inline-block;
+    position: absolute;
+    bottom: 2%;
+    right: 5%;
+  }
 }

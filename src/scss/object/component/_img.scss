@@ -46,4 +46,10 @@
   &__profile {
     
   }
+  &__work {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 9px;
+  }
 }

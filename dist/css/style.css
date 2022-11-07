@@ -218,6 +218,13 @@ button {
     height: auto;
   }
 }
+.c-img__work {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 9px;
+}
+
 .c-btn__nav--open {
   width: 10vw;
   height: auto;
@@ -771,6 +778,54 @@ button {
 
 .p-work__wrapper {
   margin-top: 80px;
+}
+.p-work__container {
+  position: relative;
+  padding: 0 20px;
+  margin-top: 40px;
+}
+@media screen and (min-width: 1025px) {
+  .p-work__container {
+    padding: 0;
+  }
+}
+.p-work__shadow--lv1, .p-work__shadow--lv3--sp, .p-work__shadow--lv2 {
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 94vw;
+  height: 12vw;
+  background-color: rgba(176, 207, 213, 0.3);
+  border-radius: 8px;
+}
+.p-work__shadow--lv2 {
+  top: 56%;
+}
+.p-work__shadow--lv3--sp {
+  top: 91%;
+}
+@media screen and (min-width: 1025px) {
+  .p-work__shadow--lv3--sp {
+    display: none;
+  }
+}
+.p-work__area {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: minmax(126px, auto) minmax(126px, auto);
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 8vw 0;
+}
+.p-work__box {
+  position: relative;
+  width: max(43vw, 162px);
+}
+.p-work__link {
+  display: inline-block;
+  position: absolute;
+  bottom: 2%;
+  right: 5%;
 }
 
 .p-post__box {
