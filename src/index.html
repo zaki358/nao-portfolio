@@ -71,7 +71,7 @@
     <main class="l-main">
       <section class="p-about__container">
         <div class="p-about__heading">
-          <h2 class="p-about__title--font c-font__heading--about">About</h2>
+          <h2 class="p-about__title--font c-font__heading--green">About</h2>
           <div class="p-about__title--circle--large c-circle--large"></div>
           <div class="p-about__title--circle--small">
             <div class="c-circle--small"></div>
@@ -79,7 +79,7 @@
             <div class="c-circle--small"></div>
           </div>
         </div>
-        <h3 class="p-about__sub-heading c-font__sub-heading--about">大切にしていること</h3>
+        <h3 class="p-about__sub-heading c-font__sub-heading--green">大切にしていること</h3>
         <article class="p-about__card">
           <img class="p-about__icon c-icon__about c-icon__about"
             src="<%= require('./images/front-page_about_research.png') %>" alt="Aboutアイコン1">
@@ -151,15 +151,15 @@
         <!-- <img class="c-img__section--top" src="" alt=""> -->
         <div class="p-profile__container">
           <div class="p-profile__heading">
-            <h2 class="p-profile__title--font c-font__heading--about">Profile</h2>
-            <div class="p-about__title--circle--large c-circle--large--white"></div>
-            <div class="p-about__title--circle--small">
+            <div class="p-profile__title--circle--small">
               <div class="c-circle--small--white"></div>
               <div class="c-circle--small--white"></div>
               <div class="c-circle--small--white"></div>
             </div>
+            <div class="p-about__title--circle--large c-circle--large--white"></div>
+            <h2 class="p-profile__title--font c-font__heading--dark">Profile</h2>
           </div>
-          <h3 class="p-profile__sub-heading c-font__sub-heading--profile">大切にしていること</h3>
+          <h3 class="p-profile__sub-heading c-font__sub-heading--dark">私たちについて</h3>
           <div class="p-profile__group">
             <div class="p-profile__self">
               <h3 class="p-profile__theme c-font__heading--profile">Nao Matsumoto</h3>
@@ -218,7 +218,7 @@
       </section>
       <section class="p-work__wrapper">
         <div class="p-about__heading">
-          <h2 class="p-about__title--font c-font__heading--about">Work</h2>
+          <h2 class="p-about__title--font c-font__heading--green">Work</h2>
           <div class="p-about__title--circle--large c-circle--large"></div>
           <div class="p-about__title--circle--small">
             <div class="c-circle--small"></div>
@@ -226,7 +226,7 @@
             <div class="c-circle--small"></div>
           </div>
         </div>
-        <h3 class="p-about__sub-heading c-font__sub-heading--about">制作したもの</h3>
+        <h3 class="p-about__sub-heading c-font__sub-heading--green">制作したもの</h3>
         <div class="p-work__container">
           <div class="p-work__area">
             <div class="p-work__shadow--lv1 "></div>
@@ -281,11 +281,78 @@
               </a>
             </div>
           </div>
-          <button class="p-work__btn c-btn__work c-font__btn--work" onclick="location.href=''"> see all</button>
+          <button class="p-work__btn c-btn__work c-font__btn--work" onclick="location.href=''"> See all</button>
         </div>
         <img class="p-work__wave" src="<%= require('./images/front-page_work_bottom.png') %>" alt="">
       </section>
-      <section class="p-skill__wrapper"></section>
+      <section class="p-skill__wrapper">
+        <svg class="p-skill__symbol--lv1 c-svg__symbol--deep" xmlns="http://www.w3.org/2000/svg" width="332"
+          height="324" viewBox="0 0 332 324">
+          <path
+            d="M2.69731 203.494C-16.9296 113.148 102.825 -15.8829 201.949 2.62256C312.816 23.3273 367.782 222.978 305.877 290.68C240.748 361.911 25.7409 309.542 2.69731 203.494Z" />
+        </svg>
+        <svg class="p-skill__symbol--lv2 c-svg__symbol--light" xmlns="http://www.w3.org/2000/svg" width="332"
+          height="324" viewBox="0 0 332 324">
+          <path
+            d="M2.69731 203.494C-16.9296 113.148 102.825 -15.8829 201.949 2.62256C312.816 23.3273 367.782 222.978 305.877 290.68C240.748 361.911 25.7409 309.542 2.69731 203.494Z" />
+        </svg>
+        <svg class="p-skill__symbol--lv2 c-svg__symbol--light" xmlns="http://www.w3.org/2000/svg" width="332"
+          height="324" viewBox="0 0 332 324">
+          <path
+            d="M2.69731 203.494C-16.9296 113.148 102.825 -15.8829 201.949 2.62256C312.816 23.3273 367.782 222.978 305.877 290.68C240.748 361.911 25.7409 309.542 2.69731 203.494Z" />
+        </svg>
+        <svg class="p-skill__symbol--lv4 c-svg__symbol--deep" xmlns="http://www.w3.org/2000/svg" width="332"
+          height="324" viewBox="0 0 332 324">
+          <path
+            d="M2.69731 203.494C-16.9296 113.148 102.825 -15.8829 201.949 2.62256C312.816 23.3273 367.782 222.978 305.877 290.68C240.748 361.911 25.7409 309.542 2.69731 203.494Z" />
+        </svg>
+        <div class="p-profile__heading">
+          <div class="p-profile__title--circle--small">
+            <div class="c-circle--small--red"></div>
+            <div class="c-circle--small--red"></div>
+            <div class="c-circle--small--red"></div>
+          </div>
+          <div class="p-about__title--circle--large c-circle--large--red"></div>
+          <h2 class="p-profile__title--font c-font__heading--red">Skill</h2>
+        </div>
+        <h3 class="p-about__sub-heading c-font__sub-heading--red">できること</h3>
+        <div class="p-skill__container">
+          <div class="p-skill__comment">
+            <p class="c-font__comment--skill">制作にかけてきた時間をグラフにしてます（2021年8月～）</p>
+            <div class="p-skill__border"></div>
+          </div>
+          <div class="p-skill__graph">
+            <div class="p-graph__container">
+              <div class="p-graph__area">
+                <img src="<%= require('./images/front-page_graph_photoshop.png') %>" alt="Photoshop">
+                <img src="<%= require('./images/front-page_graph_illustrator.png') %>" alt="illustrator">
+                <img src="<%= require('./images/front-page_graph_xd.png') %>" alt="XD">
+                <img src="<%= require('./images/front-page_graph_figma.png') %>" alt="Figma">
+                <img src="<%= require('./images/front-page_graph_html_css.png') %>" alt="HTML/CSS">
+                <img src="<%= require('./images/front-page_graph_sass.png') %>" alt="Sass">
+                <img src="<%= require('./images/front-page_graph_github.png') %>" alt="GitHub">
+                <div class="p-graph__background">
+                  <p class="p-graph__title c-font__graph">Commit</p>
+                </div>
+              </div>
+              <div class="p-graph__column--icon">
+                <img src="<%= require('./images/front-page_graph_icon_photoshop.png') %>" alt="Photoshop">
+                <img src="<%= require('./images/front-page_graph_icon_illustrator.png') %>" alt="illustrator">
+                <img src="<%= require('./images/front-page_graph_icon_xd.png') %>" alt="XD">
+                <img src="<%= require('./images/front-page_graph_icon_figma.png') %>" alt="Figma">
+                <div class="p-graph__icon--html-css">
+                  <img src="<%= require('./images/front-page_graph_icon-html.png') %>" alt="HTML">
+                  <img src="<%= require('./images/front-page_graph_icon-css.png') %>" alt="CSS">
+                </div>
+
+                <img src="<%= require('./images/front-page_graph_icon_sass.png') %>" alt="Sass">
+                <img src="<%= require('./images/front-page_graph_icon_github.png') %>" alt="GitHub">
+              </div>
+            </div>
+          </div>
+          <div class="p-skill__column"></div>
+        </div>
+      </section>
       <section class="p-contact__wrapper"></section>
     </main>
     <footer class="l-footer p-footer">

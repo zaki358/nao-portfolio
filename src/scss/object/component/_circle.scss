@@ -13,6 +13,11 @@
       background-color: val.$gray;
       box-shadow: inset 2px 2px 5px rgba(95, 95, 95, 0.6);
     }
+    &--red {
+      @extend .c-circle--large;
+      background-color: val.$paleColor;
+      box-shadow: inset 2px 2px 5px rgba(66, 61, 60, 0.45);
+    }
   }
   &--small {
     width: 15px;
@@ -23,7 +28,12 @@
     &--white {
       @extend .c-circle--small;
       background-color: val.$gray;
-      box-shadow: inset 2px 2px 5px rgba(95, 95, 95, 0.6);
+      box-shadow: inset 1.5px 1.5px 3px rgba(71, 65, 64, 0.5);
+    }
+    &--red {
+      @extend .c-circle--small;
+      background-color: val.$paleColor;
+      box-shadow: inset 2px 2px 5px rgba(66, 61, 60, 0.45);
     }
   }
   &__gap {

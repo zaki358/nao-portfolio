@@ -26,5 +26,8 @@
       border-right: 0.3px solid;
       transform: skew(45deg);
     }
+    @include mixin.media(pc) {
+      width: min(4.5vw, 63px);
+    }
   }
 }

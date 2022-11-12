@@ -15,8 +15,16 @@
     //margin-top: 100px;
     @include mixin.sectionHeading;
   }
+  &__title--circle--small {
+    transform: translateX(-60%);
+    width: 68px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 16px;
+  }
   &__title--font {
     @include mixin.sectionTitleFont;
+    margin: -8px
   }
   &__title--circle--large {
     @include mixin.sectionTitleCircleLarge;

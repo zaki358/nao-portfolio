@@ -7,15 +7,32 @@
     font-size: 2.4rem;
     color: val.$fontMainColor;
   }
-  &__heading--about {
+  &__heading--green {
     @include mixin.coquette300;
     font-size: 3.4rem;
     color: val.$fontMainColor;
   }
-  &__sub-heading--about {
+  &__heading--dark {
+    @extend .c-font__heading--green;
+    color: val.$darkColor;
+  }
+  &__heading--red {
+    @extend .c-font__heading--green;
+    color: val.$redColor;
+
+  }
+  &__sub-heading--green {
     @include mixin.gothic400;
     font-size: 1.6rem;
     color: val.$fontMainColor;
+  }
+  &__sub-heading--dark {
+    @extend .c-font__sub-heading--green;
+    color: #666666;
+  }
+  &__sub-heading--red {
+    @extend .c-font__sub-heading--green;
+    color: val.$redColor;
   }
   &__heading--post {
     font-family: 'Noto Sans JP', sans-serif;
@@ -43,18 +60,35 @@
     line-height: 2.8rem;
     color: #444444;
   }
-  &__sub-heading--profile {
-    @include mixin.gothic400;
-    font-size: 1.6rem;
-    color: #666666;
-  }
   &__link--work {
     @include mixin.montserrat200;
     font-size: 2.5vw;
+    @include mixin.media(pc) {
+      font-size: min(1.25vw, 1.8rem);
+    }
   }
   &__btn--work {
     @include mixin.montserrat200;
     font-size: 5.5vw;
     line-height: 3.8rem;
+    @include mixin.media(pc) {
+      font-size: 2.4rem;
+      line-height: 4.8rem;
+    }
+  }
+  &__comment--skill {
+    @include mixin.gothic400;
+    font-size: 3.1vw;
+    @include mixin.media(pc) {
+      font-size: 1.8rem;
+    }
+  }
+  &__graph {
+    @include mixin.coquette800;
+    color: rgba(213, 192, 158, 0.4);
+    font-size: 5.8vw;
+    @include mixin.media(pc) {
+      font-size: 4.8rem;
+    }
   }
 }
