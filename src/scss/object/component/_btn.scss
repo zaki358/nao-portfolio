@@ -2,7 +2,7 @@
 
 .c-btn {
   &__nav--open {
-    width: 10vw;
+    width : 10vw;
     height: auto;
     @include mixin.media(tab) {
         width: 6vw;

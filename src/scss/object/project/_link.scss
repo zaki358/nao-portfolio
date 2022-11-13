@@ -3,28 +3,28 @@
 
 .p-link {
   &__container {
-    width: 100%;
-    height: 100%;
+    width           : 100%;
+    height          : 100%;
     background-color: rgba(253, 253, 253, 0.9);
-    border-radius: 9px 0 9px 0;
+    border-radius   : 9px 0 9px 0;
   }
   &__text {
-    position: relative;
-    display: inline-block;
-    width: 10vw;
-    height: auto;
+    position : relative;
+    display  : inline-block;
+    width    : 10vw;
+    height   : auto;
     transform: translate(25%, 25%);
     &::before {
       content: "";
-      position: absolute;
-      top: 68%;
-      left: -4%;
-      width: 90%;
-      height: 30%;
-      opacity: 0.5;
+      position     : absolute;
+      top          : 68%;
+      left         : -4%;
+      width        : 90%;
+      height       : 30%;
+      opacity      : 0.5;
       border-bottom: 0.3px solid;
-      border-right: 0.3px solid;
-      transform: skew(45deg);
+      border-right : 0.3px solid;
+      transform    : skew(45deg);
     }
     @include mixin.media(pc) {
       width: min(4.5vw, 63px);

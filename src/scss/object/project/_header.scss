@@ -4,13 +4,13 @@
 .p-header {
   &__content {
     position: relative;
-    z-index: 100;
+    z-index : 100;
   }
   &__background--sp {
     position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 101;
+    top     : 0;
+    right   : 0;
+    z-index : 101;
     @include mixin.media(tab) {
       display: none;
     }
@@ -19,23 +19,23 @@
     display: none;
     @include mixin.media(tab) {
       position: absolute;
-      z-index: 101;
-      display: block;
-      top: 0;
-      right: 0;
+      z-index : 101;
+      display : block;
+      top     : 0;
+      right   : 0;
     }
     @include mixin.media(pc) {
       right: 0;
     }
   }
   &__title {
-    display: flex;
+    display        : flex;
     justify-content: center;
-    position: absolute;
-    top: 4%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 102;
+    position       : absolute;
+    top            : 4%;
+    left           : 50%;
+    transform      : translateX(-50%);
+    z-index        : 102;
     @include mixin.media(tab) {
       top: 2%;
     }
@@ -60,44 +60,44 @@
   &__catchcopy--pc {
     display: none;
     @include mixin.media(pc) {
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      z-index: 102;
+      display  : block;
+      position : absolute;
+      top      : 50%;
+      left     : 50%;
+      z-index  : 102;
       transform: translateX(-50%);
     }
   }
   &__catchcopy--sp--lv1 {
     position: absolute;
-    top: 35%;
-    right: 28%;
-    z-index: 102;
+    top     : 35%;
+    right   : 28%;
+    z-index : 102;
     @include mixin.media(pc) {
       display: none;
     }
   }
   &__catchcopy--sp--lv2 {
     position: absolute;
-    top: 56%;
-    right: 15%;
-    z-index: 102;
+    top     : 56%;
+    right   : 15%;
+    z-index : 102;
     @include mixin.media(pc) {
       display: none;
     }
   }
   &__present {
     position: absolute;
-    top: 51%;
-    left: 7%;
-    z-index: 99;
+    top     : 51%;
+    left    : 7%;
+    z-index : 99;
     @include mixin.media(pc) {
-      top: 26%;
+      top : 26%;
       left: 18%;
     }
   }
   &__nav {
-    display: none;
+    display         : none;
     position        : absolute;
     top             : 0;
     right           : -100%;
@@ -115,7 +115,7 @@
       height          : 100%;
     }
     @include mixin.media(pc) {
-      display: block;
+      display         : block;
       position        : static;
       background-color: transparent;
       &::before {
@@ -158,11 +158,11 @@
   }
   &__open--btn {
     position: absolute;
-    top: 6.5%;
-    right: 10%;
-    z-index: 104;
+    top     : 6.5%;
+    right   : 10%;
+    z-index : 104;
     @include mixin.media(tab) {
-      top: 3.5%;
+      top  : 3.5%;
       right: 5%;
     }
     @include mixin.media(pc) {

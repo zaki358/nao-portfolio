@@ -3,144 +3,144 @@
 
 .p-about {
   &__container {
-    padding: 0 20px;
+    padding   : 0 20px;
     margin-top: 100px;
   }
   &__heading {
-    display: flex;
+    display        : flex;
     justify-content: center;
-    align-items: center;
+    align-items    : center;
   }
   &__title--font {
     position: relative;
-    z-index: 101;
+    z-index : 101;
   }
   &__title--circle--large {
-    position: relative;
-    z-index: 100;
+    position   : relative;
+    z-index    : 100;
     margin-left: -26px;
   }
   &__title--circle--small {
-    width: 68px;
-    display: flex;
+    width          : 68px;
+    display        : flex;
     justify-content: space-between;
-    margin-left: 16px;
+    margin-left    : 16px;
   }
   &__sub-heading {
     text-align: center;
   }
   &__card {
-    display: flex;
+    display       : flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
+    align-items   : center;
+    margin-top    : 50px;
     @include mixin.media(tab) {
-      flex-direction: row;
+      flex-direction : row;
       justify-content: center;
     }
   }
   &__card--goal {
-    display: flex;
+    display       : flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 25px;
+    align-items   : center;
+    margin-top    : 25px;
     @include mixin.media(tab) {
-      flex-direction: row;
+      flex-direction : row;
       justify-content: center;
     }
   }
   &__post {
-    padding: 16px 25px 20px 20px;
+    padding         : 16px 25px 20px 20px;
     background-color: val.$white;
-    border-radius: 16px;
-    box-shadow: 1px 1px 6px rgba(66, 61, 60, 0.3);
-    margin-top: 24px;
+    border-radius   : 16px;
+    box-shadow      : 1px 1px 6px rgba(66, 61, 60, 0.3);
+    margin-top      : 24px;
     @include mixin.media(tab) {
-      width: 100%;
-      height: auto;
-      margin-top: 0px;
+      width      : 100%;
+      height     : auto;
+      margin-top : 0px;
       margin-left: 25px;
     }
     @include mixin.media(pc) {
-      width: 560px;
-      height: 205px;
+      width      : 560px;
+      height     : 205px;
       margin-left: 50px;
     }
   }
   &__post--goal {
-    padding: 16px 25px 20px 20px;
+    padding         : 16px 25px 20px 20px;
     background-color: val.$white;
-    border-radius: 16px;
-    border: 0.2px solid val.$fontMainColor;
-    box-shadow: 16px 20px rgba(176, 207, 213, 0.3);
-    margin-top: 24px;
+    border-radius   : 16px;
+    border          : 0.2px solid val.$fontMainColor;
+    box-shadow      : 16px 20px rgba(176, 207, 213, 0.3);
+    margin-top      : 24px;
     @include mixin.media(tab) {
-      width: 100%;
-      height: auto;
+      width      : 100%;
+      height     : auto;
       margin-left: 25px;
       margin-top: 0;
     }
     @include mixin.media(pc) {
-      position: relative;
-      display: flex;
+      position   : relative;
+      display    : flex;
       align-items: center;
-      width: 560px;
-      height: 160px;
+      width      : 560px;
+      height     : 160px;
       margin-left: 50px;
       padding: 16px 60px 20px 60px;
       &::before {
         content: "";
-        position: absolute;
-        bottom: 28%;
-        left: 3%;
-        width: 36px;
-        height: 45px;
+        position        : absolute;
+        bottom          : 28%;
+        left            : 3%;
+        width           : 36px;
+        height          : 45px;
         background-image: url("@images/front-page_about_post_goal_left.svg");
       }
       &::after {
         content: "";
-        position: absolute;
-        bottom: 28%;
-        right: 3%;
-        width: 36px;
-        height: 45px;
+        position        : absolute;
+        bottom          : 28%;
+        right           : 3%;
+        width           : 36px;
+        height          : 45px;
         background-image: url("@images/front-page_about_post_goal_right.svg");
       }
     }
   }
   &__gap {
     position: relative;
-    height: 100px;
-    width: 26px;
-    margin: 25px auto 0 auto;
+    height  : 100px;
+    width   : 26px;
+    margin  : 25px auto 0 auto;
   }
   &__circle--lv1 {
     position: absolute;
-    top: 0;
-    left: 0;
+    top     : 0;
+    left    : 0;
   }
   &__circle--lv2 {
-    position: absolute;
-    top: 25%;
-    left: 40%;
+    position : absolute;
+    top      : 25%;
+    left     : 40%;
     transform: translateY(-25%);
   }
   &__circle--lv3 {
-    position: absolute;
-    top: 50%;
-    left: 100%;
+    position : absolute;
+    top      : 50%;
+    left     : 100%;
     transform: translate(-100%, -50%);
   }
   &__circle--lv4 {
-    position: absolute;
-    top: 75%;
-    left: 40%;
+    position : absolute;
+    top      : 75%;
+    left     : 40%;
     transform: translateY(-70%);
   }
   &__circle--lv5 {
-    position: absolute;
-    top: 100%;
-    left: 0;
+    position : absolute;
+    top      : 100%;
+    left     : 0;
     transform: translateY(-100%);
   }
 }

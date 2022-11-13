@@ -3,17 +3,17 @@ html {
 }
 
 body {
-  overflow-x: hidden;
-  box-sizing: border-box;
+  overflow-x : hidden;
+  box-sizing : border-box;
   font-family: 'Noto Sans JP';
-  font-style: normal;
+  font-style : normal;
   font-weight: 100;
 }
 
 a {
   text-decoration: none;
   display        : inline-block;
-  color: black;
+  color          : black;
 }
 
 img {
@@ -22,7 +22,7 @@ img {
 
 ul {
   list-style: none;
-  padding: 0;
+  padding   : 0;
 }
 
 li {
@@ -30,9 +30,9 @@ li {
 }
 
 button {
-  padding: 0;
+  padding         : 0;
   background-color: transparent;
-  border: none;
-  appearance: none;
-  cursor: pointer;
+  border          : none;
+  appearance      : none;
+  cursor          : pointer;
 }

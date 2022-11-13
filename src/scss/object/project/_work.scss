@@ -6,9 +6,7 @@
     margin-top: 80px;
   }
   &__container {
-    //position: relative;
-    //z-index: 100;
-    padding: 0 20px;
+    padding   : 0 20px;
     margin-top: 40px;
     @include mixin.media(pc) {
       padding: 0;
@@ -16,32 +14,31 @@
   }
   
   &__area {
-    position: relative;
-    display: grid;
-    justify-items: center;
+    position             : relative;
+    display              : grid;
+    justify-items        : center;
     grid-template-columns: minmax(126px, auto) minmax(126px, auto);
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows   : 1fr 1fr 1fr;
     gap: 8vw 0;
     @include mixin.media(pc) {
-      width: min(68vw, 990px);
-      //height: auto;
+      width                : min(68vw, 990px);
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      margin: 0 auto;
+      grid-template-rows   : 1fr 1fr;
+      margin               : 0 auto;
     }
   }
   &__shadow--lv1 {
-    position: absolute;
-    top: 22%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 94vw;
-    height: 12vw;
+    position        : absolute;
+    top             : 22%;
+    left            : 50%;
+    transform       : translateX(-50%);
+    width           : 94vw;
+    height          : 12vw;
     background-color: rgba($color: val.$shadowBlue, $alpha: 0.3);
-    border-radius: 8px;
+    border-radius   : 8px;
     @include mixin.media(pc) {
-      top: 29%;
-      width: min(70vw, 994px);
+      top   : 29%;
+      width : min(70vw, 994px);
       height: min(7vw, 96px);
     }
   }
@@ -62,52 +59,52 @@
   }
   &__box {
     position: relative;
-    width: max(43vw, 162px);
-    height: auto;
+    width   : max(43vw, 162px);
+    height  : auto;
     @include mixin.media(pc) {
       width: min(20vw, 280px);
     }
   }
   &__link {
-    display: inline-block;
+    display : inline-block;
     position: absolute;
-    bottom: 1%;
-    right: 0;
-    width: 35%;
-    height: 20%;
+    bottom  : 1%;
+    right   : 0;
+    width   : 35%;
+    height  : 20%;
   }
   &__btn {
-    position: relative;
-    width: 58vw;
-    height: auto;
+    position        : relative;
+    width           : 58vw;
+    height          : auto;
     background-color: rgba($color: val.$white, $alpha: 1);
-    display: block;
-    margin: 55px auto 0 auto;
-    box-shadow: 1px 1px 6px rgba(66, 61, 60, 0.3);
-    border-radius: 6px;
-    padding: 16px 0;
+    display         : block;
+    margin          : 55px auto 0 auto;
+    box-shadow      : 1px 1px 6px rgba(66, 61, 60, 0.3);
+    border-radius   : 6px;
+    padding         : 16px 0;
     &::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      right: 15%;
-      width: 6vw;
-      height: 2.5vw;
+      content      : "";
+      position     : absolute;
+      top          : 50%;
+      right        : 15%;
+      width        : 6vw;
+      height       : 2.5vw;
       border-bottom: 0.3px solid;
-      border-right: 0.3px solid;
-      transform: translateY(-50%) skew(45deg);
+      border-right : 0.3px solid;
+      transform    : translateY(-50%) skew(45deg);
     }
     @include mixin.media(pc) {
       width: 280px;
       &::before {
-        width: 28px;
+        width : 28px;
         height: 14px;
       }
     }
   }
   &__wave {
-    width: 100%;
-    height: auto;
+    width     : 100%;
+    height    : auto;
     margin-top: 56px;
   }
 }

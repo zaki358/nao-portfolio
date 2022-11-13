@@ -3,29 +3,29 @@
 
 .c-svg {
   &__background--top--front {
-    fill: none;
+    fill         : none;
     margin-bottom: -5%;
-    position: relative;
-    z-index: 101;
+    position     : relative;
+    z-index      : 101;
     path {
       stroke: val.$mainColor;
     }
   }
   &__background--top {
-    fill: val.$mainColor;
+    fill         : val.$mainColor;
     margin-bottom: -1%;
   }
   &__background--bottom {
-    fill: val.$mainColor;
-    transform: scaleY(-1);
+    fill      : val.$mainColor;
+    transform : scaleY(-1);
     margin-top: -1%;
   }
   &__background--bottom--front {
-    fill: none;
+    fill      : none;
     margin-top: -5%;
-    position: relative;
-    z-index: 101;
-    transform: scaleY(-1);
+    position  : relative;
+    z-index   : 101;
+    transform : scaleY(-1);
     path {
       stroke: val.$mainColor;
     }
@@ -33,14 +33,14 @@
   &__symbol--deep {
     fill: none;
     path {
-      fill: val.$symbol;
+      fill        : val.$symbol;
       fill-opacity: 0.8;
     }
   }
   &__symbol--light {
     fill: none;
     path {
-      fill: val.$symbol;
+      fill        : val.$symbol;
       fill-opacity: 0.2;
     }
   }

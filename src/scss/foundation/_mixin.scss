@@ -12,49 +12,49 @@
 @mixin coquette200 {
   font-family: coquette, sans-serif;
   font-weight: 200;
-  font-style: normal;
+  font-style : normal;
 }
 
 @mixin coquette300 {
   font-family: coquette, sans-serif;
   font-weight: 300;
-  font-style: normal;
+  font-style : normal;
 }
 
 @mixin coquette400 {
   font-family: coquette, sans-serif;
   font-weight: 400;
-  font-style: normal;
+  font-style : normal;
 }
 
 @mixin coquette700 {
   font-family: coquette, sans-serif;
   font-weight: 700;
-  font-style: normal;
+  font-style : normal;
 }
 
 @mixin coquette800 {
   font-family: coquette, sans-serif;
   font-weight: 800;
-  font-style: normal;
+  font-style : normal;
 }
 
 @mixin coquette900 {
   font-family: coquette, sans-serif;
   font-weight: 900;
-  font-style: normal;
+  font-style : normal;
 }
 
 @mixin gothic400 {
   font-family: fot-tsukuardgothic-std, sans-serif;
   font-weight: 400;
-  font-style: normal;
+  font-style : normal;
 }
 
 @mixin gothic700 {
   font-family: fot-tsukuardgothic-std, sans-serif;
   font-weight: 700;
-  font-style: normal;
+  font-style : normal;
 }
 
 @mixin montserrat200 {
@@ -69,9 +69,9 @@
 }
 
 @mixin sectionHeading {
-  display: flex;
+  display        : flex;
   justify-content: center;
-  align-items: center;
+  align-items    : center;
 }
 
 @mixin sectionTitleFont {
@@ -79,24 +79,24 @@
 }
 
 @mixin sectionTitleCircleLarge {
-  z-index: 100;
+  z-index    : 100;
   margin-left: -26px;
 }
 
 @mixin sectionTitleCircleSmall {
-  width: 68px;
-  display: flex;
+  width          : 68px;
+  display        : flex;
   justify-content: space-between;
-  margin-left: 16px;
+  margin-left    : 16px;
 }
 
 @mixin profilePaddingPC {
-  padding: 20px 40px;
+  padding : 20px 40px;
   overflow: hidden;
 }
 
 @mixin profilePaddingSP {
-  padding: 10px 10px 20px 20px;
+  padding : 10px 10px 20px 20px;
   overflow: hidden;
 }
 
