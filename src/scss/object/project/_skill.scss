@@ -4,18 +4,24 @@
 .p-skill {
   &__wrapper {
     position: relative;
+    margin-top: 100px;
   }
   &__symbol--lv1 {
-
+    position : absolute;
+    top      : 0%;
+    left     : -27%;
+    width    : 42vw;
+    height   : auto;
+    transform: rotate(-78deg)
   }
   &__symbol--lv2 {
-    
+    @extend .p-skill__symbol--lv1;
   }
   &__symbol--lv3 {
-    
+    @extend .p-skill__symbol--lv1;
   }
   &__symbol--lv4 {
-    
+    @extend .p-skill__symbol--lv1;
   }
   &__container {
     padding: 0 16px;
@@ -26,6 +32,7 @@
     padding: 3vw 0;
     width: 100%;
     height: auto;
+    margin-top: 80px;
     &::before {
       content: "";
       position: absolute;
@@ -50,7 +57,7 @@
       border-radius: 0 0 15px 0;
     }
     @include mixin.media(pc) {
-      margin: 0 auto;
+      margin: 80px auto 0 auto;
       padding: 0;
       line-height: 70px;
       width: 550px;
@@ -77,6 +84,90 @@
     }
   }
   &__graph {
-    margin-top: 66px;
+    margin-top: 120px;
+  }
+  &__cat-group {
+    position: relative;
+    width: 100%;
+    height: 68vw;
+    margin-top: 100px;
+    @include mixin.media(pc) {
+      position: static;
+      display: flex;
+      justify-content: space-between;
+      width: 760px;
+      height: 180px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &__cat-item--deep {
+    display            : flex;
+    flex-direction     : column;
+    justify-content    : center;
+    align-items        : center;
+    text-align         : center;
+    width              : 24vw;
+    height             : 24vw;
+    @include mixin.backgroundCatFace(val.$catDeep);
+    background-repeat  : no-repeat;
+    background-position: center;
+    background-size    : cover;
+    @include mixin.media(pc) {
+      width : 120px;
+      height: 120px
+    }
+  }
+  &__cat-item--light {
+    @extend .p-skill__cat-item--deep;
+    @include mixin.backgroundCatFace(val.$catLight, 0.3);
+  }
+  &__cat-item--brown {
+    @extend .p-skill__cat-item--deep;
+    @include mixin.backgroundCatFace(val.$catBrown);
+  }
+  &__cat-position--lv1 {
+    position: absolute;
+    top: 0;
+    left: 3%;
+    @include mixin.media(pc) {
+      position: static;
+    }
+  }
+  &__cat-position--lv2 {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    @include mixin.media(pc) {
+      position: static;
+      transform: translateX(0);
+      align-self: flex-end;
+    }
+  }
+  &__cat-position--lv3 {
+    position: absolute;
+    top: 0;
+    right: 3%;
+    @include mixin.media(pc) {
+      position: static;
+    }
+  }
+  &__cat-position--lv4 {
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    @include mixin.media(pc) {
+      position: static;
+      align-self: flex-end;
+    }
+  }
+  &__cat-position--lv5 {
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+    @include mixin.media(pc) {
+      position: static;
+    }
   }
 }

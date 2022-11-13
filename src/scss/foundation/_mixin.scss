@@ -1,5 +1,6 @@
 @use "./variables";
 
+
 //---レスポンシブ用（pcは初期値）---//
 @mixin media($breakpoint: pc) {
   @media #{map-get(variables.$breakpoints, $breakpoint)} {
@@ -97,4 +98,8 @@
 @mixin profilePaddingSP {
   padding: 10px 10px 20px 20px;
   overflow: hidden;
+}
+
+@mixin backgroundCatFace($color, $opacity: 1) {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 91 92" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.5677 5.58378C5.04253 2.60533 7.93851 0.175271 10.7805 1.20967L24.6258 6.24902C30.8131 3.06557 37.8306 1.2686 45.2678 1.2686C53.6422 1.2686 61.4843 3.54695 68.2084 7.51761L82.4609 2.3301C85.3029 1.29571 88.1989 3.72574 87.6737 6.70417L84.7196 23.4578C84.6795 23.6852 84.6218 23.9027 84.5483 24.1098C88.3034 30.6983 90.4487 38.3234 90.4487 46.4495C90.4487 71.4022 70.2206 91.6304 45.2678 91.6304C20.3151 91.6304 0.0869141 71.4022 0.0869141 46.4495C0.0869141 36.8323 3.09175 27.9169 8.2138 20.5909L5.5677 5.58378Z" fill="%23#{$color}" fill-opacity="#{$opacity}"/></svg>');
 }

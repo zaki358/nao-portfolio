@@ -1,2 +1,28 @@
 @use "../../foundation/mixin";
 @use "../../foundation/variables" as val;
+
+.p-contact {
+  &__wrapper {
+    margin-top: 100px;
+    padding   : 0 20px;
+  }
+  &__caption {
+    padding      : 22px 12px 24px 27px;
+    width        : 95%;
+    height       : auto;
+    background   : #FDFDFD;
+    border       : 0.1px solid #157788;
+    border-radius: 16px;
+    box-shadow   : 16px 20px rgb(176 207 213 / 30%);
+  }
+  &__form {
+    margin-top: 80px;
+    width: 100%;
+    height: 533px;
+    background-image: url("@images/front-page_contact_form_background_blue_sp.svg"), url("@images/front-page_contact_form_background_pink_sp.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    //background-position: center;
+  }
+
+}

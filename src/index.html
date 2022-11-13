@@ -286,23 +286,19 @@
         <img class="p-work__wave" src="<%= require('./images/front-page_work_bottom.png') %>" alt="">
       </section>
       <section class="p-skill__wrapper">
-        <svg class="p-skill__symbol--lv1 c-svg__symbol--deep" xmlns="http://www.w3.org/2000/svg" width="332"
-          height="324" viewBox="0 0 332 324">
+        <svg class="p-skill__symbol--lv1 c-svg__symbol--deep" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 324">
           <path
             d="M2.69731 203.494C-16.9296 113.148 102.825 -15.8829 201.949 2.62256C312.816 23.3273 367.782 222.978 305.877 290.68C240.748 361.911 25.7409 309.542 2.69731 203.494Z" />
         </svg>
-        <svg class="p-skill__symbol--lv2 c-svg__symbol--light" xmlns="http://www.w3.org/2000/svg" width="332"
-          height="324" viewBox="0 0 332 324">
+        <svg class="p-skill__symbol--lv2 c-svg__symbol--light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 324">
           <path
             d="M2.69731 203.494C-16.9296 113.148 102.825 -15.8829 201.949 2.62256C312.816 23.3273 367.782 222.978 305.877 290.68C240.748 361.911 25.7409 309.542 2.69731 203.494Z" />
         </svg>
-        <svg class="p-skill__symbol--lv2 c-svg__symbol--light" xmlns="http://www.w3.org/2000/svg" width="332"
-          height="324" viewBox="0 0 332 324">
+        <svg class="p-skill__symbol--lv2 c-svg__symbol--light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 324">
           <path
             d="M2.69731 203.494C-16.9296 113.148 102.825 -15.8829 201.949 2.62256C312.816 23.3273 367.782 222.978 305.877 290.68C240.748 361.911 25.7409 309.542 2.69731 203.494Z" />
         </svg>
-        <svg class="p-skill__symbol--lv4 c-svg__symbol--deep" xmlns="http://www.w3.org/2000/svg" width="332"
-          height="324" viewBox="0 0 332 324">
+        <svg class="p-skill__symbol--lv4 c-svg__symbol--deep" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 332 324">
           <path
             d="M2.69731 203.494C-16.9296 113.148 102.825 -15.8829 201.949 2.62256C312.816 23.3273 367.782 222.978 305.877 290.68C240.748 361.911 25.7409 309.542 2.69731 203.494Z" />
         </svg>
@@ -331,9 +327,7 @@
                 <img src="<%= require('./images/front-page_graph_html_css.png') %>" alt="HTML/CSS">
                 <img src="<%= require('./images/front-page_graph_sass.png') %>" alt="Sass">
                 <img src="<%= require('./images/front-page_graph_github.png') %>" alt="GitHub">
-                <div class="p-graph__background">
-                  <p class="p-graph__title c-font__graph">Commit</p>
-                </div>
+
               </div>
               <div class="p-graph__column--icon">
                 <img src="<%= require('./images/front-page_graph_icon_photoshop.png') %>" alt="Photoshop">
@@ -344,16 +338,53 @@
                   <img src="<%= require('./images/front-page_graph_icon-html.png') %>" alt="HTML">
                   <img src="<%= require('./images/front-page_graph_icon-css.png') %>" alt="CSS">
                 </div>
-
                 <img src="<%= require('./images/front-page_graph_icon_sass.png') %>" alt="Sass">
                 <img src="<%= require('./images/front-page_graph_icon_github.png') %>" alt="GitHub">
               </div>
+              <div class="p-graph__background">
+                <p class="p-graph__title c-font__graph">Commit</p>
+              </div>
             </div>
           </div>
-          <div class="p-skill__column"></div>
+          <div class="p-skill__cat-group">
+            <div class="p-skill__cat-item--deep p-skill__cat-position--lv1 c-font__cat-item">
+              バナー制作
+            </div>
+            <div class="p-skill__cat-item--light p-skill__cat-position--lv2 c-font__cat-item">
+              LP作成
+            </div>
+            <p class="p-skill__cat-item--brown p-skill__cat-position--lv3 c-font__cat-item">
+              Web<br>デザイン
+            </p>
+            <p class="p-skill__cat-item--brown p-skill__cat-position--lv4 c-font__cat-item">ロゴ制作</p>
+            <p class="p-skill__cat-item--deep p-skill__cat-position--lv5 c-font__cat-item">
+              DTP<br>デザイン
+            </p>
+          </div>
         </div>
       </section>
-      <section class="p-contact__wrapper"></section>
+      <section class="p-contact__wrapper">
+        <div class="p-about__heading">
+          <h2 class="p-about__title--font c-font__heading--green">Contact</h2>
+          <div class="p-about__title--circle--large c-circle--large"></div>
+          <div class="p-about__title--circle--small">
+            <div class="c-circle--small"></div>
+            <div class="c-circle--small"></div>
+            <div class="c-circle--small"></div>
+          </div>
+        </div>
+        <h3 class="p-about__sub-heading c-font__sub-heading--green">お問い合わせ</h3>
+        <div class="p-contact__caption">
+          <p>
+            お問い合わせはこちらのフォームからお願いします。個人情報はお返事を出すことだけに使用しています。
+          </p>
+        </div>
+        <div class="p-contact__form"></div>
+        <div class="p-contact__thank">
+          <img src="" alt="">
+          <p>Thank you for watching</p>
+        </div>
+      </section>
     </main>
     <footer class="l-footer p-footer">
 
