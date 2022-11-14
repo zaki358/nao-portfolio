@@ -14,15 +14,32 @@
     border       : 0.1px solid #157788;
     border-radius: 16px;
     box-shadow   : 16px 20px rgb(176 207 213 / 30%);
+    @include mixin.media(pc) {
+      
+    }
   }
-  &__form {
+  &__outer {
     margin-top       : 80px;
     width            : 100%;
-    height           : 533px;
+    height           : 139vw;
+    background-color: val.$white;
+    border-radius    : 1.05vw;
+    box-shadow       : 0.065vw 0.065vw 0.42vw rgba(66, 61, 60, 0.3);
+    padding          : 8px 3vw;
+    @include mixin.media(pc) {
+
+    }
+  }
+  &__inner {
+    width            : 100%;
+    height           : 100%;
     background-image : url("@images/front-page_contact_form_background_blue_sp.svg"), url("@images/front-page_contact_form_background_pink_sp.svg");
     background-repeat: no-repeat;
-    background-size  : cover;
-    //background-position: center;
+    background-size  : 100%;
+    padding: 28px;
+    @include mixin.media(pc) {
+      
+    }
   }
 
 }

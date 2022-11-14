@@ -56,23 +56,23 @@
         <div class="p-header__menu">
           <ul class="p-header__list">
             <li class="p-header__item"><a class="c-font__list--header" href="">
-              Top
-            </a></li>
+                Top
+              </a></li>
             <li class="p-header__item"><a class="c-font__list--header" href="">
-              About
-            </a></li>
+                About
+              </a></li>
             <li class="p-header__item"><a class="c-font__list--header" href="">
-              Profile
-            </a></li>
+                Profile
+              </a></li>
             <li class="p-header__item"><a class="c-font__list--header" href="">
-              Work
-            </a></li>
+                Work
+              </a></li>
             <li class="p-header__item"><a class="c-font__list--header" href="">
-              SKill
-            </a></li>
+                SKill
+              </a></li>
             <li class="p-header__item"><a class="c-font__list--header" href="">
-              Contact
-            </a></li>
+                Contact
+              </a></li>
           </ul>
         </div>
 
@@ -179,9 +179,8 @@
               Profile
             </h2>
           </div>
-          <h3 class="p-profile__sub-heading c-font__sub-heading--dark"
-          >私たちについて
-        </h3>
+          <h3 class="p-profile__sub-heading c-font__sub-heading--dark">私たちについて
+          </h3>
           <div class="p-profile__group">
             <div class="p-profile__self">
               <h3 class="p-profile__theme c-font__heading--profile">Nao Matsumoto</h3>
@@ -328,7 +327,7 @@
           <path
             d="M2.69731 203.494C-16.9296 113.148 102.825 -15.8829 201.949 2.62256C312.816 23.3273 367.782 222.978 305.877 290.68C240.748 361.911 25.7409 309.542 2.69731 203.494Z" />
         </svg>
-        <svg class="p-skill__symbol--lv4 c-svg__symbol--deep" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 332 324">
+        <svg class="p-skill__symbol--lv4 c-svg__symbol--deep" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 324">
           <path
             d="M2.69731 203.494C-16.9296 113.148 102.825 -15.8829 201.949 2.62256C312.816 23.3273 367.782 222.978 305.877 290.68C240.748 361.911 25.7409 309.542 2.69731 203.494Z" />
         </svg>
@@ -417,11 +416,34 @@
             お問い合わせはこちらのフォームからお願いします。個人情報はお返事を出すことだけに使用しています。
           </p>
         </div>
-        <div class="p-contact__form"></div>
-        <div class="p-contact__thank">
-          <img src="" alt="">
-          <p>Thank you for watching</p>
+        <div class="p-contact__outer">
+          <div class="p-contact__inner">
+            <form class="p-form__area" action="#" method="" name="contact-form">
+              <div class="p-form__name">
+                <label for="name" class="c-font__form">お名前</label>
+                <input type="text" id="name" name="your-name">
+              </div>
+              <div class="p-form__kana">
+                <label for="kana" class="c-font__form">ふりがな</label>
+                <input type="text" id="kana" name="your-name-kana">
+              </div>
+              <div class="p-form__mail">
+                <label for="email" class="c-font__form">メールアドレス</label>
+                <input type="email" id="email" name="your-email">
+              </div>
+              <div class="p-form__message">
+                <label for="message" class="c-font__form">お問い合わせ</label>
+                <textarea id="message" name="your-message"></textarea>
+              </div>
+              <input type="submit" value="送信">
+            </form>
+          </div>
         </div>
+        <div class="p-contact__thank">
+        </div>
+        <img src="" alt="">
+        <p>Thank you for watching</p>
+
       </section>
     </main>
     <footer class="l-footer p-footer">
