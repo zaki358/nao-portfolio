@@ -3,22 +3,86 @@
 
 .p-form {
   &__area {
-
+    @include mixin.media(pc) {
+      position: relative;
+    }
     input[type="text"],
     input[type="email"] {
-      width: 100%;
+      width           : 100%;
+      height          : 40px;
+      box-shadow      : inset 0.75px 0.75px 1.5px rgba(73, 73, 73, 0.4);
+      border-radius   : 4px;
+      margin-top      : 9.5px;
+      background-color: val.$white;
+      font-size: 200%;
+      @include mixin.media(pc) {
+        //width: calc(50% - 20px);
+        height: 36px;
+      }
+    }
+    textarea {
+      width           : 100%;
+      height          : 105px;
+      box-shadow      : inset 0.38px 0.38px 0.76px rgba(73, 73, 73, 0.4);
+      border-radius   : 2px;
+      margin-top      : 9.5px;
+      background-color: val.$white;
+      @include mixin.media(pc) {
+        height: 172px;
+      }
+    }
+    input[type="submit"] {
+      display: block;
+      width: 123px;
+      height: 37px;
+      background: rgba(176, 207, 213, 0.3);
+      border: 1px solid val.$graphMain;
+      border-radius: 8px;
+      margin: 24px auto 0 auto;
+      @include mixin.media(pc) {
+        width : 120px;
+        height: 36px;
+        margin: 20px 0 0 auto;
+      }
+    }
+  }
+  &__one-line {
+    @include mixin.media(pc) {
+      display        : flex;
+      flex-wrap      : wrap;
+      flex-direction : row;
+      justify-content: space-between;
     }
   }
   &__name {
-
+    @include mixin.media(pc) {
+      display       : flex;
+      flex-direction: column;
+      width: calc(50% - 20px);
+    }
   }
   &__kana {
-
+    margin-top: 20px;
+    @include mixin.media(pc) {
+      display       : flex;
+      flex-direction: column;
+      width: calc(50% - 20px);
+      margin-top: 0;
+    }
   }
   &__mail {
-
+    margin-top: 20px;
+    @include mixin.media(pc) {
+      display       : flex;
+      flex-direction: column;
+      width: calc(50% - 20px);
+      margin-top: 16px;
+    }
   }
   &__message {
-
+    margin-top: 20px;
+    @include mixin.media(pc) {
+      margin-top: 18px;
+    }
   }
 }

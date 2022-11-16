@@ -412,42 +412,48 @@
         </div>
         <h3 class="p-about__sub-heading c-font__sub-heading--green">お問い合わせ</h3>
         <div class="p-contact__caption">
-          <p>
+          <p class="c-font__text">
             お問い合わせはこちらのフォームからお願いします。個人情報はお返事を出すことだけに使用しています。
           </p>
         </div>
         <div class="p-contact__outer">
           <div class="p-contact__inner">
             <form class="p-form__area" action="#" method="" name="contact-form">
-              <div class="p-form__name">
-                <label for="name" class="c-font__form">お名前</label>
-                <input type="text" id="name" name="your-name">
-              </div>
-              <div class="p-form__kana">
-                <label for="kana" class="c-font__form">ふりがな</label>
-                <input type="text" id="kana" name="your-name-kana">
-              </div>
-              <div class="p-form__mail">
-                <label for="email" class="c-font__form">メールアドレス</label>
-                <input type="email" id="email" name="your-email">
+              <div class="p-form__one-line">
+                <div class="p-form__name">
+                  <label for="name" class="c-font__form">お名前</label>
+                  <input type="text" id="name" name="your-name">
+                </div>
+                <div class="p-form__kana">
+                  <label for="kana" class="c-font__form">ふりがな</label>
+                  <input type="text" id="kana" name="your-name-kana">
+                </div>
+                <div class="p-form__mail">
+                  <label for="email" class="c-font__form">メールアドレス</label>
+                  <input type="email" id="email" name="your-email">
+                </div>
               </div>
               <div class="p-form__message">
                 <label for="message" class="c-font__form">お問い合わせ</label>
                 <textarea id="message" name="your-message"></textarea>
               </div>
-              <input type="submit" value="送信">
+              <input class="c-font__form--btn" type="submit" value="送信">
             </form>
           </div>
+          <img class="p-contact__form--img c-img__form" src="/images/front-page_contact_human.png"
+            alt="">
         </div>
         <div class="p-contact__thank">
+          <p class="p-contact__one-word c-font__contact--thank">Thank you for watching</p>
         </div>
-        <img src="" alt="">
-        <p>Thank you for watching</p>
+        <img class="p-contact__img--human c-img__human" src="/images/front-page_contact_human.png"
+          alt="">
+
 
       </section>
     </main>
     <footer class="l-footer p-footer">
-
+      <p>naolabo</p>
     </footer>
   </div>
 <script defer src="/js/index.js"></script></body>

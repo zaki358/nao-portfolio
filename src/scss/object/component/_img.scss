@@ -52,4 +52,19 @@
     object-fit   : contain;
     border-radius: 9px;
   }
+  &__form {
+    object-fit: contain;
+    @include mixin.media(pc) {
+      width : min(170px, 12vw);
+      height: auto;
+    }
+  }
+  &__human {
+    height    : 50vw;
+    object-fit: contain;
+    @include mixin.media(tab) {
+      width : min(24vw,170px);
+      height: auto;
+    }
+  }
 }
