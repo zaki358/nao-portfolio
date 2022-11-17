@@ -67,4 +67,25 @@
       height: auto;
     }
   }
+  &__link--footer--twitter {
+    object-fit: contain;
+    @include mixin.media(pc) {
+      width: auto;
+      height: 90%;
+    }
+  }
+  &__link--footer--instagram {
+    object-fit: contain;
+    @include mixin.media(pc) {
+      width: auto;
+      height: 80%;
+    }
+  }
+  &__link--footer--mail {
+    object-fit: contain;
+    @include mixin.media(pc) {
+      width: auto;
+      height: 90%;
+    }
+  }
 }

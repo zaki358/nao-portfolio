@@ -1,4 +1,5 @@
 @use "../../foundation/mixin";
+@use "../../foundation/variables" as val;
 
 .c-btn {
   &__nav--open {
@@ -7,5 +8,12 @@
     @include mixin.media(tab) {
         width: 6vw;
     }
+  }
+  &__footer {
+    width           : 80px;
+    height          : 156px;
+    background-color: val.$white;
+    box-shadow      : 1px 1px 6.66818px rgba(66, 61, 60, 0.3);
+    border-radius   : 56px 56px 0px 0px;
   }
 }
