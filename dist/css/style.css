@@ -648,7 +648,7 @@ button {
   margin: 5px 0;
 }
 .p-header__open--btn {
-  position: absolute;
+  position: fixed;
   top: 6.5%;
   right: 10%;
   z-index: 104;
@@ -1110,12 +1110,31 @@ button {
   margin-top: 100px;
 }
 .p-skill__symbol--lv1, .p-skill__symbol--lv4, .p-skill__symbol--lv3, .p-skill__symbol--lv2 {
+  overflow: hidden;
   position: absolute;
   top: 0%;
   left: -27%;
   width: 42vw;
   height: auto;
-  transform: rotate(-78deg);
+  animation-name: reverseRotation;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+.p-skill__symbol--lv2 {
+  top: 7%;
+  left: auto;
+  right: -15%;
+  animation-name: forwardRotation;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
 .p-skill__container {
   padding: 0 16px;
@@ -1281,6 +1300,22 @@ button {
   }
 }
 
+@keyframes forwardRotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes reverseRotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
 .p-contact__wrapper {
   position: relative;
   margin-top: 100px;

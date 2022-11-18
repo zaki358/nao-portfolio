@@ -7,18 +7,34 @@
     margin-top: 100px;
   }
   &__symbol--lv1 {
+    overflow: hidden;
     position : absolute;
     top      : 0%;
     left     : -27%;
     width    : 42vw;
     height   : auto;
-    transform: rotate(-78deg)
+    @include mixin.animation(
+      reverseRotation,
+      $duration: 10s,
+      $iteration-count: infinite,
+      $timing-function: linear
+    )
   }
   &__symbol--lv2 {
     @extend .p-skill__symbol--lv1;
+    top  : 7%;
+    left : auto;
+    right: -15%;
+    @include mixin.animation(
+      forwardRotation,
+      $duration: 10s,
+      $iteration-count: infinite,
+      $timing-function: linear
+    )
   }
   &__symbol--lv3 {
     @extend .p-skill__symbol--lv1;
+  
   }
   &__symbol--lv4 {
     @extend .p-skill__symbol--lv1;
@@ -171,3 +187,23 @@
     }
   }
 }
+
+@keyframes forwardRotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes reverseRotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+  
+}
+

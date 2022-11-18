@@ -8,6 +8,28 @@
   }
 }
 
+@mixin animation(
+   //初期値
+  $name,
+  $duration: 1s,
+  $timing-function: ease,
+  $delay: 0s,
+  $iteration-count: 1,
+  $direction: normal,
+  $fill-mode: forwards
+) {
+   //プロパティのネスト記法
+  animation: {
+    name: $name;
+    duration: $duration;
+    timing-function: $timing-function;
+    delay: $delay;
+    iteration-count: $iteration-count;
+    direction: $direction;
+    fill-mode: $fill-mode;
+  }
+}
+
 //font
 @mixin coquette200 {
   font-family: coquette, sans-serif;
