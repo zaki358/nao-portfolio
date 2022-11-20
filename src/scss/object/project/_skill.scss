@@ -14,51 +14,72 @@
     height   : auto;
     top      : 0%;
     left     : -27%;
+    z-index  : -1;
     @include mixin.animation(
       reverseRotation,
       $duration: 10s,
       $iteration-count: infinite,
       $timing-function: linear
-    )
+    );
+    @include mixin.media(pc) {
+      width: 335px;
+      top: 13%;
+      left: -15%;
+    }
   }
   &__symbol--lv2 {
     position : absolute;
     width    : 42vw;
     height   : auto;
-    top      : 7%;
-    left     : 98%;
+    top      : calc(52% + 50px);
+    left     : -10%;
+    z-index  : -1;
     @include mixin.animation(
       forwardRotation,
       $duration: 10s,
       $iteration-count: infinite,
       $timing-function: linear
-    )
+    );
+    @include mixin.media(pc) {
+      width: 335px;
+    }
   }
   &__symbol--lv3 {
     position : absolute;
     width    : 42vw;
     height   : auto;
     top      : 7%;
-    left     : 60%;
+    left     : 75%;
+    z-index  : -1;
     @include mixin.animation(
       forwardRotation,
       $duration: 10s,
       $iteration-count: infinite,
       $timing-function: linear
     );
+    @include mixin.media(pc) {
+      width: 335px;
+      top  : 14%;
+      left : 84%;
+    }
   }
   &__symbol--lv4 {
     position : absolute;
     width    : 42vw;
     height   : auto;
-    top      : 7%;
-    left     : 60%;
+    top      : calc(54% + 100px);
+    left     : 64%;
+    z-index  : -1;
     @include mixin.animation(
       forwardRotation,
       $duration: 10s,
       $iteration-count: infinite,
       $timing-function: linear
     );
+    @include mixin.media(pc) {
+      width: 335px;
+      left : 86%;
+    }
   }
   &__container {
     padding: 0 16px;

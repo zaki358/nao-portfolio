@@ -27,7 +27,7 @@
 
 <body>
   <!-- <div class="l-wrapper"> -->
-  <header class="l-header p-header__content">
+  <header id="top" class="l-header p-header__content">
     <img class="p-header__background--sp c-img__background--header--sp"
       src="<%= require('./images/header_background_sp.png') %>" alt="">
     <img class="p-header__background--pc c-img__background--header--pc"
@@ -55,22 +55,22 @@
           src="<%= require('./images/header_nav_btn_close.svg') %>" alt="メニュー閉じるアイコン"></button>
       <div class="p-header__menu">
         <ul class="p-header__list">
-          <li class="p-header__item"><a class="c-font__list--header" href="">
+          <li class="p-header__item"><a class="c-font__list--header" href="#top">
               Top
             </a></li>
-          <li class="p-header__item"><a class="c-font__list--header" href="">
+          <li class="p-header__item"><a class="c-font__list--header" href="#about">
               About
             </a></li>
-          <li class="p-header__item"><a class="c-font__list--header" href="">
+          <li class="p-header__item"><a class="c-font__list--header" href="#profile">
               Profile
             </a></li>
-          <li class="p-header__item"><a class="c-font__list--header" href="">
+          <li class="p-header__item"><a class="c-font__list--header" href="#work">
               Work
             </a></li>
-          <li class="p-header__item"><a class="c-font__list--header" href="">
+          <li class="p-header__item"><a class="c-font__list--header" href="#skill">
               SKill
             </a></li>
-          <li class="p-header__item"><a class="c-font__list--header" href="">
+          <li class="p-header__item"><a class="c-font__list--header" href="#contact">
               Contact
             </a></li>
         </ul>
@@ -82,7 +82,7 @@
     </button>
   </header>
   <main class="l-main">
-    <section class="p-about__container">
+    <section id="about" class="p-about__container">
       <div class="p-about__heading">
         <h2 class="p-about__title--font c-font__heading--green">About</h2>
         <div class="p-about__title--circle--large c-circle--large"></div>
@@ -157,7 +157,7 @@
         </div>
       </article>
     </section>
-    <section class="p-profile__wrapper">
+    <section id="profile" class="p-profile__wrapper">
       <svg class="c-svg__background--top--front" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1439 95">
         <path
           d="M0 72C58.8333 43.6667 157 1.00005 275 1C421.5 0.999939 546 94 707.5 94C869 94 998 3 1141 3C1255.4 3 1386 57.5 1438 81.0001" />
@@ -243,7 +243,7 @@
           d="M0 72C58.8333 43.6667 157 1.00005 275 1C421.5 0.999939 546 94 707.5 94C869 94 998 3 1141 3C1255.4 3 1386 57.5 1438 81.0001" />
       </svg>
     </section>
-    <section class="p-work__wrapper">
+    <section id="work" class="p-work__wrapper">
       <div class="p-about__heading">
         <h2 class="p-about__title--font c-font__heading--green">Work</h2>
         <div class="p-about__title--circle--large c-circle--large"></div>
@@ -314,7 +314,7 @@
       </div>
       <img class="p-work__wave" src="<%= require('./images/front-page_work_bottom.png') %>" alt="">
     </section>
-    <section class="p-skill__wrapper">
+    <section id="skill" class="p-skill__wrapper">
       <div class="p-skill__symbol--lv1">
         <svg class="c-svg__symbol--deep" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 324">
           <path
@@ -408,7 +408,7 @@
         </div>
       </div>
     </section>
-    <section class="p-contact__wrapper">
+    <section id="contact" class="p-contact__wrapper">
       <div class="p-about__heading">
         <h2 class="p-about__title--font c-font__heading--green">Contact</h2>
         <div class="p-about__title--circle--large c-circle--large"></div>

@@ -91,6 +91,12 @@
     top     : 51%;
     left    : 7%;
     z-index : 99;
+    @include mixin.animation(
+      upDown,
+      $duration: 5s,
+      $iteration-count: infinite,
+      $timing-function: linear
+    );
     @include mixin.media(pc) {
       top : 26%;
       left: 18%;
@@ -169,4 +175,35 @@
       display: none;
     }
   }
+}
+
+@keyframes upDown {
+  0% {
+    transform: translate(0);
+  }
+  12% {
+    transform: translateY(10px);
+  }
+  24% {
+    transform: translateY(20px);
+  }
+  36% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  62% {
+    transform: translateY(-10px);
+  }
+  74% {
+    transform: translateY(-20px);
+  }
+  86% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translate(0);
+  }
+
 }

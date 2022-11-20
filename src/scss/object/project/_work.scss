@@ -58,20 +58,24 @@
     }
   }
   &__box {
-    position: relative;
-    width   : max(43vw, 162px);
-    height  : auto;
+    position  : relative;
+    width     : max(43vw, 162px);
+    height    : auto;
+    transition: all 0.5s 0s ease;
     @include mixin.media(pc) {
       width: min(20vw, 280px);
     }
+    &:hover {
+      transform: translateY(-15px);
+    }
   }
   &__link {
-    display : inline-block;
-    position: absolute;
-    bottom  : 1%;
-    right   : 0;
-    width   : 35%;
-    height  : 20%;
+    display   : inline-block;
+    position  : absolute;
+    bottom    : 1%;
+    right     : 0;
+    width     : 35%;
+    height    : 20%;
   }
   &__btn {
     position        : relative;
@@ -83,6 +87,7 @@
     box-shadow      : 1px 1px 6px rgba(66, 61, 60, 0.3);
     border-radius   : 6px;
     padding         : 16px 0;
+    transition      : all 0.1s 0s ease;
     &::before {
       content      : "";
       position     : absolute;
@@ -93,6 +98,9 @@
       border-bottom: 0.3px solid;
       border-right : 0.3px solid;
       transform    : translateY(-50%) skew(45deg);
+    }
+    &:hover {
+      background-color: rgba(176, 207, 213, 0.3);
     }
     @include mixin.media(pc) {
       width: 280px;

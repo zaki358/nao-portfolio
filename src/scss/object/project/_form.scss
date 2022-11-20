@@ -32,13 +32,17 @@
       }
     }
     input[type="submit"] {
-      display: block;
-      width: 123px;
-      height: 37px;
-      background: rgba(176, 207, 213, 0.3);
-      border: 1px solid val.$graphMain;
+      display      : block;
+      width        : 123px;
+      height       : 37px;
+      background   : rgba(176, 207, 213, 0.3);
+      border       : 1px solid val.$graphMain;
       border-radius: 8px;
-      margin: 24px auto 0 auto;
+      margin       : 24px auto 0 auto;
+      transition   : all 0.1s 0s ease;
+      &:hover {
+        background-color: val.$graphMain;
+      }
       @include mixin.media(pc) {
         width : 120px;
         height: 36px;
