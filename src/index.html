@@ -26,456 +26,467 @@
 </head>
 
 <body>
-  <div class="l-wrapper">
-    <header class="l-header p-header__content">
-      <img class="p-header__background--sp c-img__background--header--sp"
-        src="<%= require('./images/header_background_sp.png') %>" alt="">
-      <img class="p-header__background--pc c-img__background--header--pc"
-        src="<%= require('./images/header_background_pc.png') %>" alt="">
-      <div class="p-header__title">
-        <img class="c-img__title--header--front" src="<%= require('./images/front-page_header_title.svg') %>"
-          alt="フロントページシンボル">
-      </div>
-      <div class="p-header__main">
-        <img class="p-header__img--sp c-img__main--header--sp"
-          src="<%= require ('./images/front-page_header_background_sp.png') %>" alt="">
-        <img class="p-header__img--pc c-img__main--header--pc"
-          src="<%= require ('./images/front-page_header_background_pc.png') %>" alt="">
-        <img class="p-header__catchcopy--pc c-img__catchcopy--pc"
-          src="<%= require('./images/front-page_header_catchcopy_pc.png') %>" alt="">
-        <img class="p-header__catchcopy--sp--lv1 c-img__catchcopy--sp"
-          src="<%= require('./images/front-page_header_catchcopy1_sp.png') %>" alt="">
-        <img class="p-header__catchcopy--sp--lv2 c-img__catchcopy--sp"
-          src="<%= require('./images/front-page_header_catchcopy1_sp.png') %>" alt="">
-        <img class="p-header__present c-img__present" src="<%= require ('./images/front-page_header_present.png') %>"
-          alt="">
-      </div>
-      <nav class="p-header__nav">
-        <button class="p-header__close--btn c-btn__nav--close"><img
-            src="<%= require('./images/header_nav_btn_close.svg') %>" alt="メニュー閉じるアイコン"></button>
-        <div class="p-header__menu">
-          <ul class="p-header__list">
-            <li class="p-header__item"><a class="c-font__list--header" href="">
-                Top
-              </a></li>
-            <li class="p-header__item"><a class="c-font__list--header" href="">
-                About
-              </a></li>
-            <li class="p-header__item"><a class="c-font__list--header" href="">
-                Profile
-              </a></li>
-            <li class="p-header__item"><a class="c-font__list--header" href="">
-                Work
-              </a></li>
-            <li class="p-header__item"><a class="c-font__list--header" href="">
-                SKill
-              </a></li>
-            <li class="p-header__item"><a class="c-font__list--header" href="">
-                Contact
-              </a></li>
-          </ul>
-        </div>
-
-      </nav>
-      <button class="p-header__open--btn"><img class="c-btn__nav--open"
-          src="<%= require('./images/header_nav_btn.svg') %>" alt="メニュー開くアイコン"></button>
-    </header>
-    <main class="l-main">
-      <section class="p-about__container">
-        <div class="p-about__heading">
-          <h2 class="p-about__title--font c-font__heading--green">About</h2>
-          <div class="p-about__title--circle--large c-circle--large"></div>
-          <div class="p-about__title--circle--small">
-            <div class="c-circle--small"></div>
-            <div class="c-circle--small"></div>
-            <div class="c-circle--small"></div>
-          </div>
-        </div>
-        <h3 class="p-about__sub-heading c-font__sub-heading--green">
-          大切にしていること
-        </h3>
-        <article class="p-about__card">
-          <img class="p-about__icon c-icon__about c-icon__about"
-            src="<%= require('./images/front-page_about_research.png') %>" alt="Aboutアイコン1">
-          <div class="p-about__post">
-            <div class="p-post__box">
-              <img class="c-icon__post" src="<%= require('./images/front-page_about_research_icon.svg') %>">
-              <h3 class="p-post__heading--about c-font__heading--post">
-                ゴールを見失わない
-              </h3>
-            </div>
-            <p class="p-post__text--about c-font__text">
-              作り始める前にゴールを設定します。企画内容やデザインの世界観などを大事にすることを明確にし、徹底的にリサーチ、情報を整理して構成を練ります。
-            </p>
-          </div>
-        </article>
-        <article class="p-about__card">
-          <img class="p-about__icon c-icon__about c-icon__about"
-            src="<%= require('./images/front-page_about_idea.png') %>" alt="Aboutアイコン1">
-          <div class="p-about__post">
-            <div class="p-post__box">
-              <img class="c-icon__post" src="<%= require('./images/front-page_about_idea_icon.svg') %>">
-              <h3 class="p-post__heading--about c-font__heading--post">一瞬で伝わるデザイン</h3>
-            </div>
-            <p class="p-post__text--about c-font__text">
-              作わかりやすいデザインであること。一番伝えたい事を、一瞬で伝えたいと思っています。
-              最小限且つ過不足のない言葉とコンテンツで伝えることを心がけています。わくわくする事も忘れずに。
-            </p>
-          </div>
-        </article>
-        <article class="p-about__card">
-          <img class="p-about__icon c-icon__about c-icon__about"
-            src="<%= require('./images/front-page_about_policy.png') %>" alt="Aboutアイコン1">
-          <div class="p-about__post">
-            <div class="p-post__box">
-              <img class="c-icon__post" src="<%= require('./images/front-page_about_policy_icon.svg') %>">
-              <h3 class="p-post__heading--about c-font__heading--post">
-                成果がなきゃ意味がない
-              </h3>
-            </div>
-            <p class="p-post__text--about c-font__text">
-              バナーは「押してもらえるような目を引くデザイン」 Webデザインは「作った後にコーディングすることを考えながら」 ただ作るだけではなく、成果が出る事やその後の工程を考えています。
-            </p>
-          </div>
-        </article>
-        <div class="p-about__gap">
-          <div class="p-about__circle--lv1 c-circle__gap"></div>
-          <div class="p-about__circle--lv2 c-circle__gap"></div>
-          <div class="p-about__circle--lv3 c-circle__gap"></div>
-          <div class="p-about__circle--lv4 c-circle__gap"></div>
-          <div class="p-about__circle--lv5 c-circle__gap"></div>
-        </div>
-        <article class="p-about__card--goal">
-          <img class="p-about__icon c-icon__about c-icon__about"
-            src="<%= require('./images/front-page_about_goal.png') %>" alt="Aboutアイコン1">
-          <div class="p-about__post--goal">
-            <p class="c-font__heading--post">
-              そんなデザインを、
-              一緒に作り上げることを大切にしたいです
-            </p>
-          </div>
-        </article>
-      </section>
-      <section class="p-profile__wrapper">
-        <svg class="c-svg__background--top--front" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1439 95">
-          <path
-            d="M0 72C58.8333 43.6667 157 1.00005 275 1C421.5 0.999939 546 94 707.5 94C869 94 998 3 1141 3C1255.4 3 1386 57.5 1438 81.0001" />
-        </svg>
-        <svg class="c-svg__background--top" xmlns="http://www.w3.org/2000/svg" id="_レイヤー_1"
-          viewBox="0 0 1440.07 102.74">
-          <path
-            d="M0,69.29C63.72,38.28,181-.85,287.38,.01c206.64,1.68,259.16,86.99,422.62,86.99C885.05,83.64,945.88,.01,1145.53,.01c122.93,0,243.53,47.51,294.47,73.52,.14,.08,.04,17.12,.04,17.12C1268.74,102.87,199.45,109.29,.01,92.87v-23.58Z" />
-        </svg>
-        <!-- <img class="c-img__section--top" src="" alt=""> -->
-        <div class="p-profile__container">
-          <div class="p-profile__heading">
-            <div class="p-profile__title--circle--small">
-              <div class="c-circle--small--white"></div>
-              <div class="c-circle--small--white"></div>
-              <div class="c-circle--small--white"></div>
-            </div>
-            <div class="p-about__title--circle--large c-circle--large--white"></div>
-            <h2 class="p-profile__title--font c-font__heading--dark">
+  <!-- <div class="l-wrapper"> -->
+  <header class="l-header p-header__content">
+    <img class="p-header__background--sp c-img__background--header--sp"
+      src="<%= require('./images/header_background_sp.png') %>" alt="">
+    <img class="p-header__background--pc c-img__background--header--pc"
+      src="<%= require('./images/header_background_pc.png') %>" alt="">
+    <div class="p-header__title">
+      <img class="c-img__title--header--front" src="<%= require('./images/front-page_header_title.svg') %>"
+        alt="フロントページシンボル">
+    </div>
+    <div class="p-header__main">
+      <img class="p-header__img--sp c-img__main--header--sp"
+        src="<%= require ('./images/front-page_header_background_sp.png') %>" alt="">
+      <img class="p-header__img--pc c-img__main--header--pc"
+        src="<%= require ('./images/front-page_header_background_pc.png') %>" alt="">
+      <img class="p-header__catchcopy--pc c-img__catchcopy--pc"
+        src="<%= require('./images/front-page_header_catchcopy_pc.png') %>" alt="">
+      <img class="p-header__catchcopy--sp--lv1 c-img__catchcopy--sp"
+        src="<%= require('./images/front-page_header_catchcopy1_sp.png') %>" alt="">
+      <img class="p-header__catchcopy--sp--lv2 c-img__catchcopy--sp"
+        src="<%= require('./images/front-page_header_catchcopy1_sp.png') %>" alt="">
+      <img class="p-header__present c-img__present" src="<%= require ('./images/front-page_header_present.png') %>"
+        alt="">
+    </div>
+    <nav class="p-header__nav">
+      <button class="p-header__close--btn c-btn__nav--close"><img
+          src="<%= require('./images/header_nav_btn_close.svg') %>" alt="メニュー閉じるアイコン"></button>
+      <div class="p-header__menu">
+        <ul class="p-header__list">
+          <li class="p-header__item"><a class="c-font__list--header" href="">
+              Top
+            </a></li>
+          <li class="p-header__item"><a class="c-font__list--header" href="">
+              About
+            </a></li>
+          <li class="p-header__item"><a class="c-font__list--header" href="">
               Profile
-            </h2>
-          </div>
-          <h3 class="p-profile__sub-heading c-font__sub-heading--dark">私たちについて
-          </h3>
-          <div class="p-profile__group">
-            <div class="p-profile__self">
-              <h3 class="p-profile__theme c-font__heading--profile">Nao Matsumoto</h3>
-              <p class="p-profile__text c-font__text--profile">
-                札幌在住30歳2児の母。2021年夏からWeb制作の学習を開始する。3ヶ月間コーディングをみっちり学習した後に、デザインの学習を本格化するとどハマりする。女性向け・子ども向け、シンプルなデザインが得意。
-              </p>
-            </div>
-            <div class="p-profile__sns">
-              <h3 class="p-profile__theme c-font__heading--profile">SNS</h3>
-              <div class="p-profile__area--sns c-font__text--profile">
-                <div class="p-profile__item--sns">
-                  <p>Twitter</p>
-                  <p>@nao_web24</p>
-                </div>
-                <div class="p-profile__item--sns">
-                  <p>
-                    Instagram
-                  </p>
-                  <p>
-                    @naolab24
-                  </p>
-                </div>
-                <div class="p-profile__item--icon">
-                  <a href="">
-                    <img class="c-icon__sns--profile"
-                      src="<%= require('./images/front-page_profile_icon_twitter.svg') %>" alt="">
-                  </a>
-                  <a href="">
-                    <img class="c-icon__sns--profile"
-                      src="<%= require('./images/front-page_profile_icon_instagram.svg') %>" alt="">
-                  </a>
+            </a></li>
+          <li class="p-header__item"><a class="c-font__list--header" href="">
+              Work
+            </a></li>
+          <li class="p-header__item"><a class="c-font__list--header" href="">
+              SKill
+            </a></li>
+          <li class="p-header__item"><a class="c-font__list--header" href="">
+              Contact
+            </a></li>
+        </ul>
+      </div>
 
-                </div>
-              </div>
-            </div>
-            <div class="p-profile__chara">
-              <h3 class="p-profile__theme c-font__heading--profile">
-                Character
-              </h3>
-              <p class="p-profile__text c-font__text--profile">
-                温厚、素直、出不精
-                寝たら忘れるタイプ
-                ものづくりが大好き
-                計画を立てるのが好き
-                甘いもの、コーヒー、
-                ビールが大好き
-              </p>
-            </div>
-            <img class="p-profile__img c-img__profile" src="<%= require('./images/front-page_profile_picture.jpg') %>"
-              alt="profile写真">
-          </div>
+    </nav>
+    <button class="p-header__open--btn">
+      <img class="c-btn__nav--open" src="<%= require('./images/header_nav_btn.svg') %>" alt="メニュー開くアイコン">
+    </button>
+  </header>
+  <main class="l-main">
+    <section class="p-about__container">
+      <div class="p-about__heading">
+        <h2 class="p-about__title--font c-font__heading--green">About</h2>
+        <div class="p-about__title--circle--large c-circle--large"></div>
+        <div class="p-about__title--circle--small">
+          <div class="c-circle--small"></div>
+          <div class="c-circle--small"></div>
+          <div class="c-circle--small"></div>
         </div>
-        <svg class="c-svg__background--bottom" xmlns="http://www.w3.org/2000/svg" id="_レイヤー_1"
-          viewBox="0 0 1440.07 102.74">
-          <path
-            d="M0,69.29C63.72,38.28,181-.85,287.38,.01c206.64,1.68,259.16,86.99,422.62,86.99C885.05,83.64,945.88,.01,1145.53,.01c122.93,0,243.53,47.51,294.47,73.52,.14,.08,.04,17.12,.04,17.12C1268.74,102.87,199.45,109.29,.01,92.87v-23.58Z" />
-        </svg>
-        <svg class="c-svg__background--bottom--front" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1439 95">
-          <path
-            d="M0 72C58.8333 43.6667 157 1.00005 275 1C421.5 0.999939 546 94 707.5 94C869 94 998 3 1141 3C1255.4 3 1386 57.5 1438 81.0001" />
-        </svg>
-      </section>
-      <section class="p-work__wrapper">
-        <div class="p-about__heading">
-          <h2 class="p-about__title--font c-font__heading--green">Work</h2>
-          <div class="p-about__title--circle--large c-circle--large"></div>
-          <div class="p-about__title--circle--small">
-            <div class="c-circle--small"></div>
-            <div class="c-circle--small"></div>
-            <div class="c-circle--small"></div>
+      </div>
+      <h3 class="p-about__sub-heading c-font__sub-heading--green">
+        大切にしていること
+      </h3>
+      <article class="p-about__card">
+        <img class="p-about__icon c-icon__about c-icon__about"
+          src="<%= require('./images/front-page_about_research.png') %>" alt="Aboutアイコン1">
+        <div class="p-about__post">
+          <div class="p-post__box">
+            <img class="c-icon__post" src="<%= require('./images/front-page_about_research_icon.svg') %>">
+            <h3 class="p-post__heading--about c-font__heading--post">
+              ゴールを見失わない
+            </h3>
           </div>
-        </div>
-        <h3 class="p-about__sub-heading c-font__sub-heading--green">
-          制作したもの
-        </h3>
-        <div class="p-work__container">
-          <div class="p-work__area">
-            <div class="p-work__shadow--lv1 "></div>
-            <div class="p-work__shadow--lv2"></div>
-            <div class="p-work__shadow--lv3--sp"></div>
-            <div class="p-work__box">
-              <img class="c-img__work" src="<%= require('./images/front-page_work_box_1.jpg') %>" alt="">
-              <a class="p-work__link" href="">
-                <div class="p-link__container">
-                  <p class="p-link__text c-font__link--work">more</p>
-                </div>
-              </a>
-            </div>
-            <div class="p-work__box">
-              <img class="c-img__work" src="<%= require('./images/front-page_work_box_2.jpg') %>" alt="">
-              <a class="p-work__link" href="">
-                <div class="p-link__container">
-                  <p class="p-link__text c-font__link--work">more</p>
-                </div>
-              </a>
-            </div>
-            <div class="p-work__box">
-              <img class="c-img__work" src="<%= require('./images/front-page_work_box_3.jpg') %>" alt="">
-              <a class="p-work__link" href="">
-                <div class="p-link__container">
-                  <p class="p-link__text c-font__link--work">more</p>
-                </div>
-              </a>
-            </div>
-            <div class="p-work__box">
-              <img class="c-img__work" src="<%= require('./images/front-page_work_box_4.jpg') %>" alt="">
-              <a class="p-work__link" href="">
-                <div class="p-link__container">
-                  <p class="p-link__text c-font__link--work">more</p>
-                </div>
-              </a>
-            </div>
-            <div class="p-work__box">
-              <img class="c-img__work" src="<%= require('./images/front-page_work_box_5.jpg') %>" alt="">
-              <a class="p-work__link" href="">
-                <div class="p-link__container">
-                  <p class="p-link__text c-font__link--work">more</p>
-                </div>
-              </a>
-            </div>
-            <div class="p-work__box">
-              <img class="c-img__work" src="<%= require('./images/front-page_work_box_6.jpg') %>" alt="">
-              <a class="p-work__link" href="">
-                <div class="p-link__container">
-                  <p class="p-link__text c-font__link--work">more</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <button class="p-work__btn c-btn__work c-font__btn--work" onclick="location.href=''"> See all</button>
-        </div>
-        <img class="p-work__wave" src="<%= require('./images/front-page_work_bottom.png') %>" alt="">
-      </section>
-      <section class="p-skill__wrapper">
-        <svg class="p-skill__symbol--lv1 c-svg__symbol--deep" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 324">
-          <path
-            d="M2.69731 203.494C-16.9296 113.148 102.825 -15.8829 201.949 2.62256C312.816 23.3273 367.782 222.978 305.877 290.68C240.748 361.911 25.7409 309.542 2.69731 203.494Z" />
-        </svg>
-        <svg class="p-skill__symbol--lv2 c-svg__symbol--light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 324">
-          <path
-            d="M2.69731 203.494C-16.9296 113.148 102.825 -15.8829 201.949 2.62256C312.816 23.3273 367.782 222.978 305.877 290.68C240.748 361.911 25.7409 309.542 2.69731 203.494Z" />
-        </svg>
-        <svg class="p-skill__symbol--lv2 c-svg__symbol--light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 324">
-          <path
-            d="M2.69731 203.494C-16.9296 113.148 102.825 -15.8829 201.949 2.62256C312.816 23.3273 367.782 222.978 305.877 290.68C240.748 361.911 25.7409 309.542 2.69731 203.494Z" />
-        </svg>
-        <svg class="p-skill__symbol--lv4 c-svg__symbol--deep" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 324">
-          <path
-            d="M2.69731 203.494C-16.9296 113.148 102.825 -15.8829 201.949 2.62256C312.816 23.3273 367.782 222.978 305.877 290.68C240.748 361.911 25.7409 309.542 2.69731 203.494Z" />
-        </svg>
-        <div class="p-profile__heading">
-          <div class="p-profile__title--circle--small">
-            <div class="c-circle--small--red"></div>
-            <div class="c-circle--small--red"></div>
-            <div class="c-circle--small--red"></div>
-          </div>
-          <div class="p-about__title--circle--large c-circle--large--red"></div>
-          <h2 class="p-profile__title--font c-font__heading--red">
-            Skill
-          </h2>
-        </div>
-        <h3 class="p-about__sub-heading c-font__sub-heading--red">
-          できること
-        </h3>
-        <div class="p-skill__container">
-          <div class="p-skill__comment">
-            <p class="c-font__comment--skill">
-              制作にかけてきた時間をグラフにしてます（2021年8月～）
-            </p>
-            <div class="p-skill__border"></div>
-          </div>
-          <div class="p-skill__graph">
-            <div class="p-graph__container">
-              <div class="p-graph__area">
-                <img src="<%= require('./images/front-page_graph_photoshop.png') %>" alt="Photoshop">
-                <img src="<%= require('./images/front-page_graph_illustrator.png') %>" alt="illustrator">
-                <img src="<%= require('./images/front-page_graph_xd.png') %>" alt="XD">
-                <img src="<%= require('./images/front-page_graph_figma.png') %>" alt="Figma">
-                <img src="<%= require('./images/front-page_graph_html_css.png') %>" alt="HTML/CSS">
-                <img src="<%= require('./images/front-page_graph_sass.png') %>" alt="Sass">
-                <img src="<%= require('./images/front-page_graph_github.png') %>" alt="GitHub">
-
-              </div>
-              <div class="p-graph__column--icon">
-                <img src="<%= require('./images/front-page_graph_icon_photoshop.png') %>" alt="Photoshop">
-                <img src="<%= require('./images/front-page_graph_icon_illustrator.png') %>" alt="illustrator">
-                <img src="<%= require('./images/front-page_graph_icon_xd.png') %>" alt="XD">
-                <img src="<%= require('./images/front-page_graph_icon_figma.png') %>" alt="Figma">
-                <div class="p-graph__icon--html-css">
-                  <img src="<%= require('./images/front-page_graph_icon-html.png') %>" alt="HTML">
-                  <img src="<%= require('./images/front-page_graph_icon-css.png') %>" alt="CSS">
-                </div>
-                <img src="<%= require('./images/front-page_graph_icon_sass.png') %>" alt="Sass">
-                <img src="<%= require('./images/front-page_graph_icon_github.png') %>" alt="GitHub">
-              </div>
-              <div class="p-graph__background">
-                <p class="p-graph__title c-font__graph">Commit</p>
-              </div>
-            </div>
-          </div>
-          <div class="p-skill__cat-group">
-            <div class="p-skill__cat-item--deep p-skill__cat-position--lv1 c-font__cat-item">
-              バナー制作
-            </div>
-            <div class="p-skill__cat-item--light p-skill__cat-position--lv2 c-font__cat-item">
-              LP作成
-            </div>
-            <p class="p-skill__cat-item--brown p-skill__cat-position--lv3 c-font__cat-item">
-              Web<br>デザイン
-            </p>
-            <p class="p-skill__cat-item--brown p-skill__cat-position--lv4 c-font__cat-item">
-              ロゴ制作
-            </p>
-            <p class="p-skill__cat-item--deep p-skill__cat-position--lv5 c-font__cat-item">
-              DTP<br>デザイン
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="p-contact__wrapper">
-        <div class="p-about__heading">
-          <h2 class="p-about__title--font c-font__heading--green">Contact</h2>
-          <div class="p-about__title--circle--large c-circle--large"></div>
-          <div class="p-about__title--circle--small">
-            <div class="c-circle--small"></div>
-            <div class="c-circle--small"></div>
-            <div class="c-circle--small"></div>
-          </div>
-        </div>
-        <h3 class="p-about__sub-heading c-font__sub-heading--green">お問い合わせ</h3>
-        <div class="p-contact__caption">
-          <p class="c-font__text">
-            お問い合わせはこちらのフォームからお願いします。個人情報はお返事を出すことだけに使用しています。
+          <p class="p-post__text--about c-font__text">
+            作り始める前にゴールを設定します。企画内容やデザインの世界観などを大事にすることを明確にし、徹底的にリサーチ、情報を整理して構成を練ります。
           </p>
         </div>
-        <div class="p-contact__outer">
-          <div class="p-contact__inner">
-            <form class="p-form__area" action="#" method="" name="contact-form">
-              <div class="p-form__one-line">
-                <div class="p-form__name">
-                  <label for="name" class="c-font__form">お名前</label>
-                  <input type="text" id="name" name="your-name">
-                </div>
-                <div class="p-form__kana">
-                  <label for="kana" class="c-font__form">ふりがな</label>
-                  <input type="text" id="kana" name="your-name-kana">
-                </div>
-                <div class="p-form__mail">
-                  <label for="email" class="c-font__form">メールアドレス</label>
-                  <input type="email" id="email" name="your-email">
-                </div>
-              </div>
-              <div class="p-form__message">
-                <label for="message" class="c-font__form">お問い合わせ</label>
-                <textarea id="message" name="your-message"></textarea>
-              </div>
-              <input class="c-font__form--btn" type="submit" value="送信">
-            </form>
+      </article>
+      <article class="p-about__card">
+        <img class="p-about__icon c-icon__about c-icon__about"
+          src="<%= require('./images/front-page_about_idea.png') %>" alt="Aboutアイコン1">
+        <div class="p-about__post">
+          <div class="p-post__box">
+            <img class="c-icon__post" src="<%= require('./images/front-page_about_idea_icon.svg') %>">
+            <h3 class="p-post__heading--about c-font__heading--post">一瞬で伝わるデザイン</h3>
           </div>
-          <img class="p-contact__form--img c-img__form" src="<%= require('./images/front-page_contact_human.png') %>"
-            alt="">
+          <p class="p-post__text--about c-font__text">
+            作わかりやすいデザインであること。一番伝えたい事を、一瞬で伝えたいと思っています。
+            最小限且つ過不足のない言葉とコンテンツで伝えることを心がけています。わくわくする事も忘れずに。
+          </p>
         </div>
-        <div class="p-contact__thank">
-          <p class="p-contact__one-word c-font__contact--thank">Thank you for watching</p>
+      </article>
+      <article class="p-about__card">
+        <img class="p-about__icon c-icon__about c-icon__about"
+          src="<%= require('./images/front-page_about_policy.png') %>" alt="Aboutアイコン1">
+        <div class="p-about__post">
+          <div class="p-post__box">
+            <img class="c-icon__post" src="<%= require('./images/front-page_about_policy_icon.svg') %>">
+            <h3 class="p-post__heading--about c-font__heading--post">
+              成果がなきゃ意味がない
+            </h3>
+          </div>
+          <p class="p-post__text--about c-font__text">
+            バナーは「押してもらえるような目を引くデザイン」 Webデザインは「作った後にコーディングすることを考えながら」 ただ作るだけではなく、成果が出る事やその後の工程を考えています。
+          </p>
         </div>
-        <img class="p-contact__img--human c-img__human" src="<%= require('./images/front-page_contact_human.png') %>"
-          alt="">
-
-
-      </section>
-    </main>
-    <footer class="l-footer p-footer">
-      <div class="p-footer__box">
-        <div class="p-footer__link">
-          <a href="">
-            <img class="c-img__link--footer--twitter" src="<%= require('./images/front-page_footer_link_icon_twitter.svg') %>" alt="twitter">
-          </a>
-          <a href="">
-            <img class="c-img__link--footer--instagram" src="<%= require('./images/front-page_footer_link_icon_instagram.svg') %>" alt="Instagram">
-          </a>
-          <a href="">
-            <img class="c-img__link--footer--mail" src="<%= require('./images/front-page_footer_link_icon_mail.svg') %>" alt="mail">
-          </a>
-        </div>
-        <div class="p-footer__title">
-          <p class="c-font__footer--title">naolabo</p>
-          <p class="c-font__footer--sub-title">©︎2022naolabdesign</p>
-        </div>
-        <button class="p-footer__btn c-btn__footer">
-          <p class="c-font__btn--footer">top</p>
-        </button>
+      </article>
+      <div class="p-about__gap">
+        <div class="p-about__circle--lv1 c-circle__gap"></div>
+        <div class="p-about__circle--lv2 c-circle__gap"></div>
+        <div class="p-about__circle--lv3 c-circle__gap"></div>
+        <div class="p-about__circle--lv4 c-circle__gap"></div>
+        <div class="p-about__circle--lv5 c-circle__gap"></div>
       </div>
+      <article class="p-about__card--goal">
+        <img class="p-about__icon c-icon__about c-icon__about"
+          src="<%= require('./images/front-page_about_goal.png') %>" alt="Aboutアイコン1">
+        <div class="p-about__post--goal">
+          <p class="c-font__heading--post">
+            そんなデザインを、
+            一緒に作り上げることを大切にしたいです
+          </p>
+        </div>
+      </article>
+    </section>
+    <section class="p-profile__wrapper">
+      <svg class="c-svg__background--top--front" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1439 95">
+        <path
+          d="M0 72C58.8333 43.6667 157 1.00005 275 1C421.5 0.999939 546 94 707.5 94C869 94 998 3 1141 3C1255.4 3 1386 57.5 1438 81.0001" />
+      </svg>
+      <svg class="c-svg__background--top" xmlns="http://www.w3.org/2000/svg" id="_レイヤー_1" viewBox="0 0 1440.07 102.74">
+        <path
+          d="M0,69.29C63.72,38.28,181-.85,287.38,.01c206.64,1.68,259.16,86.99,422.62,86.99C885.05,83.64,945.88,.01,1145.53,.01c122.93,0,243.53,47.51,294.47,73.52,.14,.08,.04,17.12,.04,17.12C1268.74,102.87,199.45,109.29,.01,92.87v-23.58Z" />
+      </svg>
+      <!-- <img class="c-img__section--top" src="" alt=""> -->
+      <div class="p-profile__container">
+        <div class="p-profile__heading">
+          <div class="p-profile__title--circle--small">
+            <div class="c-circle--small--white"></div>
+            <div class="c-circle--small--white"></div>
+            <div class="c-circle--small--white"></div>
+          </div>
+          <div class="p-about__title--circle--large c-circle--large--white"></div>
+          <h2 class="p-profile__title--font c-font__heading--dark">
+            Profile
+          </h2>
+        </div>
+        <h3 class="p-profile__sub-heading c-font__sub-heading--dark">私たちについて
+        </h3>
+        <div class="p-profile__group">
+          <div class="p-profile__self">
+            <h3 class="p-profile__theme c-font__heading--profile">Nao Matsumoto</h3>
+            <p class="p-profile__text c-font__text--profile">
+              札幌在住30歳2児の母。2021年夏からWeb制作の学習を開始する。3ヶ月間コーディングをみっちり学習した後に、デザインの学習を本格化するとどハマりする。女性向け・子ども向け、シンプルなデザインが得意。
+            </p>
+          </div>
+          <div class="p-profile__sns">
+            <h3 class="p-profile__theme c-font__heading--profile">SNS</h3>
+            <div class="p-profile__area--sns c-font__text--profile">
+              <div class="p-profile__item--sns">
+                <p>Twitter</p>
+                <p>@nao_web24</p>
+              </div>
+              <div class="p-profile__item--sns">
+                <p>
+                  Instagram
+                </p>
+                <p>
+                  @naolab24
+                </p>
+              </div>
+              <div class="p-profile__item--icon">
+                <a href="">
+                  <img class="c-icon__sns--profile" src="<%= require('./images/front-page_profile_icon_twitter.svg') %>"
+                    alt="">
+                </a>
+                <a href="">
+                  <img class="c-icon__sns--profile"
+                    src="<%= require('./images/front-page_profile_icon_instagram.svg') %>" alt="">
+                </a>
 
-    </footer>
-  </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-profile__chara">
+            <h3 class="p-profile__theme c-font__heading--profile">
+              Character
+            </h3>
+            <p class="p-profile__text c-font__text--profile">
+              温厚、素直、出不精
+              寝たら忘れるタイプ
+              ものづくりが大好き
+              計画を立てるのが好き
+              甘いもの、コーヒー、
+              ビールが大好き
+            </p>
+          </div>
+          <img class="p-profile__img c-img__profile" src="<%= require('./images/front-page_profile_picture.jpg') %>"
+            alt="profile写真">
+        </div>
+      </div>
+      <svg class="c-svg__background--bottom" xmlns="http://www.w3.org/2000/svg" id="_レイヤー_1"
+        viewBox="0 0 1440.07 102.74">
+        <path
+          d="M0,69.29C63.72,38.28,181-.85,287.38,.01c206.64,1.68,259.16,86.99,422.62,86.99C885.05,83.64,945.88,.01,1145.53,.01c122.93,0,243.53,47.51,294.47,73.52,.14,.08,.04,17.12,.04,17.12C1268.74,102.87,199.45,109.29,.01,92.87v-23.58Z" />
+      </svg>
+      <svg class="c-svg__background--bottom--front" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1439 95">
+        <path
+          d="M0 72C58.8333 43.6667 157 1.00005 275 1C421.5 0.999939 546 94 707.5 94C869 94 998 3 1141 3C1255.4 3 1386 57.5 1438 81.0001" />
+      </svg>
+    </section>
+    <section class="p-work__wrapper">
+      <div class="p-about__heading">
+        <h2 class="p-about__title--font c-font__heading--green">Work</h2>
+        <div class="p-about__title--circle--large c-circle--large"></div>
+        <div class="p-about__title--circle--small">
+          <div class="c-circle--small"></div>
+          <div class="c-circle--small"></div>
+          <div class="c-circle--small"></div>
+        </div>
+      </div>
+      <h3 class="p-about__sub-heading c-font__sub-heading--green">
+        制作したもの
+      </h3>
+      <div class="p-work__container">
+        <div class="p-work__area">
+          <div class="p-work__shadow--lv1 "></div>
+          <div class="p-work__shadow--lv2"></div>
+          <div class="p-work__shadow--lv3--sp"></div>
+          <div class="p-work__box">
+            <img class="c-img__work" src="<%= require('./images/front-page_work_box_1.jpg') %>" alt="">
+            <a class="p-work__link" href="">
+              <div class="p-link__container">
+                <p class="p-link__text c-font__link--work">more</p>
+              </div>
+            </a>
+          </div>
+          <div class="p-work__box">
+            <img class="c-img__work" src="<%= require('./images/front-page_work_box_2.jpg') %>" alt="">
+            <a class="p-work__link" href="">
+              <div class="p-link__container">
+                <p class="p-link__text c-font__link--work">more</p>
+              </div>
+            </a>
+          </div>
+          <div class="p-work__box">
+            <img class="c-img__work" src="<%= require('./images/front-page_work_box_3.jpg') %>" alt="">
+            <a class="p-work__link" href="">
+              <div class="p-link__container">
+                <p class="p-link__text c-font__link--work">more</p>
+              </div>
+            </a>
+          </div>
+          <div class="p-work__box">
+            <img class="c-img__work" src="<%= require('./images/front-page_work_box_4.jpg') %>" alt="">
+            <a class="p-work__link" href="">
+              <div class="p-link__container">
+                <p class="p-link__text c-font__link--work">more</p>
+              </div>
+            </a>
+          </div>
+          <div class="p-work__box">
+            <img class="c-img__work" src="<%= require('./images/front-page_work_box_5.jpg') %>" alt="">
+            <a class="p-work__link" href="">
+              <div class="p-link__container">
+                <p class="p-link__text c-font__link--work">more</p>
+              </div>
+            </a>
+          </div>
+          <div class="p-work__box">
+            <img class="c-img__work" src="<%= require('./images/front-page_work_box_6.jpg') %>" alt="">
+            <a class="p-work__link" href="">
+              <div class="p-link__container">
+                <p class="p-link__text c-font__link--work">more</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <button class="p-work__btn c-btn__work c-font__btn--work" onclick="location.href=''"> See all</button>
+      </div>
+      <img class="p-work__wave" src="<%= require('./images/front-page_work_bottom.png') %>" alt="">
+    </section>
+    <section class="p-skill__wrapper">
+      <div class="p-skill__symbol--lv1">
+        <svg class="c-svg__symbol--deep" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 324">
+          <path
+            d="M2.69731 203.494C-16.9296 113.148 102.825 -15.8829 201.949 2.62256C312.816 23.3273 367.782 222.978 305.877 290.68C240.748 361.911 25.7409 309.542 2.69731 203.494Z" />
+        </svg>
+      </div>
+      <div class="p-skill__symbol--lv2">
+        <svg class="c-svg__symbol--light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 324">
+          <path
+            d="M2.69731 203.494C-16.9296 113.148 102.825 -15.8829 201.949 2.62256C312.816 23.3273 367.782 222.978 305.877 290.68C240.748 361.911 25.7409 309.542 2.69731 203.494Z" />
+        </svg>
+      </div>
+      <div class="p-skill__symbol--lv3">
+        <svg class="c-svg__symbol--light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 324">
+          <path
+            d="M2.69731 203.494C-16.9296 113.148 102.825 -15.8829 201.949 2.62256C312.816 23.3273 367.782 222.978 305.877 290.68C240.748 361.911 25.7409 309.542 2.69731 203.494Z" />
+        </svg>
+      </div>
+      <div class="p-skill__symbol--lv4">
+        <svg class="c-svg__symbol--deep" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 324">
+          <path
+            d="M2.69731 203.494C-16.9296 113.148 102.825 -15.8829 201.949 2.62256C312.816 23.3273 367.782 222.978 305.877 290.68C240.748 361.911 25.7409 309.542 2.69731 203.494Z" />
+        </svg>
+      </div>
+      <div class="p-profile__heading">
+        <div class="p-profile__title--circle--small">
+          <div class="c-circle--small--red"></div>
+          <div class="c-circle--small--red"></div>
+          <div class="c-circle--small--red"></div>
+        </div>
+        <div class="p-about__title--circle--large c-circle--large--red"></div>
+        <h2 class="p-profile__title--font c-font__heading--red">
+          Skill
+        </h2>
+      </div>
+      <h3 class="p-about__sub-heading c-font__sub-heading--red">
+        できること
+      </h3>
+      <div class="p-skill__container">
+        <div class="p-skill__comment">
+          <p class="c-font__comment--skill">
+            制作にかけてきた時間をグラフにしてます（2021年8月～）
+          </p>
+          <div class="p-skill__border"></div>
+        </div>
+        <div class="p-skill__graph">
+          <div class="p-graph__container">
+            <div class="p-graph__area">
+              <img src="<%= require('./images/front-page_graph_photoshop.png') %>" alt="Photoshop">
+              <img src="<%= require('./images/front-page_graph_illustrator.png') %>" alt="illustrator">
+              <img src="<%= require('./images/front-page_graph_xd.png') %>" alt="XD">
+              <img src="<%= require('./images/front-page_graph_figma.png') %>" alt="Figma">
+              <img src="<%= require('./images/front-page_graph_html_css.png') %>" alt="HTML/CSS">
+              <img src="<%= require('./images/front-page_graph_sass.png') %>" alt="Sass">
+              <img src="<%= require('./images/front-page_graph_github.png') %>" alt="GitHub">
+
+            </div>
+            <div class="p-graph__column--icon">
+              <img src="<%= require('./images/front-page_graph_icon_photoshop.png') %>" alt="Photoshop">
+              <img src="<%= require('./images/front-page_graph_icon_illustrator.png') %>" alt="illustrator">
+              <img src="<%= require('./images/front-page_graph_icon_xd.png') %>" alt="XD">
+              <img src="<%= require('./images/front-page_graph_icon_figma.png') %>" alt="Figma">
+              <div class="p-graph__icon--html-css">
+                <img src="<%= require('./images/front-page_graph_icon-html.png') %>" alt="HTML">
+                <img src="<%= require('./images/front-page_graph_icon-css.png') %>" alt="CSS">
+              </div>
+              <img src="<%= require('./images/front-page_graph_icon_sass.png') %>" alt="Sass">
+              <img src="<%= require('./images/front-page_graph_icon_github.png') %>" alt="GitHub">
+            </div>
+            <div class="p-graph__background">
+              <p class="p-graph__title c-font__graph">Commit</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-skill__cat-group">
+          <div class="p-skill__cat-item--deep p-skill__cat-position--lv1 c-font__cat-item">
+            バナー制作
+          </div>
+          <div class="p-skill__cat-item--light p-skill__cat-position--lv2 c-font__cat-item">
+            LP作成
+          </div>
+          <p class="p-skill__cat-item--brown p-skill__cat-position--lv3 c-font__cat-item">
+            Web<br>デザイン
+          </p>
+          <p class="p-skill__cat-item--brown p-skill__cat-position--lv4 c-font__cat-item">
+            ロゴ制作
+          </p>
+          <p class="p-skill__cat-item--deep p-skill__cat-position--lv5 c-font__cat-item">
+            DTP<br>デザイン
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="p-contact__wrapper">
+      <div class="p-about__heading">
+        <h2 class="p-about__title--font c-font__heading--green">Contact</h2>
+        <div class="p-about__title--circle--large c-circle--large"></div>
+        <div class="p-about__title--circle--small">
+          <div class="c-circle--small"></div>
+          <div class="c-circle--small"></div>
+          <div class="c-circle--small"></div>
+        </div>
+      </div>
+      <h3 class="p-about__sub-heading c-font__sub-heading--green">お問い合わせ</h3>
+      <div class="p-contact__caption">
+        <p class="c-font__text">
+          お問い合わせはこちらのフォームからお願いします。個人情報はお返事を出すことだけに使用しています。
+        </p>
+      </div>
+      <div class="p-contact__outer">
+        <div class="p-contact__inner">
+          <form class="p-form__area" action="#" method="" name="contact-form">
+            <div class="p-form__one-line">
+              <div class="p-form__name">
+                <label for="name" class="c-font__form">お名前</label>
+                <input type="text" id="name" name="your-name">
+              </div>
+              <div class="p-form__kana">
+                <label for="kana" class="c-font__form">ふりがな</label>
+                <input type="text" id="kana" name="your-name-kana">
+              </div>
+              <div class="p-form__mail">
+                <label for="email" class="c-font__form">メールアドレス</label>
+                <input type="email" id="email" name="your-email">
+              </div>
+            </div>
+            <div class="p-form__message">
+              <label for="message" class="c-font__form">お問い合わせ</label>
+              <textarea id="message" name="your-message"></textarea>
+            </div>
+            <input class="c-font__form--btn" type="submit" value="送信">
+          </form>
+        </div>
+        <img class="p-contact__form--img c-img__form" src="<%= require('./images/front-page_contact_human.png') %>"
+          alt="">
+      </div>
+      <div class="p-contact__thank">
+        <p class="p-contact__one-word c-font__contact--thank">Thank you for watching</p>
+      </div>
+      <img class="p-contact__img--human c-img__human" src="<%= require('./images/front-page_contact_human.png') %>"
+        alt="">
+
+
+    </section>
+  </main>
+  <footer class="l-footer p-footer">
+    <div class="p-footer__box">
+      <div class="p-footer__link">
+        <a href="">
+          <img class="c-img__link--footer--twitter"
+            src="<%= require('./images/front-page_footer_link_icon_twitter.svg') %>" alt="twitter">
+        </a>
+        <a href="">
+          <img class="c-img__link--footer--instagram"
+            src="<%= require('./images/front-page_footer_link_icon_instagram.svg') %>" alt="Instagram">
+        </a>
+        <a href="">
+          <img class="c-img__link--footer--mail" src="<%= require('./images/front-page_footer_link_icon_mail.svg') %>"
+            alt="mail">
+        </a>
+      </div>
+      <div class="p-footer__title">
+        <p class="c-font__footer--title">naolabo</p>
+        <p class="c-font__footer--sub-title">©︎2022naolabdesign</p>
+      </div>
+      <button class="p-footer__btn c-btn__footer">
+        <p class="c-font__btn--footer">top</p>
+      </button>
+    </div>
+
+  </footer>
+  <!-- </div> -->
 </body>
 
 </html>

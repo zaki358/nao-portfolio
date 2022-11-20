@@ -41,6 +41,8 @@ p, h1, h2, h3, h4, h5, h6 {
 
 html {
   font-size: 62.5%;
+  width: 100%;
+  height: auto;
 }
 
 body {
@@ -49,6 +51,8 @@ body {
   font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 100;
+  width: 100%;
+  height: auto;
 }
 
 a {
@@ -1108,14 +1112,15 @@ button {
 .p-skill__wrapper {
   position: relative;
   margin-top: 100px;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
-.p-skill__symbol--lv1, .p-skill__symbol--lv4, .p-skill__symbol--lv3, .p-skill__symbol--lv2 {
-  overflow: hidden;
+.p-skill__symbol--lv1 {
   position: absolute;
-  top: 0%;
-  left: -27%;
   width: 42vw;
   height: auto;
+  top: 0%;
+  left: -27%;
   animation-name: reverseRotation;
   animation-duration: 10s;
   animation-timing-function: linear;
@@ -1125,9 +1130,39 @@ button {
   animation-fill-mode: forwards;
 }
 .p-skill__symbol--lv2 {
+  position: absolute;
+  width: 42vw;
+  height: auto;
   top: 7%;
-  left: auto;
-  right: -15%;
+  left: 98%;
+  animation-name: forwardRotation;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+.p-skill__symbol--lv3 {
+  position: absolute;
+  width: 42vw;
+  height: auto;
+  top: 7%;
+  left: 60%;
+  animation-name: forwardRotation;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+.p-skill__symbol--lv4 {
+  position: absolute;
+  width: 42vw;
+  height: auto;
+  top: 7%;
+  left: 60%;
   animation-name: forwardRotation;
   animation-duration: 10s;
   animation-timing-function: linear;

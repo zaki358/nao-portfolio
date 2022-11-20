@@ -5,14 +5,15 @@
   &__wrapper {
     position  : relative;
     margin-top: 100px;
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
   &__symbol--lv1 {
-    overflow: hidden;
     position : absolute;
-    top      : 0%;
-    left     : -27%;
     width    : 42vw;
     height   : auto;
+    top      : 0%;
+    left     : -27%;
     @include mixin.animation(
       reverseRotation,
       $duration: 10s,
@@ -21,10 +22,11 @@
     )
   }
   &__symbol--lv2 {
-    @extend .p-skill__symbol--lv1;
-    top  : 7%;
-    left : auto;
-    right: -15%;
+    position : absolute;
+    width    : 42vw;
+    height   : auto;
+    top      : 7%;
+    left     : 98%;
     @include mixin.animation(
       forwardRotation,
       $duration: 10s,
@@ -33,11 +35,30 @@
     )
   }
   &__symbol--lv3 {
-    @extend .p-skill__symbol--lv1;
-  
+    position : absolute;
+    width    : 42vw;
+    height   : auto;
+    top      : 7%;
+    left     : 60%;
+    @include mixin.animation(
+      forwardRotation,
+      $duration: 10s,
+      $iteration-count: infinite,
+      $timing-function: linear
+    );
   }
   &__symbol--lv4 {
-    @extend .p-skill__symbol--lv1;
+    position : absolute;
+    width    : 42vw;
+    height   : auto;
+    top      : 7%;
+    left     : 60%;
+    @include mixin.animation(
+      forwardRotation,
+      $duration: 10s,
+      $iteration-count: infinite,
+      $timing-function: linear
+    );
   }
   &__container {
     padding: 0 16px;
