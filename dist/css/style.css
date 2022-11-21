@@ -356,12 +356,12 @@ button {
   width: 43vw;
   height: auto;
 }
-.c-img__present {
+.c-img__present--sp {
   width: 31vw;
   height: auto;
 }
 @media screen and (min-width: 1025px) {
-  .c-img__present {
+  .c-img__present--pc {
     width: 20vw;
     height: auto;
   }
@@ -476,7 +476,7 @@ button {
 
 .p-header__content {
   position: relative;
-  z-index: 100;
+  z-index: 101;
 }
 .p-header__background--sp {
   position: absolute;
@@ -576,7 +576,7 @@ button {
     display: none;
   }
 }
-.p-header__present {
+.p-header__present--sp {
   position: absolute;
   top: 51%;
   left: 7%;
@@ -590,9 +590,26 @@ button {
   animation-fill-mode: forwards;
 }
 @media screen and (min-width: 1025px) {
-  .p-header__present {
-    top: 26%;
-    left: 18%;
+  .p-header__present--sp {
+    display: none;
+  }
+}
+.p-header__present--pc {
+  display: none;
+}
+@media screen and (min-width: 1025px) {
+  .p-header__present--pc {
+    display: block;
+    position: absolute;
+    top: 35%;
+    left: 16%;
+    animation-name: upDown;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
   }
 }
 .p-header__nav {
@@ -617,7 +634,10 @@ button {
 @media screen and (min-width: 1025px) {
   .p-header__nav {
     display: block;
-    position: static;
+    position: fixed;
+    top: 0;
+    left: 90%;
+    width: 80px;
     background-color: transparent;
   }
   .p-header__nav::before {
@@ -644,6 +664,7 @@ button {
 }
 @media screen and (min-width: 1025px) {
   .p-header__menu {
+    position: static;
     top: 3%;
     left: 86%;
     height: auto;
@@ -660,13 +681,13 @@ button {
 }
 .p-header__open--btn {
   position: fixed;
-  top: 6.5%;
+  top: 12vw;
   right: 10%;
   z-index: 104;
 }
 @media screen and (min-width: 600px) {
   .p-header__open--btn {
-    top: 3.5%;
+    top: 6vw;
     right: 5%;
   }
 }
@@ -1428,6 +1449,7 @@ button {
   position: relative;
   margin-top: 100px;
   padding: 0 20px;
+  overflow: hidden;
 }
 .p-contact__caption {
   padding: 22px 12px 24px 27px;
@@ -1528,7 +1550,14 @@ button {
     display: none;
   }
 }
-
+.p-contact__img--airplane {
+  position: absolute;
+  top: 5%;
+  left: 60%;
+}
+.p-contact__img--airplane img:first-of-type {
+  transform: translate(80px, 5px);
+}
 .p-footer {
   margin-top: 107px;
   width: 100%;

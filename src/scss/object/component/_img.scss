@@ -35,9 +35,11 @@
     width : 43vw;
     height: auto;
   }
-  &__present {
+  &__present--sp {
     width : 31vw;
     height: auto;
+  }
+  &__present--pc {
     @include mixin.media(pc) {
       width : 20vw;
       height: auto;

@@ -4,7 +4,7 @@
 .p-header {
   &__content {
     position: relative;
-    z-index : 100;
+    z-index : 101;
   }
   &__background--sp {
     position: absolute;
@@ -86,20 +86,34 @@
       display: none;
     }
   }
-  &__present {
+  &__present--sp {
     position: absolute;
     top     : 51%;
     left    : 7%;
     z-index : 99;
     @include mixin.animation(
-      upDown,
-      $duration: 5s,
+      $name           : upDown,
+      $duration       : 5s,
       $iteration-count: infinite,
       $timing-function: linear
     );
     @include mixin.media(pc) {
-      top : 26%;
-      left: 18%;
+      display: none;
+    }
+  }
+  &__present--pc {
+    display: none;
+    @include mixin.media(pc) {
+      display : block;
+      position: absolute;
+      top     : 35%;
+      left    : 16%;
+      @include mixin.animation(
+      $name           :upDown,
+      $duration       : 5s,
+      $iteration-count: infinite,
+      $timing-function: linear
+    );
     }
   }
   &__nav {
@@ -122,7 +136,10 @@
     }
     @include mixin.media(pc) {
       display         : block;
-      position        : static;
+      position        : fixed;
+      top             : 0;
+      left            : 90%;
+      width           : 80px;
       background-color: transparent;
       &::before {
         display: none;
@@ -145,6 +162,7 @@
     z-index : 104;
     width   : auto;
     @include mixin.media(pc) {
+      position: static;
       top   : 3%;
       left  : 86%;
       height: auto;
@@ -164,11 +182,11 @@
   }
   &__open--btn {
     position: fixed;
-    top     : 6.5%;
+    top     : 12vw;
     right   : 10%;
     z-index : 104;
     @include mixin.media(tab) {
-      top  : 3.5%;
+      top  : 6vw;
       right: 5%;
     }
     @include mixin.media(pc) {

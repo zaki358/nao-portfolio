@@ -6,6 +6,7 @@
     position  : relative;
     margin-top: 100px;
     padding   : 0 20px;
+    overflow  : hidden;
   }
   &__caption {
     padding      : 22px 12px 24px 27px;
@@ -91,6 +92,18 @@
     }
     @include mixin.media(pc) {
       display: none;
+    }
+  }
+  &__img--airplane {
+    position: absolute;
+    top     : 5%;
+    left    : 60%;
+    img:first-of-type {
+      transform: translate(80px, 5px);
+
+    }
+    img:last-of-type {
+
     }
   }
 }
