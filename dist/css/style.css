@@ -418,6 +418,16 @@ button {
     height: 90%;
   }
 }
+.c-img__airplane {
+  object-fit: contain;
+  width: 55%;
+  height: auto;
+}
+.c-img__airplane--line {
+  object-fit: contain;
+  width: 43%;
+  height: auto;
+}
 
 .c-btn__nav--open {
   width: 10vw;
@@ -1493,11 +1503,11 @@ button {
     padding: 40px;
   }
 }
-.p-contact__form--img {
+.p-contact__form--img--human {
   display: none;
 }
 @media screen and (min-width: 1025px) {
-  .p-contact__form--img {
+  .p-contact__form--img--human {
     display: block;
     position: absolute;
     bottom: 0;
@@ -1552,11 +1562,98 @@ button {
 }
 .p-contact__img--airplane {
   position: absolute;
-  top: 5%;
-  left: 60%;
+  top: 8%;
+  right: 1vw;
+  width: min(30vw, 135px);
+  height: min(27vw, 122px);
+  z-index: -1;
+}
+@media screen and (min-width: 1025px) {
+  .p-contact__img--airplane {
+    display: none;
+  }
 }
 .p-contact__img--airplane img:first-of-type {
-  transform: translate(80px, 5px);
+  position: absolute;
+  top: 0;
+  left: 35%;
+  z-index: 99;
+  animation-name: airplaneUpDown;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+.p-contact__img--airplane img:last-of-type {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 100;
+}
+.p-contact__form--img--airplane {
+  display: none;
+}
+@media screen and (min-width: 1025px) {
+  .p-contact__form--img--airplane {
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 104%;
+    width: min(30vw, 135px);
+    height: min(27vw, 122px);
+    z-index: -1;
+  }
+  .p-contact__form--img--airplane img:first-of-type {
+    position: absolute;
+    top: 0;
+    left: 35%;
+    z-index: 99;
+    animation-name: airplaneUpDown;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+  }
+  .p-contact__form--img--airplane img:last-of-type {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 100;
+  }
+}
+
+@keyframes airplaneUpDown {
+  0% {
+    transform: translate(0);
+  }
+  12% {
+    transform: translateY(5px);
+  }
+  24% {
+    transform: translateY(10px);
+  }
+  36% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  62% {
+    transform: translateY(-5px);
+  }
+  74% {
+    transform: translateY(-10px);
+  }
+  86% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translate(0);
+  }
 }
 .p-footer {
   margin-top: 107px;

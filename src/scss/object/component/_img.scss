@@ -90,4 +90,14 @@
       height: 90%;
     }
   }
+  &__airplane {
+    object-fit: contain;
+    width     : 55%;
+    height    : auto;
+  }
+  &__airplane--line {
+    object-fit: contain;
+    width     : 43%;
+    height    : auto;
+  }
 }

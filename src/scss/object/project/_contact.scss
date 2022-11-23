@@ -49,7 +49,7 @@
       padding         : 40px;
     }
   }
-  &__form--img {
+  &__form--img--human {
     display: none;
     @include mixin.media(pc) {
       display : block;
@@ -95,15 +95,94 @@
     }
   }
   &__img--airplane {
+    //position: absolute;
     position: absolute;
-    top     : 5%;
-    left    : 60%;
+    top     : 8%;
+    right   : 1vw;
+    width   : min(30vw, 135px);
+    height  : min(27vw, 122px);
+    z-index : -1;
+    @include mixin.media(pc) {
+      display: none;
+    }
     img:first-of-type {
-      transform: translate(80px, 5px);
-
+      position: absolute;
+      top     : 0;
+      left    : 35%;
+      z-index : 99;
+      @include mixin.animation(
+      $name           :airplaneUpDown,
+      $duration       : 3s,
+      $iteration-count: infinite,
+      $timing-function: linear
+    );
     }
     img:last-of-type {
-
+      position: absolute;
+      top     : 50%;
+      left    : 0;
+      z-index : 100;
     }
   }
+  &__form--img--airplane {
+    display: none;
+    @include mixin.media(pc) {
+      display : block;
+      position: absolute;
+      top     : 30%;
+      left    : 104%;
+      width   : min(30vw, 135px);
+      height  : min(27vw, 122px);
+      z-index : -1;
+      img:first-of-type {
+        position: absolute;
+        top     : 0;
+        left    : 35%;
+        z-index : 99;
+        @include mixin.animation(
+        $name           :airplaneUpDown,
+        $duration       : 3s,
+        $iteration-count: infinite,
+        $timing-function: linear
+      );
+      }
+      img:last-of-type {
+        position: absolute;
+        top     : 50%;
+        left    : 0;
+        z-index : 100;
+      }
+    }
+  }
+}
+
+@keyframes airplaneUpDown {
+  0% {
+    transform: translate(0);
+  }
+  12% {
+    transform: translateY(5px);
+  }
+  24% {
+    transform: translateY(10px);
+  }
+  36% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  62% {
+    transform: translateY(-5px);
+  }
+  74% {
+    transform: translateY(-10px);
+  }
+  86% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translate(0);
+  }
+
 }
