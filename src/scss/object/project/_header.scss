@@ -2,10 +2,24 @@
 @use "../../foundation/variables" as val;
 
 .p-header {
-  &__content {
+  &__content--front {
     overflow: hidden;
     position: relative;
     z-index : 101;
+  }
+  &__content--work {
+    overflow: hidden;
+    position: relative;
+    z-index : 101;
+    width   : 100%;
+    height  : 120vw;
+    @include mixin.media(tab) {
+      width: 100vw;
+    }
+    @include mixin.media(pc) {
+      // height: min(38vw, 584px);
+      height: auto;
+    }
   }
   &__background--sp {
     position: absolute;
@@ -29,7 +43,7 @@
       right: 0;
     }
   }
-  &__title {
+  &__title--front {
     display        : flex;
     justify-content: center;
     position       : absolute;
@@ -41,9 +55,33 @@
       top: 2%;
     }
   }
-  &__main {
-    position: relative;
+  &__title--work {
+    display        : flex;
+    justify-content: center;
+    position       : absolute;
+    top            : 10%;
+    left           : 50%;
+    transform      : translateX(-50%);
+    z-index        : 102;
+    @include mixin.media(tab) {
+      top: 5%;
+    }
+  }
+  &__main--front {
+    //position: relative;
     @include mixin.media(pc) {
+      padding-top: 15vw;
+    }
+  }
+  &__main--work {
+    position: absolute;
+    bottom  : 0%;
+    left    : 2%;
+    @include mixin.media(tab) {
+
+    }
+    @include mixin.media(pc) {
+      position: static;
       padding-top: 15vw;
     }
   }
@@ -52,7 +90,18 @@
       display: none;
     }
   }
+  &__img--sp--work {
+    @include mixin.media(pc) {
+      display: none;
+    }
+  }
   &__img--pc {
+    display: none;
+    @include mixin.media(pc) {
+      display: block;
+    }
+  }
+  &__img--pc--work {
     display: none;
     @include mixin.media(pc) {
       display: block;
@@ -85,6 +134,17 @@
     z-index : 102;
     @include mixin.media(pc) {
       display: none;
+    }
+  }
+  &__catchcopy--work {
+    position: absolute;
+    top     : 32%;
+    left    : 50%;
+    z-index : 102;
+    @include mixin.media(pc) {
+      top      : 57%;
+      left     : 50%;
+      transform: translateX(-50%);
     }
   }
   &__present--sp {

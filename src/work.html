@@ -1,24 +1,118 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>work-page</title>
   <link rel="stylesheet" href="https://use.typekit.net/ffe5yoz.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
   <script>
-    (function(d) {
+    (function (d) {
       var config = {
         kitId: 'adf1ial',
         scriptTimeout: 3000,
         async: true
       },
-      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
     })(document);
   </script>
 </head>
+
 <body>
-  <h1>テスト2</h1>
-  <a href="./index.html">index</a>
+  <header id="top" class="l-header p-header__content--work">
+    <img class="p-header__background--sp c-img__background--header--sp"
+      src="<%= require('./images/header_background_sp.png') %>" alt="">
+    <img class="p-header__background--pc c-img__background--header--pc"
+      src="<%= require('./images/header_background_pc.png') %>" alt="">
+    <div class="p-header__title--work">
+      <img class="c-img__title--header--work" src="<%= require('./images/work-page_header_title.svg') %>"
+        alt="フロントページシンボル">
+    </div>
+    <div class="p-header__main--work">
+      <img class="p-header__img--sp--work c-img__main--header--sp--work"
+        src="<%= require ('./images/work-page_header_background_sp.png') %>" alt="背景">
+      <img class="p-header__img--pc--work c-img__main--header--pc--work"
+        src="<%= require ('./images/work-page_header_background_pc.png') %>" alt="背景">
+      <img class="p-header__catchcopy--work c-img__catchcopy--work"
+        src="<%= require('./images/work-page_header_catchcopy.png') %>" alt="キャッチコピー">
+    </div>
+    <nav class="p-header__nav">
+      <button class="p-header__close--btn c-btn__nav--close"><img
+          src="<%= require('./images/header_nav_btn_close.svg') %>" alt="メニュー閉じるアイコン"></button>
+      <div class="p-header__menu">
+        <ul class="p-header__list">
+          <li class="p-header__item">
+            <a class="c-font__list--header" href="index.html#top">
+              Top
+            </a>
+          </li>
+          <li class="p-header__item">
+            <a class="c-font__list--header" href="index.html#about">
+              About
+            </a>
+          </li>
+          <li class="p-header__item">
+            <a class="c-font__list--header" href="index.html#profile">
+              Profile
+            </a>
+          </li>
+          <li class="p-header__item">
+            <a class="c-font__list--header" href="index.html#work">
+              Work
+            </a>
+          </li>
+          <li class="p-header__item">
+            <a class="c-font__list--header" href="index.html#skill">
+              SKill
+            </a>
+          </li>
+          <li class="p-header__item">
+            <a class="c-font__list--header" href="index.html#contact">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+
+    <button class="p-header__open--btn">
+      <img class="c-btn__nav--open" src="<%= require('./images/header_nav_btn.svg') %>" alt="メニュー開くアイコン">
+    </button>
+  </header>
+  <footer class="l-footer p-footer">
+    <div class="p-footer__box">
+      <div class="p-footer__link">
+        <a href="">
+          <img class="c-img__link--footer--twitter"
+            src="<%= require('./images/front-page_footer_link_icon_twitter.svg') %>" alt="twitter">
+        </a>
+        <a href="">
+          <img class="c-img__link--footer--instagram"
+            src="<%= require('./images/front-page_footer_link_icon_instagram.svg') %>" alt="Instagram">
+        </a>
+        <a href="">
+          <img class="c-img__link--footer--mail" src="<%= require('./images/front-page_footer_link_icon_mail.svg') %>"
+            alt="mail">
+        </a>
+      </div>
+      <div class="p-footer__title">
+        <p class="c-font__footer--title">naolabo</p>
+        <p class="c-font__footer--sub-title">©︎2022naolabdesign</p>
+      </div>
+      <button class="p-footer__btn c-btn__footer">
+        <p class="c-font__btn--footer">top</p>
+      </button>
+    </div>
+
+  </footer>
 </body>
+
 </html>

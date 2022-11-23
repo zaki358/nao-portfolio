@@ -141,21 +141,24 @@ const closeListBtn = document.querySelector(".p-header__close--btn");
 const menuList = document.querySelector(".p-header__nav");
 const mediaQueryList = window.matchMedia('(min-width: 1050px)');
 
-(0,_modules_scroll_js__WEBPACK_IMPORTED_MODULE_1__.pageScroll)(pageTopBtn);
+window.addEventListener('DOMContentLoaded', function () {
+  (0,_modules_scroll_js__WEBPACK_IMPORTED_MODULE_1__.pageScroll)(pageTopBtn);
 
-(0,_modules_hamburger_js__WEBPACK_IMPORTED_MODULE_2__.menu)(openListBtn,closeListBtn,menuList);
+  (0,_modules_hamburger_js__WEBPACK_IMPORTED_MODULE_2__.menu)(openListBtn, closeListBtn, menuList);
 
-const breakPointFunction = (breakPoint) => {
-  if(breakPoint.matches) {
-    console.log("変わったよ！");
-    if(menuList.classList.contains("js-open") == true) {
-      (0,_modules_hamburger_js__WEBPACK_IMPORTED_MODULE_2__.switchByWidth)(menuList,openListBtn);
+  const breakPointFunction = (breakPoint) => {
+    if (breakPoint.matches) {
+      if (menuList.classList.contains("js-open") === true) {
+        (0,_modules_hamburger_js__WEBPACK_IMPORTED_MODULE_2__.switchByWidth)(menuList, openListBtn);
+      }
     }
-  }
-};
-mediaQueryList.addEventListener("change",breakPointFunction);
-//初期化
-breakPointFunction(mediaQueryList);
+  };
+  mediaQueryList.addEventListener("change", breakPointFunction);
+  //初期化
+  breakPointFunction(mediaQueryList);
+});
+
+
 })();
 
 /******/ })()

@@ -27,26 +27,26 @@
 
 <body>
   <!-- <div class="l-wrapper"> -->
-  <header id="top" class="l-header p-header__content">
+  <header id="top" class="l-header p-header__content--front">
     <img class="p-header__background--sp c-img__background--header--sp"
       src="<%= require('./images/header_background_sp.png') %>" alt="">
     <img class="p-header__background--pc c-img__background--header--pc"
       src="<%= require('./images/header_background_pc.png') %>" alt="">
-    <div class="p-header__title">
+    <div class="p-header__title--front">
       <img class="c-img__title--header--front" src="<%= require('./images/front-page_header_title.svg') %>"
         alt="フロントページシンボル">
     </div>
-    <div class="p-header__main">
+    <div class="p-header__main--front">
       <img class="p-header__img--sp c-img__main--header--sp"
-        src="<%= require ('./images/front-page_header_background_sp.png') %>" alt="">
+        src="<%= require ('./images/front-page_header_background_sp.png') %>" alt="背景">
       <img class="p-header__img--pc c-img__main--header--pc"
-        src="<%= require ('./images/front-page_header_background_pc.png') %>" alt="">
+        src="<%= require ('./images/front-page_header_background_pc.png') %>" alt="背景">
       <img class="p-header__catchcopy--pc c-img__catchcopy--pc"
-        src="<%= require('./images/front-page_header_catchcopy_pc.png') %>" alt="">
+        src="<%= require('./images/front-page_header_catchcopy_pc.png') %>" alt="キャッチコピー">
       <img class="p-header__catchcopy--sp--lv1 c-img__catchcopy--sp"
-        src="<%= require('./images/front-page_header_catchcopy1_sp.png') %>" alt="">
+        src="<%= require('./images/front-page_header_catchcopy1_sp.png') %>" alt="キャッチコピー">
       <img class="p-header__catchcopy--sp--lv2 c-img__catchcopy--sp"
-        src="<%= require('./images/front-page_header_catchcopy1_sp.png') %>" alt="">
+        src="<%= require('./images/front-page_header_catchcopy1_sp.png') %>" alt="キャッチコピー">
       <img class="p-header__present--sp c-img__present--sp"
         src="<%= require ('./images/front-page_header_present_sp.png') %>" alt="present画像(スマホ版)">
       <img class="p-header__present--pc c-img__present--pc"
@@ -312,7 +312,7 @@
             </a>
           </div>
         </div>
-        <button class="p-work__btn c-btn__work c-font__btn--work" onclick="location.href=''"> See all</button>
+        <button class="p-work__btn c-btn__work c-font__btn--work" onclick="location.href='work.html'"> See all</button>
       </div>
       <img class="p-work__wave" src="<%= require('./images/front-page_work_bottom.png') %>" alt="">
     </section>

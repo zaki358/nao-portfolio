@@ -16,15 +16,30 @@
     width : max(50vw, 190px);
     height: auto;
     @include mixin.media(tab) {
-      width: min(30vw, 576px);
+      width: min(30vw, 434px);
+    }
+  }
+  &__title--header--work {
+    width : max(30vw, 120px);
+    height: auto;
+    @include mixin.media(tab) {
+      width: min(18vw, 262px);
     }
   }
   &__main--header--sp {
     width : 100vw;
     height: auto;
   }
+  &__main--header--sp--work {
+    width : 89vw;
+    height: auto;
+  }
   &__main--header--pc {
     width : 100vw;
+    height: auto;
+  }
+  &__main--header--pc--work {
+    width: 100vw;
     height: auto;
   }
   &__catchcopy--pc {
@@ -34,6 +49,13 @@
   &__catchcopy--sp {
     width : 43vw;
     height: auto;
+  }
+  &__catchcopy--work {
+    width : max(50vw, 185px);
+    height: auto;
+    @include mixin.media(pc) {
+      width: min(25vw, 335px);
+    }
   }
   &__present--sp {
     width : 31vw;
