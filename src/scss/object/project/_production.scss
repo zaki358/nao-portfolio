@@ -1,0 +1,23 @@
+@use "../../foundation/mixin";
+@use "../../foundation/variables" as val;
+
+.p-production {
+  &__wrapper {
+    width              : 100%;
+    height             : 1000px;
+    background-image   : url("@images/work-page_work_background_sp.svg");
+    background-repeat  : no-repeat;
+    background-position: top center;
+    background-size    : 100vw;
+    @include mixin.media(pc) {
+      background-image: url("@images/work-page_work_background_pc.svg");
+    }
+  }
+  &__area {
+    padding: 70px 20px 50px 20px;
+    @include mixin.media(pc) {
+      width: 65vw;
+      padding: 186px 256px 104px 238px;
+    }
+  }
+}

@@ -1755,6 +1755,29 @@ button {
     transform: translate(0);
   }
 }
+.p-production__wrapper {
+  width: 100%;
+  height: 1000px;
+  background-image: url(/images/work-page_work_background_sp.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100vw;
+}
+@media screen and (min-width: 1025px) {
+  .p-production__wrapper {
+    background-image: url(/images/work-page_work_background_pc.svg);
+  }
+}
+.p-production__area {
+  padding: 70px 20px 50px 20px;
+}
+@media screen and (min-width: 1025px) {
+  .p-production__area {
+    width: 65vw;
+    padding: 186px 256px 104px 238px;
+  }
+}
+
 .p-footer {
   margin-top: 107px;
   width: 100%;
