@@ -4,7 +4,6 @@
 .p-production {
   &__wrapper {
     width              : 100%;
-    height             : 1000px;
     background-image   : url("@images/work-page_work_background_sp.svg");
     background-repeat  : no-repeat;
     background-position: top center;
@@ -13,11 +12,138 @@
       background-image: url("@images/work-page_work_background_pc.svg");
     }
   }
-  &__area {
-    padding: 70px 20px 50px 20px;
+  &__box {
+    display       : flex;
+    flex-direction: column;
+    padding       : 70px 20px 50px 20px;
     @include mixin.media(pc) {
-      width: 65vw;
-      padding: 186px 256px 104px 238px;
+      display              : grid;
+      grid-template-columns: 1fr 1fr;
+      //grid-template-rows   : 1fr 1fr 1fr;
+      grid-auto-rows       : auto;
+      grid-auto-columns    : auto;
+      width                : min(65vw, 944px);
+      margin               : 0 auto;
+    }
+  }
+
+  //タイトル
+  &__area--title {
+    width       : 100%;
+    padding-left: 30px;
+    @include mixin.media(pc) {
+      width: 100%;
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+  }
+  &__day {
+
+  }
+  &__heading {
+
+  }
+  &__title--client {
+
+  }
+  &__title--product {
+
+  }
+  &__lead {
+
+  }
+  &__weapon {
+    display       : flex;
+    flex-direction: row;
+    dd {
+      margin-left: 10px;
+    }
+  }
+  &__period {
+    display       : flex;
+    flex-direction: row;
+    dd {
+      margin-left: 20px;
+    }
+  }
+  //概要
+  &__outline {
+    width           : 100%;
+    height          : auto;
+    margin-top      : 34px;
+    div {
+      background-color: val.$gray;
+      border-radius   : 4.2vw;
+      padding         : 0px 24px 24px 24px;
+    }
+    img {
+      width     : 100%;
+      object-fit: contain;
+      margin-top: 24px;
+    }
+    @include mixin.media(pc) {
+      width: 100%;
+      grid-column: 1/2;
+      grid-row: 1/3;
+      div {
+        border-radius: 16px;
+      }
+    }
+  }
+  //詳細
+  &__detail {
+    @include mixin.media(pc) {
+    width: 100%;
+    grid-column: 1/3;
+    grid-row: 3/4;
+    }
+  }
+  &__item--detail {
+    width           : 100%;
+    height          : auto;
+    background-color: val.$gray;
+    border-radius   : 4.2vw;
+    padding         : 0px 24px 24px 24px;
+    img {
+      width     : 100%;
+      object-fit: contain;
+      margin-top: 24px;
+    }
+  }
+  //説明
+  &__area--about {
+    width     : 100%;
+    margin-top: 24px;
+    @include mixin.media(pc) {
+      width: 100%;
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+  }
+  &__flow {
+
+  }
+  &__sub-heading {
+
+  }
+  &__about {
+    margin-top: 16px;
+    dd {
+      margin-left: 16px;
+    }
+  }
+  &__text {
+    dl,
+    dt,
+    p {
+      margin-top: 20px;
+    }
+    dd {
+      text-indent: 24px;
+    }
+
+    span {
+      
     }
   }
 }
