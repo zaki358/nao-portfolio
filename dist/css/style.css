@@ -295,6 +295,13 @@ button {
   font-size: 2.4rem;
   line-height: 2.8rem;
 }
+.c-font--bukatsu {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  color: #074656;
+}
 .c-icon__about {
   width: 120px;
   height: auto;
@@ -1790,11 +1797,13 @@ button {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 100vw;
+  margin-bottom: 56px;
 }
 @media screen and (min-width: 1025px) {
   .p-production__wrapper {
     background-image: url(/images/work-page_work_background_pc.svg);
     overflow: hidden;
+    margin-bottom: 76px;
   }
 }
 .p-production__box {
@@ -1873,21 +1882,37 @@ button {
     grid-row: 3/4;
   }
 }
-.p-production__item--detail {
+.p-production__item--detail, .p-production__item--detail--pc {
   display: flex;
   flex-direction: column;
+  row-gap: 24px;
   width: 100%;
   height: auto;
   background-color: #EEEBE6;
   border-radius: 4.2vw;
-  padding: 0px 24px 24px 24px;
+  padding: 24px 24px 24px 24px;
+  margin-top: 24px;
 }
 @media screen and (min-width: 1025px) {
-  .p-production__item--detail {
+  .p-production__item--detail, .p-production__item--detail--pc {
     flex-direction: row;
     flex-wrap: wrap;
+    row-gap: 24px;
+    justify-content: space-around;
     border-radius: 22px;
   }
+}
+.p-production__item--detail--pc {
+  display: none;
+}
+@media screen and (min-width: 1025px) {
+  .p-production__item--detail--pc {
+    display: flex;
+  }
+}
+.p-production__unit--detail {
+  display: flex;
+  flex-direction: column;
 }
 .p-production__unit--detail p {
   display: none;
@@ -1895,7 +1920,6 @@ button {
 .p-production__unit--detail img {
   width: 100%;
   object-fit: contain;
-  margin-top: 24px;
 }
 @media screen and (min-width: 1025px) {
   .p-production__unit--detail {
@@ -1936,6 +1960,31 @@ button {
 }
 .p-production__text span {
   background-color: #ffc9d2;
+}
+.p-production__link {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.p-production__link img {
+  object-fit: contain;
+}
+.p-production__link p {
+  margin-top: 0;
+  margin-left: 8px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  color: #144750;
+}
+.p-production__link a {
+  border-bottom: 0.5px solid;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  color: #144750;
 }
 
 .p-footer {

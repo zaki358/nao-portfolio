@@ -8,9 +8,11 @@
     background-repeat  : no-repeat;
     background-position: top center;
     background-size    : 100vw;
+    margin-bottom      : 56px;
     @include mixin.media(pc) {
       background-image: url("@images/work-page_work_background_pc.svg");
       overflow        : hidden;
+      margin-bottom   : 76px;
     }
   }
   &__box {
@@ -98,7 +100,6 @@
   }
   //詳細
   &__detail {
-
     @include mixin.media(pc) {
     width      : 100%;
     grid-column: 1/3;
@@ -108,32 +109,45 @@
   &__item--detail {
     display         : flex;
     flex-direction  : column;
+    row-gap         : 24px;
     width           : 100%;
     height          : auto;
     background-color: val.$gray;
     border-radius   : 4.2vw;
-    padding         : 0px 24px 24px 24px;
+    padding         : 24px 24px 24px 24px;
+    margin-top     : 24px;
     @include mixin.media(pc) {
-      flex-direction: row;
-      flex-wrap     : wrap;
-      border-radius : 22px;
+      flex-direction : row;
+      flex-wrap      : wrap;
+      row-gap: 24px;
+      justify-content: space-around;
+      border-radius  : 22px;
+      
+    }
+  }
+  &__item--detail--pc {
+    @extend .p-production__item--detail;
+    display: none;
+    @include mixin.media(pc) {
+      display: flex;
     }
   }
   &__unit--detail {
-
+    display       : flex;
+    flex-direction: column;
     p {
       display: none;
     }
     img {
       width     : 100%;
       object-fit: contain;
-      margin-top: 24px;
+      //margin-top: 24px;
     }
     @include mixin.media(pc) {
       display       : flex;
       flex-direction: column;
       p {
-        display: block;
+        display    : block;
       }
       img {
         width: auto;
@@ -174,6 +188,31 @@
 
     span {
       background-color: #ffc9d2;
+    }
+  }
+  &__link {
+    display    : flex;
+    align-items: center;
+    margin-top : 20px;
+    img {
+      object-fit: contain;
+    }
+    p {
+      margin-top : 0;
+      margin-left: 8px;
+      font-family : 'Noto Sans JP', sans-serif;
+      font-weight : 300;
+      font-size   : 1.6rem;
+      line-height : 2.8rem;
+      color       : #144750;
+    }
+    a {
+      border-bottom: 0.5px solid;
+      font-family  : 'Noto Sans JP', sans-serif;
+      font-weight  : 300;
+      font-size    : 1.6rem;
+      line-height  : 2.8rem;
+      color        : #144750;
     }
   }
 }
