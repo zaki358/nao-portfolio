@@ -773,7 +773,7 @@ button {
   .p-header__nav {
     display: block;
     position: fixed;
-    top: 0;
+    top: 2%;
     left: 90%;
     width: 80px;
     background-color: transparent;
@@ -841,6 +841,27 @@ button {
 }
 .p-header__open--btn.js-open {
   display: none;
+}
+.p-header__link--home--work {
+  display: none;
+}
+@media screen and (min-width: 1025px) {
+  .p-header__link--home--work {
+    display: block;
+    position: fixed;
+    top: 8%;
+    left: 4%;
+    z-index: 101;
+    width: min(6vw, 63px);
+    height: auto;
+  }
+  .p-header__link--home--work a {
+    display: inline-block;
+    width: 100%;
+  }
+  .p-header__link--home--work img {
+    object-fit: contain;
+  }
 }
 
 @keyframes upDown {
@@ -1954,9 +1975,6 @@ button {
 .p-production__text dt,
 .p-production__text p {
   margin-top: 20px;
-}
-.p-production__text dd {
-  text-indent: 24px;
 }
 .p-production__text span {
   background-color: #ffc9d2;

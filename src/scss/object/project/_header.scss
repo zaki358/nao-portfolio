@@ -199,7 +199,7 @@
     @include mixin.media(pc) {
       display         : block;
       position        : fixed;
-      top             : 0;
+      top             : 2%;
       left            : 90%;
       width           : 80px;
       background-color: transparent;
@@ -263,7 +263,25 @@
       display: none;
     }
   }
-  
+  &__link--home--work {
+    display: none;
+    @include mixin.media(pc) {
+      display : block;
+      position: fixed;
+      top     : 8%;
+      left    : 4%;
+      z-index : 101;
+      width   : min(6vw, 63px);
+      height  : auto;
+      a {
+      display: inline-block;
+      width  : 100%;
+        }
+      img {
+      object-fit: contain;
+      }
+    }
+  }
 }
 
 @keyframes upDown {

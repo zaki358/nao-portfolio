@@ -22,7 +22,7 @@
     @include mixin.media(pc) {
       display              : grid;
       grid-template-columns: 1fr 1fr;
-      //grid-template-rows   : 1fr 1fr 1fr;
+      //grid-template-rows   : minmax(auto, 400px) auto;
       grid-auto-rows       : auto;
       grid-auto-columns    : auto;
       column-gap           : 106px;
@@ -115,7 +115,7 @@
     background-color: val.$gray;
     border-radius   : 4.2vw;
     padding         : 24px 24px 24px 24px;
-    margin-top     : 24px;
+    margin-top      : 24px;
     @include mixin.media(pc) {
       flex-direction : row;
       flex-wrap      : wrap;
@@ -183,7 +183,7 @@
       margin-top: 20px;
     }
     dd {
-      text-indent: 24px;
+      //text-indent: 24px;
     }
 
     span {
