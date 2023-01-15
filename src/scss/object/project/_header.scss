@@ -52,7 +52,7 @@
     transform      : translateX(-50%);
     z-index        : 102;
     @include mixin.media(tab) {
-      top: 40px;
+      top: 52px;
     }
   }
   &__title--work {
@@ -64,7 +64,7 @@
     transform      : translateX(-50%);
     z-index        : 102;
     @include mixin.media(tab) {
-      top: 5%;
+      top: 80px;
     }
   }
   &__main--front {
