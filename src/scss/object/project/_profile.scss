@@ -8,7 +8,10 @@
   }
   &__container {
     background-color: val.$mainColor;
-    padding         : 132px 20px 100px 20px;
+    padding         : 64px 20px 50px 20px;
+    @include mixin.media(tab) {
+      padding         : 132px 20px 180px 20px;
+    }
     //overflow:hidden; //子要素にmarginをつけたときに使用
   }
   &__heading {
@@ -37,7 +40,7 @@
   }
   &__group {
     display              : grid;
-    margin               : 65px auto 0 auto;
+    margin               : 30px auto 0 auto;
     width                : 100%;
     height               : auto;
     grid-template-columns: 1fr 1fr;
@@ -45,6 +48,7 @@
     gap                  : 16px;
     //grid-template-rows: 1fr 1fr 1fr;
     @include mixin.media(bigTab) {
+      margin               : 65px auto 0 auto;
       width                : min(95vw, 800px);
       height               : 518px;
       grid-template-columns: 1fr 1fr 1fr;
@@ -87,9 +91,8 @@
     }
   }
   &__chara {
-    background-color: brown;
     margin          : auto;
-    background-color: val.$white;
+    background-color: val.$gray;
     border-radius   : 16px;
     box-shadow      : inset 2px 2px 6px rgba(66, 61, 60, 0.52);
     grid-column     : 1/2;
@@ -122,7 +125,7 @@
     white-space  : nowrap;
   }
   &__text {
-    margin-top: 5px;
+    margin-top: 12px;
   }
   &__area--sns {
     margin-top: 15px;

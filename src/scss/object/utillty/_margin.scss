@@ -1,0 +1,10 @@
+@use "../../foundation/mixin";
+@use "../../foundation/variables" as val;
+
+.u-margin {
+  &__about--top {
+    @include mixin.media(tab) {
+      margin-top: 90px;
+    }
+  }
+}

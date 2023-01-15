@@ -4,7 +4,11 @@
 .p-about {
   &__container {
     padding   : 0 20px;
-    margin-top: 100px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    @include mixin.media(tab) {
+      margin-top: 100px;
+    }
   }
   &__heading {
     display        : flex;
@@ -28,6 +32,7 @@
   }
   &__sub-heading {
     text-align: center;
+    margin-top: 20px;
   }
   &__card {
     display       : flex;
@@ -56,6 +61,7 @@
     box-shadow      : 1px 1px 6px rgba(66, 61, 60, 0.3);
     margin-top      : 24px;
     @include mixin.media(tab) {
+      padding    : 16px 40px 20px 41px;
       width      : 100%;
       height     : auto;
       margin-top : 0px;
@@ -82,12 +88,12 @@
     }
     @include mixin.media(pc) {
       position   : relative;
-      display    : flex;
+      //display    : flex;
       align-items: center;
       width      : 560px;
       height     : 160px;
       margin-left: 50px;
-      padding: 16px 60px 20px 60px;
+      padding: 32px 66px 20px 70px;
       &::before {
         content: "";
         position        : absolute;

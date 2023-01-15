@@ -47,12 +47,12 @@
     display        : flex;
     justify-content: center;
     position       : absolute;
-    top            : 4%;
+    top            : 46px;
     left           : 50%;
     transform      : translateX(-50%);
     z-index        : 102;
     @include mixin.media(tab) {
-      top: 2%;
+      top: 40px;
     }
   }
   &__title--work {
@@ -240,8 +240,8 @@
     text-align: right;
   }
   &__item {
-    padding: 5px 0;
-    margin : 5px 0;
+    padding: 2px 0;
+    // margin : 5px 0;
     @include mixin.media(pc) {
 
     }
@@ -249,11 +249,13 @@
   &__open--btn {
     display : block;
     position: fixed;
-    top     : 12vw;
+    // top     : 12vw;
+    top     : 64px;
     right   : 10%;
     z-index : 104;
     @include mixin.media(tab) {
-      top  : 6vw;
+      // top  : 6vw;
+      top  : 55px;
       right: 5%;
     }
     @include mixin.media(pc) {

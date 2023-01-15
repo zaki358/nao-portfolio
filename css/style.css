@@ -1,6 +1,3 @@
-/*!******************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/scss/style.scss ***!
-  \******************************************************************************************************************************************/
 /*
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
@@ -78,7 +75,9 @@ button {
   padding: 0;
   background-color: transparent;
   border: none;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   cursor: pointer;
 }
 
@@ -431,11 +430,13 @@ button {
 .c-img__work {
   width: 100%;
   height: auto;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   border-radius: 9px;
 }
 .c-img__form {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media screen and (min-width: 1025px) {
   .c-img__form {
@@ -445,7 +446,8 @@ button {
 }
 .c-img__human {
   height: 50vw;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media screen and (min-width: 600px) {
   .c-img__human {
@@ -454,7 +456,8 @@ button {
   }
 }
 .c-img__link--footer--twitter {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media screen and (min-width: 1025px) {
   .c-img__link--footer--twitter {
@@ -463,7 +466,8 @@ button {
   }
 }
 .c-img__link--footer--instagram {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media screen and (min-width: 1025px) {
   .c-img__link--footer--instagram {
@@ -472,7 +476,8 @@ button {
   }
 }
 .c-img__link--footer--mail {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media screen and (min-width: 1025px) {
   .c-img__link--footer--mail {
@@ -481,12 +486,14 @@ button {
   }
 }
 .c-img__airplane {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 55%;
   height: auto;
 }
 .c-img__airplane--line {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 43%;
   height: auto;
 }
@@ -600,14 +607,14 @@ button {
   display: flex;
   justify-content: center;
   position: absolute;
-  top: 4%;
+  top: 46px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 102;
 }
 @media screen and (min-width: 600px) {
   .p-header__title--front {
-    top: 2%;
+    top: 40px;
   }
 }
 .p-header__title--work {
@@ -719,13 +726,20 @@ button {
   top: 51%;
   left: 7%;
   z-index: 99;
-  animation-name: upDown;
-  animation-duration: 5s;
-  animation-timing-function: linear;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
+  -webkit-animation-name: upDown;
+          animation-name: upDown;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 @media screen and (min-width: 1025px) {
   .p-header__present--sp {
@@ -741,13 +755,20 @@ button {
     position: absolute;
     top: 35%;
     left: 16%;
-    animation-name: upDown;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
+    -webkit-animation-name: upDown;
+            animation-name: upDown;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
 }
 .p-header__nav {
@@ -818,19 +839,18 @@ button {
   text-align: right;
 }
 .p-header__item {
-  padding: 5px 0;
-  margin: 5px 0;
+  padding: 2px 0;
 }
 .p-header__open--btn {
   display: block;
   position: fixed;
-  top: 12vw;
+  top: 64px;
   right: 10%;
   z-index: 104;
 }
 @media screen and (min-width: 600px) {
   .p-header__open--btn {
-    top: 6vw;
+    top: 55px;
     right: 5%;
   }
 }
@@ -860,7 +880,38 @@ button {
     width: 100%;
   }
   .p-header__link--home--work img {
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+
+@-webkit-keyframes upDown {
+  0% {
+    transform: translate(0);
+  }
+  12% {
+    transform: translateY(10px);
+  }
+  24% {
+    transform: translateY(20px);
+  }
+  36% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  62% {
+    transform: translateY(-10px);
+  }
+  74% {
+    transform: translateY(-20px);
+  }
+  86% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translate(0);
   }
 }
 
@@ -896,6 +947,7 @@ button {
 .p-about__container {
   padding: 0 20px;
   margin-top: 100px;
+  margin-bottom: 10px;
 }
 .p-about__heading {
   display: flex;
@@ -999,7 +1051,7 @@ button {
     left: 3%;
     width: 36px;
     height: 45px;
-    background-image: url(/images/front-page_about_post_goal_left.svg);
+    background-image: url("@images/front-page_about_post_goal_left.svg");
   }
   .p-about__post--goal::after {
     content: "";
@@ -1008,7 +1060,7 @@ button {
     right: 3%;
     width: 36px;
     height: 45px;
-    background-image: url(/images/front-page_about_post_goal_right.svg);
+    background-image: url("@images/front-page_about_post_goal_right.svg");
   }
 }
 .p-about__gap {
@@ -1167,7 +1219,8 @@ button {
   }
 }
 .p-profile__img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 16px;
   grid-column: 1/3;
   grid-row: 3;
@@ -1354,13 +1407,20 @@ button {
   top: 0%;
   left: -27%;
   z-index: -1;
-  animation-name: reverseRotation;
-  animation-duration: 10s;
-  animation-timing-function: linear;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
+  -webkit-animation-name: reverseRotation;
+          animation-name: reverseRotation;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 @media screen and (min-width: 1025px) {
   .p-skill__symbol--lv1 {
@@ -1376,13 +1436,20 @@ button {
   top: calc(52% + 50px);
   left: -10%;
   z-index: -1;
-  animation-name: forwardRotation;
-  animation-duration: 10s;
-  animation-timing-function: linear;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
+  -webkit-animation-name: forwardRotation;
+          animation-name: forwardRotation;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 @media screen and (min-width: 1025px) {
   .p-skill__symbol--lv2 {
@@ -1396,13 +1463,20 @@ button {
   top: 7%;
   left: 75%;
   z-index: -1;
-  animation-name: forwardRotation;
-  animation-duration: 10s;
-  animation-timing-function: linear;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
+  -webkit-animation-name: forwardRotation;
+          animation-name: forwardRotation;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 @media screen and (min-width: 1025px) {
   .p-skill__symbol--lv3 {
@@ -1418,13 +1492,20 @@ button {
   top: calc(54% + 100px);
   left: 64%;
   z-index: -1;
-  animation-name: forwardRotation;
-  animation-duration: 10s;
-  animation-timing-function: linear;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
+  -webkit-animation-name: forwardRotation;
+          animation-name: forwardRotation;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 @media screen and (min-width: 1025px) {
   .p-skill__symbol--lv4 {
@@ -1524,7 +1605,7 @@ button {
   text-align: center;
   width: 24vw;
   height: 24vw;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\"  viewBox=\"0 0 91 92\" fill=\"none\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M5.5677 5.58378C5.04253 2.60533 7.93851 0.175271 10.7805 1.20967L24.6258 6.24902C30.8131 3.06557 37.8306 1.2686 45.2678 1.2686C53.6422 1.2686 61.4843 3.54695 68.2084 7.51761L82.4609 2.3301C85.3029 1.29571 88.1989 3.72574 87.6737 6.70417L84.7196 23.4578C84.6795 23.6852 84.6218 23.9027 84.5483 24.1098C88.3034 30.6983 90.4487 38.3234 90.4487 46.4495C90.4487 71.4022 70.2206 91.6304 45.2678 91.6304C20.3151 91.6304 0.0869141 71.4022 0.0869141 46.4495C0.0869141 36.8323 3.09175 27.9169 8.2138 20.5909L5.5677 5.58378Z\" fill=\"%23B1D3DD\" fill-opacity=\"1\"/></svg>");
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 91 92" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.5677 5.58378C5.04253 2.60533 7.93851 0.175271 10.7805 1.20967L24.6258 6.24902C30.8131 3.06557 37.8306 1.2686 45.2678 1.2686C53.6422 1.2686 61.4843 3.54695 68.2084 7.51761L82.4609 2.3301C85.3029 1.29571 88.1989 3.72574 87.6737 6.70417L84.7196 23.4578C84.6795 23.6852 84.6218 23.9027 84.5483 24.1098C88.3034 30.6983 90.4487 38.3234 90.4487 46.4495C90.4487 71.4022 70.2206 91.6304 45.2678 91.6304C20.3151 91.6304 0.0869141 71.4022 0.0869141 46.4495C0.0869141 36.8323 3.09175 27.9169 8.2138 20.5909L5.5677 5.58378Z" fill="%23B1D3DD" fill-opacity="1"/></svg>');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1536,10 +1617,10 @@ button {
   }
 }
 .p-skill__cat-item--light {
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\"  viewBox=\"0 0 91 92\" fill=\"none\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M5.5677 5.58378C5.04253 2.60533 7.93851 0.175271 10.7805 1.20967L24.6258 6.24902C30.8131 3.06557 37.8306 1.2686 45.2678 1.2686C53.6422 1.2686 61.4843 3.54695 68.2084 7.51761L82.4609 2.3301C85.3029 1.29571 88.1989 3.72574 87.6737 6.70417L84.7196 23.4578C84.6795 23.6852 84.6218 23.9027 84.5483 24.1098C88.3034 30.6983 90.4487 38.3234 90.4487 46.4495C90.4487 71.4022 70.2206 91.6304 45.2678 91.6304C20.3151 91.6304 0.0869141 71.4022 0.0869141 46.4495C0.0869141 36.8323 3.09175 27.9169 8.2138 20.5909L5.5677 5.58378Z\" fill=\"%23B0CFD5\" fill-opacity=\"0.3\"/></svg>");
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 91 92" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.5677 5.58378C5.04253 2.60533 7.93851 0.175271 10.7805 1.20967L24.6258 6.24902C30.8131 3.06557 37.8306 1.2686 45.2678 1.2686C53.6422 1.2686 61.4843 3.54695 68.2084 7.51761L82.4609 2.3301C85.3029 1.29571 88.1989 3.72574 87.6737 6.70417L84.7196 23.4578C84.6795 23.6852 84.6218 23.9027 84.5483 24.1098C88.3034 30.6983 90.4487 38.3234 90.4487 46.4495C90.4487 71.4022 70.2206 91.6304 45.2678 91.6304C20.3151 91.6304 0.0869141 71.4022 0.0869141 46.4495C0.0869141 36.8323 3.09175 27.9169 8.2138 20.5909L5.5677 5.58378Z" fill="%23B0CFD5" fill-opacity="0.3"/></svg>');
 }
 .p-skill__cat-item--brown {
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\"  viewBox=\"0 0 91 92\" fill=\"none\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M5.5677 5.58378C5.04253 2.60533 7.93851 0.175271 10.7805 1.20967L24.6258 6.24902C30.8131 3.06557 37.8306 1.2686 45.2678 1.2686C53.6422 1.2686 61.4843 3.54695 68.2084 7.51761L82.4609 2.3301C85.3029 1.29571 88.1989 3.72574 87.6737 6.70417L84.7196 23.4578C84.6795 23.6852 84.6218 23.9027 84.5483 24.1098C88.3034 30.6983 90.4487 38.3234 90.4487 46.4495C90.4487 71.4022 70.2206 91.6304 45.2678 91.6304C20.3151 91.6304 0.0869141 71.4022 0.0869141 46.4495C0.0869141 36.8323 3.09175 27.9169 8.2138 20.5909L5.5677 5.58378Z\" fill=\"%23EEEBE6\" fill-opacity=\"1\"/></svg>");
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 91 92" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.5677 5.58378C5.04253 2.60533 7.93851 0.175271 10.7805 1.20967L24.6258 6.24902C30.8131 3.06557 37.8306 1.2686 45.2678 1.2686C53.6422 1.2686 61.4843 3.54695 68.2084 7.51761L82.4609 2.3301C85.3029 1.29571 88.1989 3.72574 87.6737 6.70417L84.7196 23.4578C84.6795 23.6852 84.6218 23.9027 84.5483 24.1098C88.3034 30.6983 90.4487 38.3234 90.4487 46.4495C90.4487 71.4022 70.2206 91.6304 45.2678 91.6304C20.3151 91.6304 0.0869141 71.4022 0.0869141 46.4495C0.0869141 36.8323 3.09175 27.9169 8.2138 20.5909L5.5677 5.58378Z" fill="%23EEEBE6" fill-opacity="1"/></svg>');
 }
 .p-skill__cat-position--lv1 {
   position: absolute;
@@ -1596,12 +1677,29 @@ button {
   }
 }
 
+@-webkit-keyframes forwardRotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @keyframes forwardRotation {
   0% {
     transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes reverseRotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
   }
 }
 @keyframes reverseRotation {
@@ -1649,14 +1747,14 @@ button {
 .p-contact__inner {
   width: 95%;
   height: 98%;
-  background-image: url(/images/front-page_contact_form_background_blue_sp.svg), url(/images/front-page_contact_form_background_pink_sp.svg);
+  background-image: url("@images/front-page_contact_form_background_blue_sp.svg"), url("@images/front-page_contact_form_background_pink_sp.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   padding: 28px;
 }
 @media screen and (min-width: 1025px) {
   .p-contact__inner {
-    background-image: url(/images/front-page_contact_form_background_blue_pc.svg), url(/images/front-page_contact_form_background_pink_pc.svg);
+    background-image: url("@images/front-page_contact_form_background_blue_pc.svg"), url("@images/front-page_contact_form_background_pink_pc.svg");
     padding: 40px;
   }
 }
@@ -1735,13 +1833,20 @@ button {
   top: 0;
   left: 35%;
   z-index: 99;
-  animation-name: airplaneUpDown;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
+  -webkit-animation-name: airplaneUpDown;
+          animation-name: airplaneUpDown;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .p-contact__img--airplane img:last-of-type {
   position: absolute;
@@ -1767,19 +1872,56 @@ button {
     top: 0;
     left: 35%;
     z-index: 99;
-    animation-name: airplaneUpDown;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
+    -webkit-animation-name: airplaneUpDown;
+            animation-name: airplaneUpDown;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
   .p-contact__form--img--airplane img:last-of-type {
     position: absolute;
     top: 50%;
     left: 0;
     z-index: 100;
+  }
+}
+
+@-webkit-keyframes airplaneUpDown {
+  0% {
+    transform: translate(0);
+  }
+  12% {
+    transform: translateY(5px);
+  }
+  24% {
+    transform: translateY(10px);
+  }
+  36% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  62% {
+    transform: translateY(-5px);
+  }
+  74% {
+    transform: translateY(-10px);
+  }
+  86% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translate(0);
   }
 }
 
@@ -1814,7 +1956,7 @@ button {
 }
 .p-production__wrapper {
   width: 100%;
-  background-image: url(/images/work-page_work_background_sp.svg);
+  background-image: url("@images/work-page_work_background_sp.svg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 100vw;
@@ -1822,7 +1964,7 @@ button {
 }
 @media screen and (min-width: 1025px) {
   .p-production__wrapper {
-    background-image: url(/images/work-page_work_background_pc.svg);
+    background-image: url("@images/work-page_work_background_pc.svg");
     overflow: hidden;
     margin-bottom: 76px;
   }
@@ -1838,7 +1980,8 @@ button {
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: auto;
     grid-auto-columns: auto;
-    column-gap: 106px;
+    -moz-column-gap: 106px;
+         column-gap: 106px;
     width: min(65vw, 944px);
     margin: 187px auto 0 auto;
     padding: 0;
@@ -1882,7 +2025,8 @@ button {
 }
 .p-production__outline img {
   width: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin-top: 24px;
 }
 @media screen and (min-width: 1025px) {
@@ -1940,7 +2084,8 @@ button {
 }
 .p-production__unit--detail img {
   width: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media screen and (min-width: 1025px) {
   .p-production__unit--detail {
@@ -1985,7 +2130,8 @@ button {
   margin-top: 20px;
 }
 .p-production__link img {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .p-production__link p {
   margin-top: 0;
@@ -2192,7 +2338,8 @@ button {
 .p-graph__area img {
   width: 7vw;
   height: auto;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin-right: -0.6%;
 }
 @media screen and (min-width: 1025px) {
@@ -2226,7 +2373,8 @@ button {
 }
 .p-graph__column--icon img {
   height: auto;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin-left: -0.2%;
   width: 7vw;
 }
@@ -2254,7 +2402,8 @@ button {
 .p-graph__icon--html-css img {
   width: 100%;
   height: 10vw;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin-left: -50%;
 }
 .p-graph__icon--html-css img:first-of-type {
@@ -2391,4 +2540,7 @@ button {
   }
 }
 
-/*# sourceMappingURL=style.css.map*/
+.u-margin__about--bottom {
+  margin-bottom: 60px;
+}
+/*# sourceMappingURL=style.css.map */

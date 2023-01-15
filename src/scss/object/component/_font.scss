@@ -39,6 +39,10 @@
     font-size  : 2.4rem;
     font-weight: 100;
     line-height: 4.8rem;
+    color: val.$fontBlack ;
+    @include mixin.media(tab) {
+      font-size: 3rem;
+    }
   }
   &__text {
     font-family: 'Noto Sans JP', sans-serif;
