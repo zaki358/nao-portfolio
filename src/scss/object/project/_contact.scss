@@ -17,8 +17,8 @@
     border       : 0.1px solid #157788;
     border-radius: 16px;
     box-shadow   : 16px 20px rgb(176 207 213 / 30%);
-    @include mixin.media(pc) {
-
+    @include mixin.media(tab) {
+      margin       : 64px auto 0 auto;
     }
   }
   &__outer {
@@ -31,10 +31,12 @@
     background-color : val.$white;
     border-radius    : 4px;
     box-shadow       : 0.25px 0.25px 1.5px rgba(66, 61, 60, 0.3);
+    padding: 10px 8px;
     @include mixin.media(pc) {
       position: relative;
       width   : 760px;
       height  : 568px;
+      padding: 8px 10px;
     }
   }
   &__inner {
@@ -51,12 +53,15 @@
   }
   &__form--img--human {
     display: none;
-    @include mixin.media(pc) {
+    @include mixin.media(tab) {
       display : block;
       position: absolute;
       bottom  : 0;
       right   : 100%;
       z-index : -1;
+    }
+    @include mixin.media(pc) {
+      right: min(108%, 790px);
     }
   }
   &__thank {

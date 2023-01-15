@@ -59,7 +59,7 @@
     display        : flex;
     justify-content: center;
     position       : absolute;
-    top            : 10%;
+    top            : 54px;
     left           : 50%;
     transform      : translateX(-50%);
     z-index        : 102;
@@ -282,6 +282,14 @@
       img {
       object-fit: contain;
       }
+    }
+  }
+}
+.p-header__content--work {
+  .p-header__open--btn--work {
+    top: 62px;
+    @include mixin.media(tab) {
+      top: 46px;
     }
   }
 }

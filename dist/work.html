@@ -23,29 +23,29 @@
         h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
     })(document);
   </script>
-</head>
+<link rel="icon" href="/favicon.svg"><link href="/./css/style.css" rel="stylesheet"></head>
 
 <body>
   <header id="top" class="l-header p-header__content--work">
     <img class="p-header__background--sp c-img__background--header--sp"
-      src="<%= require('./images/header_background_sp.png') %>" alt="">
+      src="/images/header_background_sp.png" alt="">
     <img class="p-header__background--pc c-img__background--header--pc"
-      src="<%= require('./images/header_background_pc.png') %>" alt="">
+      src="/images/header_background_pc.png" alt="">
     <div class="p-header__title--work">
-      <img class="c-img__title--header--work" src="<%= require('./images/work-page_header_title.svg') %>"
+      <img class="c-img__title--header--work" src="/images/work-page_header_title.svg"
         alt="フロントページシンボル">
     </div>
     <div class="p-header__main--work">
       <img class="p-header__img--sp--work c-img__main--header--sp--work"
-        src="<%= require ('./images/work-page_header_background_sp.png') %>" alt="背景">
+        src="/images/work-page_header_background_sp.png" alt="背景">
       <img class="p-header__img--pc--work c-img__main--header--pc--work"
-        src="<%= require ('./images/work-page_header_background_pc.png') %>" alt="背景">
+        src="/images/work-page_header_background_pc.png" alt="背景">
       <img class="p-header__catchcopy--work c-img__catchcopy--work"
-        src="<%= require('./images/work-page_header_catchcopy.png') %>" alt="キャッチコピー">
+        src="/images/work-page_header_catchcopy.png" alt="キャッチコピー">
     </div>
     <nav class="p-header__nav">
       <button class="p-header__close--btn c-btn__nav--close"><img
-          src="<%= require('./images/header_nav_btn_close.svg') %>" alt="メニュー閉じるアイコン"></button>
+          src="/images/header_nav_btn_close.svg" alt="メニュー閉じるアイコン"></button>
       <div class="p-header__menu">
         <ul class="p-header__list">
           <li class="p-header__item">
@@ -84,11 +84,11 @@
     </nav>
     <div class="p-header__link--home--work">
       <a href="index.html">
-        <img src="<%= require('./images/work-page_header_link_home.svg') %>" alt="homeへのリンク">
+        <img src="/images/work-page_header_link_home.svg" alt="homeへのリンク">
       </a>
     </div>
     <button class="p-header__open--btn p-header__open--btn--work">
-      <img class="c-btn__nav--open" src="<%= require('./images/header_nav_btn.svg') %>" alt="メニュー開くアイコン">
+      <img class="c-btn__nav--open" src="/images/header_nav_btn.svg" alt="メニュー開くアイコン">
     </button>
   </header>
   <main class="l-main">
@@ -135,9 +135,9 @@
         <!-- 概要 -->
         <div class="p-production__outline">
           <div>
-            <img src="<%= require('./images/work-page_outline_raise-tech_banner-1.png') %>" alt="raise techのbanner1">
-            <img src="<%= require('./images/work-page_outline_raise-tech_banner-2.png') %>" alt="raise techのbanner2">
-            <img src="<%= require('./images/work-page_outline_raise-tech_banner-3.png') %>" alt="raise techのbanner3">
+            <img src="/images/work-page_outline_raise-tech_banner-1.png" alt="raise techのbanner1">
+            <img src="/images/work-page_outline_raise-tech_banner-2.png" alt="raise techのbanner2">
+            <img src="/images/work-page_outline_raise-tech_banner-3.png" alt="raise techのbanner3">
           </div>
         </div>
         <!-- 詳細 -->
@@ -234,38 +234,38 @@
         <!-- 概要 -->
         <div class="p-production__outline">
           <div>
-            <img src="<%= require('./images/work-page_outline_gym.png') %>" alt="パーソナルトレーニングジム">
+            <img src="/images/work-page_outline_gym.png" alt="パーソナルトレーニングジム">
           </div>
         </div>
         <!-- 詳細 -->
         <div class="p-production__detail">
           <div class="p-production__item--detail--pc">
             <div class="p-production__unit--detail">
-              <img src="<%= require('./images/work-page_detail_item1_unit1_gym.png') %>" alt="入会方法">
+              <img src="/images/work-page_detail_item1_unit1_gym.png" alt="入会方法">
             </div>
             <div class="p-production__unit--detail">
-              <img src="<%= require('./images/work-page_detail_item1_unit2_gym.png') %>" alt="BUKATSU">
+              <img src="/images/work-page_detail_item1_unit2_gym.png" alt="BUKATSU">
             </div>
             <div class="p-production__unit--detail">
-              <img src="<%= require('./images/work-page_detail_item1_unit3_gym.png') %>" alt="F&Q">
+              <img src="/images/work-page_detail_item1_unit3_gym.png" alt="F&Q">
             </div>
           </div>
           <div class="p-production__item--detail">
             <div class="p-production__unit--detail">
               <p class="c-font--bukatsu">1.女性向け</p>
-              <img src="<%= require('./images/work-page_detail_item2_unit1_gym.png') %>" alt="">
+              <img src="/images/work-page_detail_item2_unit1_gym.png" alt="">
             </div>
             <div class="p-production__unit--detail">
               <p class="c-font--bukatsu">2.男性向け</p>
-              <img src="<%= require('./images/work-page_detail_item2_unit2_gym.png') %>" alt="">
+              <img src="/images/work-page_detail_item2_unit2_gym.png" alt="">
             </div>
             <div class="p-production__unit--detail">
               <p class="c-font--bukatsu">3.男女向け</p>
-              <img src="<%= require('./images/work-page_detail_item2_unit3_gym.png') %>" alt="">
+              <img src="/images/work-page_detail_item2_unit3_gym.png" alt="">
             </div>
             <div class="p-production__unit--detail">
               <p class="c-font--bukatsu">没案</p>
-              <img src="<%= require('./images/work-page_detail_item2_unit4_gym.png') %>" alt="">
+              <img src="/images/work-page_detail_item2_unit4_gym.png" alt="">
             </div>
           </div>
         </div>
@@ -353,9 +353,9 @@
         <!-- 概要 -->
         <div class="p-production__outline">
           <div>
-            <img src="<%= require('./images/work-page_outline_fuwafuwaya1.png') %>" alt="FuwaFuwaYa">
-            <img src="<%= require('./images/work-page_outline_fuwafuwaya2.png') %>" alt="FuwaFuwaYa">
-            <img src="<%= require('./images/work-page_outline_fuwafuwaya3.png') %>" alt="FuwaFuwaYa">
+            <img src="/images/work-page_outline_fuwafuwaya1.png" alt="FuwaFuwaYa">
+            <img src="/images/work-page_outline_fuwafuwaya2.png" alt="FuwaFuwaYa">
+            <img src="/images/work-page_outline_fuwafuwaya3.png" alt="FuwaFuwaYa">
           </div>
         </div>
         <!-- 詳細 -->
@@ -433,8 +433,8 @@
         <!-- 概要 -->
         <div class="p-production__outline">
           <div>
-            <img src="<%= require('./images/work-page_outline_miraini1.png') %>" alt="ミライニ ロゴ">
-            <img src="<%= require('./images/work-page_outline_miraini2.png') %>" alt="ミライニ ロゴ">
+            <img src="/images/work-page_outline_miraini1.png" alt="ミライニ ロゴ">
+            <img src="/images/work-page_outline_miraini2.png" alt="ミライニ ロゴ">
           </div>
         </div>
         <!-- 詳細 -->
@@ -526,7 +526,7 @@
         <!-- 概要 -->
         <div class="p-production__outline">
           <div>
-            <img src="<%= require('./images/work-page_outline_miraini_web.png') %>" alt="ミライニ薬局">
+            <img src="/images/work-page_outline_miraini_web.png" alt="ミライニ薬局">
           </div>
         </div>
         <!-- 詳細 -->
@@ -534,13 +534,13 @@
           <div class="p-production__item--detail--pc">
             <div class="p-production__unit--detail">
               <p class="c-font--bukatsu">下層ページ</p>
-              <img src="<%= require('./images/work-page_detail_item1_unit_miraini_web.png') %>" alt="ミライニ">
+              <img src="/images/work-page_detail_item1_unit_miraini_web.png" alt="ミライニ">
             </div>
           </div>
           <div class="p-production__item--detail">
             <div class="p-production__unit--detail">
               <p class="c-font--bukatsu">SP版</p>
-              <img src="<%= require('./images/work-page_detail_item2_unit_miraini_web.png') %>" alt="ミライニ">
+              <img src="/images/work-page_detail_item2_unit_miraini_web.png" alt="ミライニ">
             </div>
           </div>
         </div>
@@ -571,7 +571,7 @@
                 新しくできた薬局という事で、処方箋をもらった患者さん・求職中の薬剤師共に、店舗がどこにあるのかが知りたい情報だと思ったので、店舗検索欄を一番最初に設置しました。 ロゴマークのモチーフがクラゲのため、ロゴの色を全面的に使用したのと、クラゲ感を波線・円・角丸で出しつつ、薬局らしい清潔でスッキリしたイメージに仕上げました。コーディングの難易度的にも難しくなりすぎないように考えながらデザインしました
               </p>
               <div class="p-production__link">
-                <img src="<%= require('./images/work-page_production_link.svg') %>" alt="ブラウザ">
+                <img src="/images/work-page_production_link.svg" alt="ブラウザ">
                 <p>{<a href="" target="_blank">ブラウザで表示する</a></p>
               </div>
             </div>
@@ -622,8 +622,8 @@
         <!-- 概要 -->
         <div class="p-production__outline">
           <div>
-            <img src="<%= require('./images/work-page_outline_raise-cram-school_small.png') %>" alt="ミライニ塾">
-            <img src="<%= require('./images/work-page_outline_raise-cram-school_large.png') %>" alt="ミライニ塾">
+            <img src="/images/work-page_outline_raise-cram-school_small.png" alt="ミライニ塾">
+            <img src="/images/work-page_outline_raise-cram-school_large.png" alt="ミライニ塾">
           </div>
         </div>
         <div class="p-production__area--about">
@@ -697,9 +697,9 @@
         <!-- 概要 -->
         <div class="p-production__outline">
           <div>
-            <img src="<%= require('./images/work-page_outline_raise-web1.png') %>" alt="RaiseTechサイト（模写）">
-            <img src="<%= require('./images/work-page_outline_raise-web2.png') %>" alt="RaiseTechサイト（模写）">
-            <img src="<%= require('./images/work-page_outline_raise-web3.png') %>" alt="RaiseTechサイト（模写）">
+            <img src="/images/work-page_outline_raise-web1.png" alt="RaiseTechサイト（模写）">
+            <img src="/images/work-page_outline_raise-web2.png" alt="RaiseTechサイト（模写）">
+            <img src="/images/work-page_outline_raise-web3.png" alt="RaiseTechサイト（模写）">
           </div>
         </div>
         <div class="p-production__area--about">
@@ -757,9 +757,9 @@
         <!-- 概要 -->
         <div class="p-production__outline">
           <div>
-            <img src="<%= require('./images/work-page_outline_nal-lab1.png') %>" alt="NaoLab">
-            <img src="<%= require('./images/work-page_outline_nal-lab2.png') %>" alt="NaoLab">
-            <img src="<%= require('./images/work-page_outline_nal-lab3.png') %>" alt="NaoLab">
+            <img src="/images/work-page_outline_nal-lab1.png" alt="NaoLab">
+            <img src="/images/work-page_outline_nal-lab2.png" alt="NaoLab">
+            <img src="/images/work-page_outline_nal-lab3.png" alt="NaoLab">
           </div>
         </div>
         <div class="p-production__area--about">
@@ -799,14 +799,14 @@
       <div class="p-footer__link">
         <a href="">
           <img class="c-img__link--footer--twitter"
-            src="<%= require('./images/front-page_footer_link_icon_twitter.svg') %>" alt="twitter">
+            src="/images/front-page_footer_link_icon_twitter.svg" alt="twitter">
         </a>
         <a href="">
           <img class="c-img__link--footer--instagram"
-            src="<%= require('./images/front-page_footer_link_icon_instagram.svg') %>" alt="Instagram">
+            src="/images/front-page_footer_link_icon_instagram.svg" alt="Instagram">
         </a>
         <a href="">
-          <img class="c-img__link--footer--mail" src="<%= require('./images/front-page_footer_link_icon_mail.svg') %>"
+          <img class="c-img__link--footer--mail" src="/images/front-page_footer_link_icon_mail.svg"
             alt="mail">
         </a>
       </div>
@@ -820,6 +820,6 @@
     </div>
 
   </footer>
-</body>
+<script defer src="/js/index.js"></script></body>
 
 </html>
