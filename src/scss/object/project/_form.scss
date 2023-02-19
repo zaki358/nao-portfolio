@@ -10,7 +10,8 @@
     input[type="email"] {
       width           : 100%;
       height          : 40px;
-      box-shadow      : inset 0.75px 0.75px 1.5px rgba(73, 73, 73, 0.4);
+      box-shadow      : inset 1.75px 1.75px 1.5px rgba(73, 73, 73, 0.4);
+      border: 1px;
       border-radius   : 4px;
       margin-top      : 9.5px;
       background-color: val.$white;
@@ -23,8 +24,8 @@
     textarea {
       width           : 100%;
       height          : 105px;
-      box-shadow      : inset 0.38px 0.38px 0.76px rgba(73, 73, 73, 0.4);
-      border-radius   : 2px;
+      box-shadow      : inset 1.75px 1.75px 1.5px rgba(73, 73, 73, 0.4);
+      border: 1px;
       margin-top      : 9.5px;
       background-color: val.$white;
       @include mixin.media(pc) {
